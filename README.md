@@ -13,5 +13,3 @@ The source contains 68 pages of JEE Main 2025 Class 11 Physics PYQs from January
 - review palette
 - post-test analytics
 
-## Note
-The source pages are image-heavy. The test engine should preserve the original question images rather than relying solely on OCR for diagram/formula accuracy.
