@@ -1,43 +1,44 @@
-# JEE Main Physics — Class 11 PYQ Simulator
+# JEE Main Class 11 Physics Test Maker
 
-A small project built to make JEE Main Physics practice feel a little more like the real thing — without the pressure of a countdown timer.
+A browser-based practice tool for working through JEE Main previous-year questions (PYQs) from Class 11 Physics. It is designed to make focused practice easy: choose a test length, select chapters, answer questions at your own pace, and review your performance when you're done.
 
-I started this because I wanted a simple way to build a test from Class 11 Physics previous-year questions (PYQs), choose how many questions to attempt, and review what I got wrong afterwards. The goal is to keep improving it as the question bank grows.
+**Live app:** https://jee11testgenerator.vercel.app/
 
-**[Open the live simulator](https://jee11testgenerator.vercel.app/)**
+## Features
 
-## What you can do
+- **Custom test length** — create a paper with the number of questions you want to attempt.
+- **Chapter selection** — practise the full available question bank or focus on selected chapters.
+- **Source filtering** — filter questions by available year/source.
+- **Untimed practice** — work without a countdown clock.
+- **Question navigation** — move between questions using the question palette.
+- **Answer review** — clear responses and mark questions to revisit before submitting.
+- **Scoring and analysis** — review your score, correct and incorrect answers, skipped questions, and chapter-wise performance.
+- **Mock history** — recent test results are stored locally in your browser.
 
-- **Build a test your way:** choose the number of questions instead of being locked into one paper length.
-- **Practise without a timer:** take the test at your own pace.
-- **Choose a source or year:** filter the available PYQs when creating a paper.
-- **Focus on chapters:** create a test from the chapters you want to practise.
-- **Keep the exam flow:** move between questions, jump from the question palette, clear an answer, or mark a question for review.
-- **See how you did:** get your score, chapter-wise analysis, and a review of incorrect or skipped questions.
-- **Revisit past mocks:** test history is saved locally in your browser.
+The current scoring scheme is **+4 for a correct answer and −1 for an incorrect answer**. Questions flagged because of notes or ambiguity in the source answer key are excluded from the default test pool.
 
-The simulator uses the usual **+4 for a correct answer and −1 for an incorrect answer**. Questions flagged because of source answer-key notes or ambiguity are excluded from the default pool rather than silently treated as reliable.
+## Question bank
 
-## A note about the questions
+Questions are presented using image assets to preserve the original equations, diagrams, and formatting as closely as possible. The bank is being expanded and reviewed over time, so image crops and answer-key mappings should be checked when issues are reported. Source-specific flags are retained rather than silently treating uncertain answers as verified.
 
-The question bank is based on JEE Main Class 11 Physics PYQs. Original question images are used so diagrams, equations, and formatting stay close to the source. Image quality and answer mappings still need careful checking as more question sets are added.
+## Getting started
 
-This is an evolving personal project, so if you spot a cropped image, a questionable answer, or something that behaves strangely, that's useful feedback.
+This is a static web project and does not require a build step.
 
-## Run it locally
+1. Clone or download this repository.
+2. Keep the JavaScript, HTML, CSS, data files, and question-image folders in their existing relative locations.
+3. Open `index.html` in a browser, or run `START_TEST.bat` on Windows.
 
-1. Download or clone this repository.
-2. Keep the project files and question-image folders together so the relative image paths continue to work.
-3. Open `index.html` in your browser, or use the included `START_TEST.bat` on Windows if you prefer the launcher.
-
-No build step is required for the current static version.
+If images do not load, check that the image files are present and that their paths match the references in the question data.
 
 ## Screenshots
 
-Screenshots would make this README more useful, especially for showing the test builder and the question-taking screen. I haven't added image embeds yet because there aren't any committed website screenshots in the repository; I don't want to add broken image links. Once screenshots are added to the repo, they can go here.
+Screenshots of the test setup and question interface can be added here once they are committed to the repository. This section is intentionally left without image links until those files are available.
 
-## What's next
+## Project direction
 
-This is the foundation, not a finished all-in-one JEE platform. The plan is to keep improving question extraction and validation, expand the question bank carefully, and build on the same test experience rather than creating a separate app for every source.
+The immediate focus is reliability: preserving question layouts, improving image readability, and checking answer mappings. The longer-term goal is to grow the question bank while keeping one consistent test experience across sources.
 
-If you're preparing for JEE too, I hope it helps you get in a few more focused practice sessions.
+## Feedback
+
+If you find an incorrect answer, a cropped or unreadable question, or a problem with test navigation or scoring, please report the issue with the relevant question number and source where possible.
