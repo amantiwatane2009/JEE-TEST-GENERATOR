@@ -21,6 +21,32 @@ The current scoring scheme is **+4 for a correct answer and −1 for an incorrec
 
 Questions are presented using image assets to preserve the original equations, diagrams, and formatting as closely as possible. The bank is being expanded and reviewed over time, so image crops and answer-key mappings should be checked when issues are reported. Source-specific flags are retained rather than silently treating uncertain answers as verified.
 
+## Screenshots
+
+### Test setup
+
+The home screen shows the default mock configuration, question pool, chapter-wise distribution, and available test options.
+
+![Test setup screen](docs/screenshots/test-setup.png)
+
+### Test analysis
+
+The results screen summarizes the score, accuracy, attempt rate, time spent, and chapter-wise performance.
+
+![Test analysis screen](docs/screenshots/test-analysis.png)
+
+### Answer review
+
+After submitting a test, each reviewed question shows the selected answer, correct answer, time spent, and original PYQ image.
+
+![Answer review screen](docs/screenshots/answer-review.png)
+
+### Taking a test
+
+The test interface keeps the original question image beside the question palette, with controls to navigate, clear an answer, mark for review, and submit.
+
+![Question interface](docs/screenshots/question-interface.png)
+
 ## Getting started
 
 This is a static web project and does not require a build step.
@@ -30,10 +56,6 @@ This is a static web project and does not require a build step.
 3. Open `index.html` in a browser, or run `START_TEST.bat` on Windows.
 
 If images do not load, check that the image files are present and that their paths match the references in the question data.
-
-## Screenshots
-
-Screenshots of the test setup and question interface can be added here once they are committed to the repository. This section is intentionally left without image links until those files are available.
 
 ## Project direction
 
