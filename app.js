@@ -36,7 +36,7 @@ function selectQuestions(n=80){
  const used=new Set((history()[0]?.ids)||[]);
  const pools=chapters.map(ch=>({ch,pool:clean.filter(q=>chapterName(q)===ch&&!used.has(q.id))}));
  // Fall back to the full chapter pool when avoiding the previous paper would leave too few questions.
- pools.forEach(x=>{if(x.pool.length===0)x.pool=clean.filter(q=>q.chapter===x.ch)});
+ pools.forEach(x=>{if(x.pool.length===0)x.pool=clean.filter(q=>chapterName(q)===x.ch)});
  const totalPool=pools.reduce((a,x)=>a+x.pool.length,0);
  n=Math.max(1,Math.min(n,totalPool));
  const counts=Object.fromEntries(chapters.map(c=>[c,0]));
@@ -65,7 +65,7 @@ function renderStart(){
  document.getElementById('hist').onclick=showHistory;
 }
 function customModal(){
- app.innerHTML=`<div class="wrap"><div class="top"><div class="brand"><h1>Custom Test</h1><p>Choose the chapters and exactly how many questions you want. There is no timer.</p></div><button class="btn secondary" onclick="renderStart()">Back</button></div><div class="card"><div class="row"><label>Questions <input id="qn" type="number" min="1" max="${clean.length}" value="40" style="width:90px;background:#0d1527;color:white;border:1px solid var(--border);padding:8px;border-radius:8px"></label><span class="muted">No time limit</span></div><div class="section">${chapters.map((c,i)=>`<label style="display:block;margin:10px 0"><input type="checkbox" class="ch" value="${i}"> ${c} <span class="muted small">(${clean.filter(q=>q.chapter===c).length})</span></label>`).join('')}</div><button class="btn" id="go">Create test</button></div></div>`;
+ app.innerHTML=`<div class="wrap"><div class="top"><div class="brand"><h1>Custom Test</h1><p>Choose the chapters and exactly how many questions you want. There is no timer.</p></div><button class="btn secondary" onclick="renderStart()">Back</button></div><div class="card"><div class="row"><label>Questions <input id="qn" type="number" min="1" max="${clean.length}" value="40" style="width:90px;background:#0d1527;color:white;border:1px solid var(--border);padding:8px;border-radius:8px"></label><span class="muted">No time limit</span></div><div class="section">${chapters.map((c,i)=>`<label style="display:block;margin:10px 0"><input type="checkbox" class="ch" value="${i}"> ${c} <span class="muted small">(${clean.filter(q=>chapterName(q)===c).length})</span></label>`).join('')}</div><button class="btn" id="go">Create test</button></div></div>`;
  document.getElementById('go').onclick=()=>{const sel=[...document.querySelectorAll('.ch:checked')].map(x=>chapters[+x.value]);if(!sel.length){alert('Select at least one chapter.');return}let pool=clean.filter(q=>sel.includes(chapterName(q)));const n=Math.max(1,Math.min(pool.length,+document.getElementById('qn').value||40));const chosen=shuffle(pool).slice(0,n);startTest(chosen)};
 }
 function startTest(qs){state={qs,index:0,answers:Array(qs.length).fill(''),review:Array(qs.length).fill(false),spent:Array(qs.length).fill(0),last:Date.now(),started:Date.now(),submitted:false};renderTest()}
