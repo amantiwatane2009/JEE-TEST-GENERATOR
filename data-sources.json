@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "sourceId": "jee-main-2025-class11-physics",
+      "year": 2025,
+      "subject": "Physics",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "active",
+      "questionBankFile": "data.js",
+      "notes": "Existing production question bank. Preserve IDs and image paths."
+    },
+    {
+      "sourceId": "jee-main-2019-class11-physics-eduniti",
+      "year": 2019,
+      "subject": "Physics",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "pending-import-validation",
+      "originalFilename": "2019pyqs.pdf",
+      "expectedChapters": [
+        "Units Dimensions Errors Vectors",
+        "Kinematics",
+        "Laws of Motion",
+        "Work Energy Power",
+        "COM & Collision",
+        "Rotation",
+        "Gravitation",
+        "Properties of Solids",
+        "Fluid Mechanics",
+        "Simple Harmonic Motion",
+        "Thermal Properties & Heat Transfer",
+        "KTG & Thermodynamics",
+        "Wave Motion"
+      ],
+      "notes": "Import only after each question crop and answer-key mapping has been checked. Preserve bonus/corrected-answer notes as flags; do not silently guess."
+    }
+  ],
+  "questionMetadataContract": {
+    "required": [
+      "id",
+      "sourceId",
+      "year",
+      "subject",
+      "class",
+      "chapter",
+      "question_no",
+      "source_page",
+      "image",
+      "answer",
+      "type",
+      "flagged"
+    ],
+    "rules": [
+      "Question IDs must be globally unique across all sources.",
+      "Never overwrite existing questions when importing another PDF.",
+      "Keep original source page and chapter numbering.",
+      "Use sourceId/year metadata for user-facing source filters; users still see one unified question bank.",
+      "Flag ambiguous, bonus, unreadable, or unverified answers instead of treating them as verified.",
+      "Image crops must contain exactly one complete question, including all options and diagrams."
+    ]
+  }
+}
