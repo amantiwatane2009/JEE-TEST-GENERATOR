@@ -27,25 +27,24 @@ Questions are presented using image assets to preserve the original equations, d
 
 The home screen shows the default mock configuration, question pool, chapter-wise distribution, and available test options.
 
-![Test setup screen](docs/screenshots/test-setup.png)
+![Test setup screen](<img width="1492" height="882" alt="image" src="https://github.com/user-attachments/assets/13be9b0d-de03-4fdb-958c-d9d2275bdb92" />)
 
 ### Test analysis
 
 The results screen summarizes the score, accuracy, attempt rate, time spent, and chapter-wise performance.
-
-![Test analysis screen](docs/screenshots/test-analysis.png)
+![Test analysis screen](<img width="1521" height="906" alt="image" src="https://github.com/user-attachments/assets/93cf695d-a092-4d2e-b7fa-e827a6f686f2" />)
 
 ### Answer review
 
 After submitting a test, each reviewed question shows the selected answer, correct answer, time spent, and original PYQ image.
 
-![Answer review screen](docs/screenshots/answer-review.png)
+![Answer review screen](<img width="1304" height="542" alt="image" src="https://github.com/user-attachments/assets/bd8eb7b5-a95d-4cde-adeb-3f0e821b493b" />)
 
 ### Taking a test
 
 The test interface keeps the original question image beside the question palette, with controls to navigate, clear an answer, mark for review, and submit.
 
-![Question interface](docs/screenshots/question-interface.png)
+![Question interface](<img width="1308" height="793" alt="image" src="https://github.com/user-attachments/assets/774b285c-1fe8-4640-828e-8ca5a3fafc45" />)
 
 ## Getting started
 
