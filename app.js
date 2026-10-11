@@ -5,11 +5,22 @@ const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math
 const allClean=QUESTIONS.filter(q=>!q.flagged);
 let sourceFilter='all';
 let clean=allClean;
-let chapters=[...new Set(clean.map(q=>q.chapter))];
+const chapterAliases={
+ "Mechanical Properties of Solids":"Properties of Solids",
+ "Properties of Solids":"Properties of Solids",
+ "Oscillations":"Simple Harmonic Motion",
+ "Simple Harmonic Motion":"Simple Harmonic Motion",
+ "Thermal Properties of Matter":"Thermal Properties & Heat Transfer",
+ "Thermal Properties & Heat Transfer":"Thermal Properties & Heat Transfer",
+ "Waves":"Wave Motion",
+ "Wave Motion":"Wave Motion"
+};
+const chapterName=q=>chapterAliases[q.chapter]||q.chapter;
+let chapters=[...new Set(clean.map(chapterName))];
 function setSource(v){
  sourceFilter=v;
  clean=allClean.filter(q=>sourceFilter==='all'||String(q.year||2025)===sourceFilter);
- chapters=[...new Set(clean.map(q=>q.chapter))];
+ chapters=[...new Set(clean.map(chapterName))];
 }
 const fmt=n=>String(Math.max(0,n)).padStart(2,'0');
 function history(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch{return[]}}
@@ -23,7 +34,7 @@ function answerLabel(q){return isLetterChoice(q)?'Answer — enter option letter
 
 function selectQuestions(n=80){
  const used=new Set((history()[0]?.ids)||[]);
- const pools=chapters.map(ch=>({ch,pool:clean.filter(q=>q.chapter===ch&&!used.has(q.id))}));
+ const pools=chapters.map(ch=>({ch,pool:clean.filter(q=>chapterName(q)===ch&&!used.has(q.id))}));
  // Fall back to the full chapter pool when avoiding the previous paper would leave too few questions.
  pools.forEach(x=>{if(x.pool.length===0)x.pool=clean.filter(q=>q.chapter===x.ch)});
  const totalPool=pools.reduce((a,x)=>a+x.pool.length,0);
@@ -43,9 +54,9 @@ function selectQuestions(n=80){
 function renderStart(){
  const total=clean.length;
  app.innerHTML=`<div class="wrap"><div class="top"><div class="brand"><h1>JEE Main Physics — Class 11 PYQ Simulator</h1><p>JEE Main Class 11 Physics PYQ bank · ${total} usable questions</p></div><div class="row"><label class="small">Source <select id="sourceFilter" style="background:#0d1527;color:white;border:1px solid var(--border);padding:9px;border-radius:8px"><option value="all">All years</option><option value="2019">2019 only</option><option value="2025">2025 only</option></select></label><button class="btn secondary" id="hist">History</button></div></div>
- <div class="grid"><div class="card"><h2>Build your test</h2><div class="stats"><div class="stat"><span class="muted">Questions</span><b id="previewN">80</b></div><div class="stat"><span class="muted">Time limit</span><b>None</b></div><div class="stat"><span class="muted">Scoring</span><b>+4 / −1</b></div><div class="stat"><span class="muted">Pool</span><b>${total}</b></div></div><p class="muted">Choose exactly how many questions you want. There is <b>no countdown and no time pressure</b>. The paper remains PYQ-only and is selected proportionally across the available Class 11 chapters.</p><div class="row"><label>Number of questions <input id="mainQn" type="number" min="1" max="${total}" value="80" style="width:100px;background:#0d1527;color:white;border:1px solid var(--border);padding:8px;border-radius:8px"></label><button class="btn" id="start">Start test</button><button class="btn secondary" id="custom">Choose chapters</button></div><div class="section"><h3>Current distribution preview</h3><table class="dist"><tr><th>Chapter</th><th>Q</th><th>Pool</th><th></th></tr>${chapters.map(c=>`<tr><td>${c}</td><td><b class="dcount" data-ch="${c}">—</b></td><td>${clean.filter(q=>q.chapter===c).length}</td><td><div class="bar"><span></span></div></td></tr>`).join('')}</table></div></div>
+ <div class="grid"><div class="card"><h2>Build your test</h2><div class="stats"><div class="stat"><span class="muted">Questions</span><b id="previewN">80</b></div><div class="stat"><span class="muted">Time limit</span><b>None</b></div><div class="stat"><span class="muted">Scoring</span><b>+4 / −1</b></div><div class="stat"><span class="muted">Pool</span><b>${total}</b></div></div><p class="muted">Choose exactly how many questions you want. There is <b>no countdown and no time pressure</b>. The paper remains PYQ-only and is selected proportionally across the available Class 11 chapters.</p><div class="row"><label>Number of questions <input id="mainQn" type="number" min="1" max="${total}" value="80" style="width:100px;background:#0d1527;color:white;border:1px solid var(--border);padding:8px;border-radius:8px"></label><button class="btn" id="start">Start test</button><button class="btn secondary" id="custom">Choose chapters</button></div><div class="section"><h3>Current distribution preview</h3><table class="dist"><tr><th>Chapter</th><th>Q</th><th>Pool</th><th></th></tr>${chapters.map(c=>`<tr><td>${c}</td><td><b class="dcount" data-ch="${c}">—</b></td><td>${clean.filter(q=>chapterName(q)===c).length}</td><td><div class="bar"><span></span></div></td></tr>`).join('')}</table></div></div>
  <div class="card"><h2>What you get</h2><ul class="muted"><li>Original PYQ question images — diagrams preserved</li><li>Choose any test length from 1 to ${total}</li><li>No timer — take the test at your own pace</li><li>Randomized paper and question order</li><li>Answer + mark-for-review palette</li><li>Post-test chapter analysis</li><li>Incorrect/skipped question review</li><li>Local history for your previous mocks</li></ul><h3>Source flags</h3><p class="small muted">${QUESTIONS.filter(q=>q.flagged).length} questions were flagged by the PDF's own answer-key notes/ambiguities and are not used in the default paper.</p></div></div></div>`;
- const updatePreview=()=>{const n=Math.max(1,Math.min(total,+document.getElementById('mainQn').value||80));document.getElementById('previewN').textContent=n;const weights=chapters.map(c=>({c,p:clean.filter(q=>q.chapter===c).length}));const sum=weights.reduce((a,x)=>a+x.p,0);const counts=Object.fromEntries(weights.map(x=>[x.c,Math.floor(n*x.p/sum)]));let left=n-Object.values(counts).reduce((a,b)=>a+b,0);weights.sort((a,b)=>(n*b.p/sum)%1-(n*a.p/sum)%1);for(let i=0;i<left;i++)counts[weights[i%weights.length].c]++;document.querySelectorAll('.dcount').forEach(e=>e.textContent=counts[e.dataset.ch]||0)};
+ const updatePreview=()=>{const n=Math.max(1,Math.min(total,+document.getElementById('mainQn').value||80));document.getElementById('previewN').textContent=n;const weights=chapters.map(c=>({c,p:clean.filter(q=>chapterName(q)===c).length}));const sum=weights.reduce((a,x)=>a+x.p,0);const counts=Object.fromEntries(weights.map(x=>[x.c,Math.floor(n*x.p/sum)]));let left=n-Object.values(counts).reduce((a,b)=>a+b,0);weights.sort((a,b)=>(n*b.p/sum)%1-(n*a.p/sum)%1);for(let i=0;i<left;i++)counts[weights[i%weights.length].c]++;document.querySelectorAll('.dcount').forEach(e=>e.textContent=counts[e.dataset.ch]||0)};
  document.getElementById('sourceFilter').value=sourceFilter;
  document.getElementById('sourceFilter').onchange=e=>{setSource(e.target.value);renderStart()};
  document.getElementById('mainQn').oninput=updatePreview; updatePreview();
@@ -55,7 +66,7 @@ function renderStart(){
 }
 function customModal(){
  app.innerHTML=`<div class="wrap"><div class="top"><div class="brand"><h1>Custom Test</h1><p>Choose the chapters and exactly how many questions you want. There is no timer.</p></div><button class="btn secondary" onclick="renderStart()">Back</button></div><div class="card"><div class="row"><label>Questions <input id="qn" type="number" min="1" max="${clean.length}" value="40" style="width:90px;background:#0d1527;color:white;border:1px solid var(--border);padding:8px;border-radius:8px"></label><span class="muted">No time limit</span></div><div class="section">${chapters.map((c,i)=>`<label style="display:block;margin:10px 0"><input type="checkbox" class="ch" value="${i}"> ${c} <span class="muted small">(${clean.filter(q=>q.chapter===c).length})</span></label>`).join('')}</div><button class="btn" id="go">Create test</button></div></div>`;
- document.getElementById('go').onclick=()=>{const sel=[...document.querySelectorAll('.ch:checked')].map(x=>chapters[+x.value]);if(!sel.length){alert('Select at least one chapter.');return}let pool=clean.filter(q=>sel.includes(q.chapter));const n=Math.max(1,Math.min(pool.length,+document.getElementById('qn').value||40));const chosen=shuffle(pool).slice(0,n);startTest(chosen)};
+ document.getElementById('go').onclick=()=>{const sel=[...document.querySelectorAll('.ch:checked')].map(x=>chapters[+x.value]);if(!sel.length){alert('Select at least one chapter.');return}let pool=clean.filter(q=>sel.includes(chapterName(q)));const n=Math.max(1,Math.min(pool.length,+document.getElementById('qn').value||40));const chosen=shuffle(pool).slice(0,n);startTest(chosen)};
 }
 function startTest(qs){state={qs,index:0,answers:Array(qs.length).fill(''),review:Array(qs.length).fill(false),spent:Array(qs.length).fill(0),last:Date.now(),started:Date.now(),submitted:false};renderTest()}
 function addSpent(){if(!state)return;const now=Date.now();state.spent[state.index]+=Math.max(0,Math.round((now-state.last)/1000));state.last=now}
