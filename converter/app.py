@@ -4,7 +4,7 @@ import hashlib, json, re, time
 from pathlib import Path
 import streamlit as st
 from dotenv import load_dotenv
-from converter import extract_pdf, load_existing, normalize_text, parse_options, split_page_questions, validate_record
+from converter import extract_pdf, load_existing, normalize_text, parse_answer_key_pages, parse_options, split_page_questions, validate_record
 from ai_assist import ai_extract
 
 HERE = Path(__file__).resolve().parent
@@ -60,17 +60,22 @@ if st.button("Extract uploaded PDFs", type="primary", disabled=not uploads):
                 if not chapter_default.strip(): flags.append("CHAPTER_UNKNOWN")
                 if not qtext: flags.append("QUESTION_TEXT_MISSING")
                 if page["ocr_error"]: flags.append("OCR_ERROR")
+                raw_answer = answer_map.get(seg["question_no"]) if seg["question_no"] is not None else None
+                if raw_answer and raw_answer.upper() in {"A", "B", "C", "D"} and int(year) != 2019:
+                    raw_answer = str(ord(raw_answer.upper()) - ord("A") + 1)
+                if not raw_answer:
+                    flags.append("ANSWER_KEY_NOT_MAPPED")
                 rows.append({
                     "id": None, "source_id": source_id.strip(),
                     "source_name": source_name.strip() or "JEE Main", "year": int(year),
                     "subject": subject, "class": int(klass), "chapter": chapter_default.strip(),
                     "attempt": session.strip() or str(year), "source_page": page["page_number"],
                     "question_no": seg["question_no"] if seg["question_no"] is not None else seq,
-                    "answer": "", "clean_answer": "", "type": "mcq" if len(options) >= 2 else "response",
+                    "answer": str(raw_answer or ""), "clean_answer": str(raw_answer or ""), "type": "mcq" if len(options) >= 2 else "response",
                     "image": page_asset, "flagged": True, "question_text": qtext,
                     "options_json": json.dumps(options, ensure_ascii=False),
                     "extraction_method": page["method"],
-                    "review_flags": ", ".join(dict.fromkeys(flags + ["ANSWER_KEY_NOT_MAPPED"])),
+                    "review_flags": ", ".join(dict.fromkeys(flags)),
                     "validated": False, "duplicate_warning": "",
                     "_text_hash": hashlib.sha256(normalize_text(qtext).encode("utf-8")).hexdigest() if qtext else "",
                     "_source_file": up.name,
