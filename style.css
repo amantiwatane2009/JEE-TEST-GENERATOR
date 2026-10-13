@@ -203,59 +203,95 @@ body>.theme-toggle{position:fixed;right:18px;bottom:18px}
 }
 
 
-/* User-selectable minimal color schemes */
-:root[data-theme="ocean"]{
- color-scheme:light;--bg:#f2f7fa;--panel:#ffffff;--panel-soft:#eaf3f7;
- --text:#20313d;--muted:#607784;--accent:#087eaa;--accent-dark:#066487;
- --good:#16845b;--bad:#c2414b;--warn:#a66a12;--border:#d9e6ec;
+/* Six minimal themes: two light and four dark */
+:root[data-theme="paper"]{
+ color-scheme:light;--bg:#f5f1e9;--panel:#fffdf8;--panel-soft:#eee8dc;
+ --text:#302d28;--muted:#777064;--accent:#796044;--accent-dark:#5f4b35;
+ --good:#24734d;--bad:#b83d48;--warn:#95651c;--border:#e3dbce;
 }
-:root[data-theme="forest"]{
- color-scheme:light;--bg:#f3f7f3;--panel:#ffffff;--panel-soft:#eaf2eb;
- --text:#24352b;--muted:#68796d;--accent:#287348;--accent-dark:#1f5d3a;
- --good:#16845b;--bad:#c2414b;--warn:#9a681c;--border:#dce7dd;
+:root[data-theme="dark"]{
+ color-scheme:dark;--bg:#191919;--panel:#222222;--panel-soft:#292929;
+ --text:#e7e7e7;--muted:#a3a3a3;--accent:#a5b4fc;--accent-dark:#8798eb;
+ --good:#69d3a0;--bad:#ff858b;--warn:#f0c36a;--border:#383838;
 }
-:root[data-theme="warm"]{
- color-scheme:light;--bg:#faf6f0;--panel:#fffdfa;--panel-soft:#f4ede3;
- --text:#3b3028;--muted:#7d6e61;--accent:#a65d32;--accent-dark:#854622;
- --good:#28734e;--bad:#b64040;--warn:#9a681c;--border:#e9ded1;
+:root[data-theme="black"]{
+ color-scheme:dark;--bg:#000000;--panel:#101010;--panel-soft:#181818;
+ --text:#eeeeee;--muted:#a0a0a0;--accent:#ffffff;--accent-dark:#d8d8d8;
+ --good:#69d3a0;--bad:#ff858b;--warn:#f0c36a;--border:#303030;
 }
-:root[data-theme="rose"]{
- color-scheme:light;--bg:#faf4f6;--panel:#fff;--panel-soft:#f5eaf0;
- --text:#382a32;--muted:#806c78;--accent:#ad4776;--accent-dark:#8e365f;
- --good:#28734e;--bad:#c2414b;--warn:#95621b;--border:#eadce4;
+:root[data-theme="midnight"]{
+ color-scheme:dark;--bg:#101522;--panel:#171f30;--panel-soft:#1d2940;
+ --text:#e6ecf5;--muted:#9aa9bf;--accent:#82aaff;--accent-dark:#638de8;
+ --good:#69d3a0;--bad:#ff858b;--warn:#f0c36a;--border:#2c3a51;
 }
-:root[data-theme="ocean"] .btn.secondary,
-:root[data-theme="forest"] .btn.secondary,
-:root[data-theme="warm"] .btn.secondary,
-:root[data-theme="rose"] .btn.secondary{background:var(--panel);color:var(--text);border-color:var(--border)}
-:root[data-theme="ocean"] .stat,
-:root[data-theme="forest"] .stat,
-:root[data-theme="warm"] .stat,
-:root[data-theme="rose"] .stat{background:var(--panel-soft);border-color:var(--border)}
-:root[data-theme="ocean"] .dist th,:root[data-theme="ocean"] .table th,
-:root[data-theme="forest"] .dist th,:root[data-theme="forest"] .table th,
-:root[data-theme="warm"] .dist th,:root[data-theme="warm"] .table th,
-:root[data-theme="rose"] .dist th,:root[data-theme="rose"] .table th{background:var(--panel-soft);color:var(--muted)}
-:root[data-theme="ocean"] input,:root[data-theme="ocean"] select,
-:root[data-theme="forest"] input,:root[data-theme="forest"] select,
-:root[data-theme="warm"] input,:root[data-theme="warm"] select,
-:root[data-theme="rose"] input,:root[data-theme="rose"] select{background:var(--panel);color:var(--text);border-color:var(--border)}
-:root[data-theme="ocean"] .pbtn.current,:root[data-theme="forest"] .pbtn.current,
-:root[data-theme="warm"] .pbtn.current,:root[data-theme="rose"] .pbtn.current{background:var(--panel-soft);color:var(--accent);border-color:var(--accent);box-shadow:none}
-:root[data-theme="ocean"] .badge,:root[data-theme="forest"] .badge,
-:root[data-theme="warm"] .badge,:root[data-theme="rose"] .badge{background:var(--panel-soft);color:var(--accent)}
+:root[data-theme="evergreen"]{
+ color-scheme:dark;--bg:#101713;--panel:#17221b;--panel-soft:#1e2c22;
+ --text:#e5eee7;--muted:#9daf9f;--accent:#8ec9a0;--accent-dark:#6caf82;
+ --good:#69d3a0;--bad:#ff858b;--warn:#f0c36a;--border:#2d4132;
+}
+/* Shared controls and surfaces follow the selected palette. */
+:root[data-theme="paper"] .btn.secondary,
+:root[data-theme="dark"] .btn.secondary,
+:root[data-theme="black"] .btn.secondary,
+:root[data-theme="midnight"] .btn.secondary,
+:root[data-theme="evergreen"] .btn.secondary{
+ background:var(--panel);color:var(--text);border-color:var(--border)
+}
+:root[data-theme="paper"] .stat,
+:root[data-theme="dark"] .stat,
+:root[data-theme="black"] .stat,
+:root[data-theme="midnight"] .stat,
+:root[data-theme="evergreen"] .stat{background:var(--panel-soft);border-color:var(--border)}
+:root[data-theme="paper"] .dist th,:root[data-theme="paper"] .table th,
+:root[data-theme="dark"] .dist th,:root[data-theme="dark"] .table th,
+:root[data-theme="black"] .dist th,:root[data-theme="black"] .table th,
+:root[data-theme="midnight"] .dist th,:root[data-theme="midnight"] .table th,
+:root[data-theme="evergreen"] .dist th,:root[data-theme="evergreen"] .table th{
+ background:var(--panel-soft);color:var(--muted)
+}
+:root[data-theme="paper"] input,:root[data-theme="paper"] select,
+:root[data-theme="dark"] input,:root[data-theme="dark"] select,
+:root[data-theme="black"] input,:root[data-theme="black"] select,
+:root[data-theme="midnight"] input,:root[data-theme="midnight"] select,
+:root[data-theme="evergreen"] input,:root[data-theme="evergreen"] select{
+ background:var(--panel)!important;color:var(--text)!important;border-color:var(--border)!important
+}
+:root[data-theme="paper"] .pbtn.current,:root[data-theme="dark"] .pbtn.current,
+:root[data-theme="black"] .pbtn.current,:root[data-theme="midnight"] .pbtn.current,
+:root[data-theme="evergreen"] .pbtn.current{
+ background:var(--panel-soft);color:var(--accent);border-color:var(--accent);box-shadow:none
+}
+:root[data-theme="paper"] .badge,:root[data-theme="dark"] .badge,
+:root[data-theme="black"] .badge,:root[data-theme="midnight"] .badge,
+:root[data-theme="evergreen"] .badge{background:var(--panel-soft);color:var(--accent)}
+:root[data-theme="dark"] .card,:root[data-theme="black"] .card,
+:root[data-theme="midnight"] .card,:root[data-theme="evergreen"] .card{
+ background:var(--panel);border-color:var(--border)!important
+}
+:root[data-theme="dark"] .mistake,:root[data-theme="black"] .mistake,
+:root[data-theme="midnight"] .mistake,:root[data-theme="evergreen"] .mistake{
+ background:var(--panel-soft);border-color:var(--border)
+}
+:root[data-theme="dark"] .qimg,:root[data-theme="black"] .qimg,
+:root[data-theme="midnight"] .qimg,:root[data-theme="evergreen"] .qimg,
+:root[data-theme="dark"] .mistake img,:root[data-theme="black"] .mistake img,
+:root[data-theme="midnight"] .mistake img,:root[data-theme="evergreen"] .mistake img{
+ background:#fff;border-color:var(--border)
+}
+:root[data-theme="dark"] .btn.danger,:root[data-theme="black"] .btn.danger,
+:root[data-theme="midnight"] .btn.danger,:root[data-theme="evergreen"] .btn.danger{
+ background:#49282e;color:#ffb5b8;border-color:#694047
+}
 .theme-picker{
  position:fixed;right:18px;bottom:18px;z-index:1000;display:flex;align-items:center;gap:8px;
- padding:8px 10px;background:var(--panel);border:1px solid var(--border);border-radius:10px;
- color:var(--text);font-size:12px;box-shadow:none;
+ padding:8px 10px;background:var(--panel);border:1px solid var(--border);border-radius:8px;
+ color:var(--text);font-size:12px;box-shadow:none
 }
 .theme-picker label{font-size:12px;color:var(--muted);white-space:nowrap}
-.theme-picker select{font-size:12px;padding:6px 24px 6px 8px;border-radius:6px;box-shadow:none;max-width:145px}
-@media(max-width:600px){.theme-picker{right:10px;bottom:10px;padding:6px 8px}.theme-picker select{max-width:125px}}
-\n/* Minimalism: keep surfaces flat, borders subtle, and spacing consistent. */
+.theme-picker select{font-size:12px;padding:6px 24px 6px 8px;border-radius:6px;box-shadow:none;max-width:150px}
+@media(max-width:600px){.theme-picker{right:10px;bottom:10px;padding:6px 8px}.theme-picker select{max-width:130px}}
+/* Minimalism: flat surfaces, subtle borders, no decorative shadows. */
 .card,.stat,.btn,.pbtn,.timer,.theme-toggle,input,select{box-shadow:none!important}
 .card{border:1px solid var(--border)!important;border-radius:12px}
 .stat{border:1px solid var(--border)!important;border-radius:9px}
-.btn,.theme-toggle{border-radius:8px}
-:root[data-theme="dark"] .card{border-color:var(--border)!important}
-:root[data-theme="dark"] .stat{border-color:var(--border)!important}
+.btn,.theme-picker{border-radius:8px}
