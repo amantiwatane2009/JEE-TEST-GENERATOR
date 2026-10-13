@@ -112,9 +112,8 @@ function initThemeToggle(){
   localStorage.setItem(THEME_KEY,next);
   applyTheme(next);
  };
- const headerRow=document.querySelector('.top .row');
- if(headerRow){headerRow.appendChild(button);button.style.position='static';}
- else{document.body.appendChild(button);}
+ // Keep the control outside #app so it remains available on every screen.
+ document.body.appendChild(button);
  applyTheme(document.documentElement.dataset.theme||'light');
 }
 initThemeToggle();
