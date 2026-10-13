@@ -189,3 +189,15 @@ hr{border:0;border-top:1px solid var(--border)}
 .theme-toggle:hover{transform:translateY(-2px)}
 :root[data-theme="dark"] .theme-toggle{border-color:#394253}
 @media(max-width:600px){.theme-toggle{right:12px;bottom:12px;min-height:42px;padding:0 13px}}
+
+/* Make theme switching easy to discover in the page header */
+.theme-toggle{
+ position:static;flex:0 0 auto;min-height:40px;padding:0 13px;
+ border-radius:10px;font-size:13px;white-space:nowrap;
+}
+body>.theme-toggle{position:fixed;right:18px;bottom:18px}
+.top .theme-toggle{position:static}
+@media(max-width:600px){
+ body>.theme-toggle{right:12px;bottom:12px}
+ .top .theme-toggle{position:static}
+}
