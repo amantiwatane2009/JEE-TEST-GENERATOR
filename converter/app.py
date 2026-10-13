@@ -5,6 +5,7 @@ from pathlib import Path
 import streamlit as st
 from dotenv import load_dotenv
 from converter import extract_pdf, load_existing, normalize_text, parse_options, split_page_questions, validate_record
+from ai_assist import ai_extract
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "output"
@@ -127,6 +128,18 @@ if rows is not None:
         if img_bytes: st.image(img_bytes, use_container_width=True)
         else: st.warning("Image asset is missing from this session.")
         st.caption(f"Extraction method: {chosen.get('extraction_method', 'unknown')} · {chosen.get('review_flags', '')}")
+
+    st.markdown("**Optional AI transcription helper**")
+    st.caption("Uses an API key and may incur charges. It transcribes text/options only; it does not solve the question or provide an answer key.")
+    if st.button("Suggest a clearer transcription with AI"):
+        try:
+            suggestion = ai_extract(chosen.get("question_text", ""))
+            st.session_state["ai_suggestion"] = suggestion
+        except Exception as exc:
+            st.error(str(exc))
+    if st.session_state.get("ai_suggestion"):
+        st.json(st.session_state["ai_suggestion"])
+        st.caption("Review this suggestion against the original page, then copy corrections into the editable fields yourself.")
 
     st.divider()
     st.subheader("Export")
