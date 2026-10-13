@@ -97,13 +97,13 @@ const THEMES=[
  {value:'evergreen',label:'Forest Dark'}
 ];
 function applyTheme(theme){
- const valid=THEMES.some(t=>t.value===theme)?theme:'light';
+ const valid=THEMES.some(t=>t.value===theme)?theme:'black';
  document.documentElement.dataset.theme=valid;
  const picker=document.getElementById('themePicker');
  if(picker)picker.value=valid;
 }
 function initThemePicker(){
- const saved=localStorage.getItem(THEME_KEY)||'light';
+ const saved=localStorage.getItem(THEME_KEY)||'black';
  applyTheme(saved);
  if(document.getElementById('themePicker'))return;
  const wrap=document.createElement('div');
@@ -114,7 +114,7 @@ function initThemePicker(){
   '</select>';
  document.body.appendChild(wrap);
  const picker=wrap.querySelector('select');
- picker.value=document.documentElement.dataset.theme||'light';
+ picker.value=document.documentElement.dataset.theme||'black';
  picker.onchange=()=>{
   const next=picker.value;
   localStorage.setItem(THEME_KEY,next);
