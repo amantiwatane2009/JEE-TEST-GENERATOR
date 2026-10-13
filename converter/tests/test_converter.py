@@ -1,5 +1,5 @@
 import unittest
-from converter import normalize_text, parse_options, split_page_questions, validate_record
+from converter import normalize_text, parse_answer_key_pages, parse_options, split_page_questions, validate_record
 
 class ConverterTests(unittest.TestCase):
     def test_splits_numbered_questions(self):
@@ -18,6 +18,17 @@ class ConverterTests(unittest.TestCase):
 
     def test_normalize_text(self):
         self.assertEqual(normalize_text("  x² + 2 "), normalize_text("x2+2"))
+
+    def test_answer_key_requires_clear_label(self):
+        pages = [{"page_number": 9, "text": "Answer Key\n1. B\n2. 12\n3. D"}]
+        answers, key_pages = parse_answer_key_pages(pages)
+        self.assertEqual(answers, {1: "B", 2: "12", 3: "D"})
+        self.assertEqual(key_pages, {9})
+
+    def test_unlabelled_page_is_not_treated_as_answer_key(self):
+        answers, key_pages = parse_answer_key_pages([{"page_number": 1, "text": "1. A\n2. B"}])
+        self.assertEqual(answers, {})
+        self.assertEqual(key_pages, set())
 
     def test_schema_requires_answer_and_chapter(self):
         record = {"id": 1, "chapter": "", "attempt": "Jan", "source_page": 1,
