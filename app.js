@@ -84,3 +84,34 @@ function renderResults(r,auto){const by={};r.rows.forEach(x=>{by[x.chapter]??={a
 function diagnosis(by,r){const arr=Object.entries(by).map(([c,v])=>({c,acc:(v.a-v.u)?v.c/(v.a-v.u):1,wrong:v.w})).sort((a,b)=>a.acc-b.acc);const slow=[...r.rows].sort((a,b)=>b.spent-a.spent).slice(0,3);let s=`You attempted ${r.correct+r.wrong}/${r.rows.length} questions. `;if(arr.length)s+=`Lowest chapter accuracy: <b>${arr[0].c}</b> (${(arr[0].acc*100).toFixed(1)}%). `;if(slow[0])s+=`Longest individual time: <b>Q${r.rows.indexOf(slow[0])+1}</b> at ${slow[0].spent}s (${slow[0].chapter}).`;return s}
 function showHistory(){const h=history();app.innerHTML=`<div class="wrap"><div class="top"><div class="brand"><h1>Mock History</h1><p>Stored locally in this browser.</p></div><button class="btn secondary" onclick="renderStart()">Back</button></div><div class="card">${h.length?h.map((r,i)=>`<div class="history-item"><b>Test ${h.length-i}</b> · ${new Date(r.date).toLocaleString()}<br><span class="muted">Score ${r.score}/${r.rows.length*4} · Accuracy ${(r.accuracy*100).toFixed(1)}% · ${r.correct} correct · ${r.wrong} wrong · ${r.unattempted} unattempted</span></div>`).join(''):'<p class="muted">No tests yet.</p>'}</div></div>`}
 renderStart();
+
+
+/* Persistent light/dark theme control */
+const THEME_KEY='jeeSimulatorTheme';
+function applyTheme(theme){
+ document.documentElement.dataset.theme=theme;
+ const button=document.getElementById('themeToggle');
+ if(button){
+  const dark=theme==='dark';
+  button.innerHTML=dark?'☀ <span>Light mode</span>':'☾ <span>Dark mode</span>';
+  button.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');
+  button.title=dark?'Switch to light mode':'Switch to dark mode';
+ }
+}
+function initThemeToggle(){
+ const saved=localStorage.getItem(THEME_KEY);
+ applyTheme(saved==='dark'?'dark':'light');
+ if(document.getElementById('themeToggle'))return;
+ const button=document.createElement('button');
+ button.id='themeToggle';
+ button.className='theme-toggle';
+ button.type='button';
+ button.onclick=()=>{
+  const next=document.documentElement.dataset.theme==='dark'?'light':'dark';
+  localStorage.setItem(THEME_KEY,next);
+  applyTheme(next);
+ };
+ document.body.appendChild(button);
+ applyTheme(document.documentElement.dataset.theme||'light');
+}
+initThemeToggle();
