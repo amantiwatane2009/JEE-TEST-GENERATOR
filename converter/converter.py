@@ -9,7 +9,7 @@ import unicodedata
 from pathlib import Path
 from typing import Any
 
-import fitz
+import pymupdf
 from PIL import Image
 
 QUESTION_START = re.compile(
@@ -31,7 +31,7 @@ def text_hash(value: str) -> str:
 def extract_pdf(pdf_bytes: bytes, filename: str, tesseract_cmd: str | None = None) -> list[dict[str, Any]]:
     """Extract page text and preserve each source page as a PNG asset."""
     pages: list[dict[str, Any]] = []
-    doc = fitz.open(stream=pdf_bytes, filetype="pdf")
+    doc = pymupdf.open(stream=pdf_bytes, filetype="pdf")
     try:
         for idx, page in enumerate(doc):
             text = page.get_text("text") or ""
@@ -42,7 +42,7 @@ def extract_pdf(pdf_bytes: bytes, filename: str, tesseract_cmd: str | None = Non
                     import pytesseract
                     if tesseract_cmd:
                         pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
-                    pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), alpha=False)
+                    pix = page.get_pixmap(matrix=pymupdf.Matrix(2, 2), alpha=False)
                     image = Image.open(io.BytesIO(pix.tobytes("png")))
                     text = pytesseract.image_to_string(image, config="--psm 6")
                 except Exception as exc:
