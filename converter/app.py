@@ -42,8 +42,11 @@ if st.button("Extract uploaded PDFs", type="primary", disabled=not uploads):
         except Exception as exc:
             errors.append({"file": up.name, "error": str(exc)})
             continue
+        answer_map, answer_key_pages = parse_answer_key_pages(pages)
         safe_stem = re.sub(r"[^A-Za-z0-9_-]+", "_", Path(up.name).stem).strip("_") or "paper"
         for page in pages:
+            if page["page_number"] in answer_key_pages:
+                continue
             page_asset = f"assets/{safe_stem}_page_{page['page_number']:03d}.png"
             image_assets[page_asset] = page["image_bytes"]
             segments = split_page_questions(page["text"])
