@@ -101,8 +101,9 @@ function applyTheme(theme){
 function initThemeToggle(){
  const saved=localStorage.getItem(THEME_KEY);
  applyTheme(saved==='dark'?'dark':'light');
- if(document.getElementById('themeToggle'))return;
- const button=document.createElement('button');
+ let button=document.getElementById('themeToggle');
+ if(button)return;
+ button=document.createElement('button');
  button.id='themeToggle';
  button.className='theme-toggle';
  button.type='button';
@@ -111,7 +112,9 @@ function initThemeToggle(){
   localStorage.setItem(THEME_KEY,next);
   applyTheme(next);
  };
- document.body.appendChild(button);
+ const headerRow=document.querySelector('.top .row');
+ if(headerRow){headerRow.appendChild(button);button.style.position='static';}
+ else{document.body.appendChild(button);}
  applyTheme(document.documentElement.dataset.theme||'light');
 }
 initThemeToggle();
