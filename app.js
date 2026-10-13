@@ -90,11 +90,11 @@ renderStart();
 const THEME_KEY='jeeSimulatorTheme';
 const THEMES=[
  {value:'light',label:'Light'},
- {value:'dark',label:'Dark'},
- {value:'ocean',label:'Ocean blue'},
- {value:'forest',label:'Forest green'},
- {value:'warm',label:'Warm sand'},
- {value:'rose',label:'Soft rose'}
+ {value:'paper',label:'Warm Paper'},
+ {value:'dark',label:'Charcoal Dark'},
+ {value:'black',label:'Pure Black'},
+ {value:'midnight',label:'Midnight Blue'},
+ {value:'evergreen',label:'Forest Dark'}
 ];
 function applyTheme(theme){
  const valid=THEMES.some(t=>t.value===theme)?theme:'light';
@@ -109,7 +109,8 @@ function initThemePicker(){
  const wrap=document.createElement('div');
  wrap.className='theme-picker';
  wrap.innerHTML='<label for="themePicker">Theme</label><select id="themePicker" aria-label="Choose color scheme">'+
-  THEMES.map(t=>'<option value="'+t.value+'">'+t.label+'</option>').join('')+
+  '<optgroup label="Light themes">'+THEMES.filter(t=>t.value==='light'||t.value==='paper').map(t=>'<option value="'+t.value+'">'+t.label+'</option>').join('')+'</optgroup>'+
+  '<optgroup label="Dark themes">'+THEMES.filter(t=>!['light','paper'].includes(t.value)).map(t=>'<option value="'+t.value+'">'+t.label+'</option>').join('')+'</optgroup>'+
   '</select>';
  document.body.appendChild(wrap);
  const picker=wrap.querySelector('select');
