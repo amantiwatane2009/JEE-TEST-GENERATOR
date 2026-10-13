@@ -295,3 +295,23 @@ body>.theme-toggle{position:fixed;right:18px;bottom:18px}
 .card{border:1px solid var(--border)!important;border-radius:12px}
 .stat{border:1px solid var(--border)!important;border-radius:9px}
 .btn,.theme-picker{border-radius:8px}
+
+
+/* Theme-aware form controls and primary actions */
+:root{--control-bg:#ffffff;--control-text:var(--text);--control-border:var(--border)}
+:root[data-theme="paper"]{--control-bg:#fffdf8;--control-text:#302d28;--control-border:#e3dbce}
+:root[data-theme="dark"]{--control-bg:#292929;--control-text:#e7e7e7;--control-border:#444444}
+:root[data-theme="black"]{--control-bg:#101010;--control-text:#eeeeee;--control-border:#383838}
+:root[data-theme="midnight"]{--control-bg:#171f30;--control-text:#e6ecf5;--control-border:#34435b}
+:root[data-theme="evergreen"]{--control-bg:#17221b;--control-text:#e5eee7;--control-border:#3a5140}
+input,select,#sourceFilter,#mainQn,#qn,.answerbox input{
+ background:var(--control-bg)!important;color:var(--control-text)!important;
+ border:1px solid var(--control-border)!important;border-radius:8px;min-height:42px;
+}
+select{cursor:pointer}
+select option,select optgroup{background:var(--panel);color:var(--text)}
+#mainQn,#qn{width:112px!important;padding:10px 12px!important;font-variant-numeric:tabular-nums}
+#sourceFilter{min-width:118px;padding:10px 30px 10px 12px!important}
+.btn:not(.secondary):not(.danger){background:var(--accent)!important;color:var(--bg)!important;border-color:var(--accent)!important}
+.btn:not(.secondary):not(.danger):hover,.btn:not(.secondary):not(.danger):active{background:var(--accent-dark)!important;border-color:var(--accent-dark)!important;color:var(--bg)!important}
+:root[data-theme="light"] .btn:not(.secondary):not(.danger),:root:not([data-theme]) .btn:not(.secondary):not(.danger),:root[data-theme="paper"] .btn:not(.secondary):not(.danger){color:#fff!important}
