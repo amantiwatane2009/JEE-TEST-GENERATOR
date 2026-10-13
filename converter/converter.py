@@ -127,3 +127,25 @@ def load_existing(path: str | Path) -> list[dict[str, Any]]:
         return data if isinstance(data, list) else []
     except (OSError, json.JSONDecodeError):
         return []
+
+
+def parse_answer_key_pages(pages: list[dict[str, Any]]) -> tuple[dict[int, str], set[int]]:
+    """Read only pages clearly labelled as an answer key; leave ambiguous entries unmapped."""
+    key_pages: set[int] = set()
+    candidates: dict[int, list[str]] = {}
+    for page in pages:
+        text = page.get("text", "")
+        if not re.search(r"\b(answer\s*key|correct\s*answers?|answer\s*sheet)\b", text, re.IGNORECASE):
+            continue
+        key_pages.add(int(page["page_number"]))
+        # Supports common numbered formats such as 1. B, Q2: 14, and 3 - C.
+        for match in re.finditer(
+            r"(?:\bQ(?:uestion)?\s*)?(\d{1,3})\s*[.):\-]\s*([A-Da-d]|[-+]?\d+(?:\.\d+)?)\b",
+            text,
+            re.IGNORECASE,
+        ):
+            qno, ans = int(match.group(1)), match.group(2).strip()
+            candidates.setdefault(qno, []).append(ans.upper() if ans.upper() in {"A","B","C","D"} else ans)
+    mapped = {qno: values[0] for qno, values in candidates.items()
+              if len(set(values)) == 1}
+    return mapped, key_pages
