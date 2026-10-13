@@ -315,3 +315,37 @@ select option,select optgroup{background:var(--panel);color:var(--text)}
 .btn:not(.secondary):not(.danger){background:var(--accent)!important;color:var(--bg)!important;border-color:var(--accent)!important}
 .btn:not(.secondary):not(.danger):hover,.btn:not(.secondary):not(.danger):active{background:var(--accent-dark)!important;border-color:var(--accent-dark)!important;color:var(--bg)!important}
 :root[data-theme="light"] .btn:not(.secondary):not(.danger),:root:not([data-theme]) .btn:not(.secondary):not(.danger),:root[data-theme="paper"] .btn:not(.secondary):not(.danger){color:#fff!important}
+
+
+/* Final palette audit: remove remaining hard-coded blue/grey text from themed UI */
+:root[data-theme] .brand h1,
+:root[data-theme] .stat b,
+:root[data-theme] .dist td:first-child,
+:root[data-theme] .table td:first-child,
+:root[data-theme] label,
+:root[data-theme] h2,
+:root[data-theme] h3{color:var(--text)}
+:root[data-theme] .muted,
+:root[data-theme] .brand p,
+:root[data-theme] .theme-picker label{color:var(--muted)}
+:root[data-theme] .badge{background:var(--panel-soft);color:var(--accent);border:1px solid var(--border)}
+:root[data-theme] .pbtn{background:var(--panel-soft);color:var(--text);border-color:var(--border)}
+:root[data-theme] .pbtn:hover{background:var(--panel);color:var(--accent);border-color:var(--accent)}
+:root[data-theme] .pbtn.current{background:var(--accent)!important;color:var(--bg)!important;border-color:var(--accent)!important;box-shadow:none!important}
+:root[data-theme] .pbtn.answered{background:color-mix(in srgb,var(--good) 18%,var(--panel))!important;color:var(--good)!important;border-color:var(--good)!important}
+:root[data-theme] .btn.secondary{background:var(--panel)!important;color:var(--text)!important;border-color:var(--border)!important}
+:root[data-theme] .btn.secondary:hover{background:var(--panel-soft)!important;color:var(--text)!important}
+:root[data-theme] .dist th,:root[data-theme] .table th{color:var(--muted)!important;background:var(--panel-soft)!important}
+:root[data-theme] .dist td,:root[data-theme] .table td{color:var(--text);border-color:var(--border)}
+:root[data-theme] .bar{background:var(--panel-soft)}
+:root[data-theme] .bar span{background:var(--accent)}
+:root[data-theme] .timer{background:var(--panel-soft);color:var(--text)}
+:root[data-theme] .mistake{background:var(--panel);border-color:var(--border);color:var(--text)}
+:root[data-theme] .answerbox input{background:var(--control-bg)!important;color:var(--control-text)!important}
+:root[data-theme] input::placeholder{color:var(--muted);opacity:1}
+:root[data-theme] .btn:not(.secondary):not(.danger){color:var(--bg)!important}
+:root[data-theme="light"] .btn:not(.secondary):not(.danger),
+:root[data-theme="paper"] .btn:not(.secondary):not(.danger){color:#fff!important}
+:root[data-theme="black"] .btn:not(.secondary):not(.danger){color:#000!important}
+:root[data-theme] .theme-picker{background:var(--panel);color:var(--text);border-color:var(--border)}
+:root[data-theme] select option,:root[data-theme] select optgroup{background:var(--panel);color:var(--text)}
