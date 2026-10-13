@@ -86,34 +86,38 @@ function showHistory(){const h=history();app.innerHTML=`<div class="wrap"><div c
 renderStart();
 
 
-/* Persistent light/dark theme control */
+/* Persistent user-selectable color themes */
 const THEME_KEY='jeeSimulatorTheme';
+const THEMES=[
+ {value:'light',label:'Light'},
+ {value:'dark',label:'Dark'},
+ {value:'ocean',label:'Ocean blue'},
+ {value:'forest',label:'Forest green'},
+ {value:'warm',label:'Warm sand'},
+ {value:'rose',label:'Soft rose'}
+];
 function applyTheme(theme){
- document.documentElement.dataset.theme=theme;
- const button=document.getElementById('themeToggle');
- if(button){
-  const dark=theme==='dark';
-  button.innerHTML=dark?'☀ <span>Light mode</span>':'☾ <span>Dark mode</span>';
-  button.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');
-  button.title=dark?'Switch to light mode':'Switch to dark mode';
- }
+ const valid=THEMES.some(t=>t.value===theme)?theme:'light';
+ document.documentElement.dataset.theme=valid;
+ const picker=document.getElementById('themePicker');
+ if(picker)picker.value=valid;
 }
-function initThemeToggle(){
- const saved=localStorage.getItem(THEME_KEY);
- applyTheme(saved==='dark'?'dark':'light');
- let button=document.getElementById('themeToggle');
- if(button)return;
- button=document.createElement('button');
- button.id='themeToggle';
- button.className='theme-toggle';
- button.type='button';
- button.onclick=()=>{
-  const next=document.documentElement.dataset.theme==='dark'?'light':'dark';
+function initThemePicker(){
+ const saved=localStorage.getItem(THEME_KEY)||'light';
+ applyTheme(saved);
+ if(document.getElementById('themePicker'))return;
+ const wrap=document.createElement('div');
+ wrap.className='theme-picker';
+ wrap.innerHTML='<label for="themePicker">Theme</label><select id="themePicker" aria-label="Choose color scheme">'+
+  THEMES.map(t=>'<option value="'+t.value+'">'+t.label+'</option>').join('')+
+  '</select>';
+ document.body.appendChild(wrap);
+ const picker=wrap.querySelector('select');
+ picker.value=document.documentElement.dataset.theme||'light';
+ picker.onchange=()=>{
+  const next=picker.value;
   localStorage.setItem(THEME_KEY,next);
   applyTheme(next);
  };
- // Keep the control outside #app so it remains available on every screen.
- document.body.appendChild(button);
- applyTheme(document.documentElement.dataset.theme||'light');
 }
-initThemeToggle();
+initThemePicker();
