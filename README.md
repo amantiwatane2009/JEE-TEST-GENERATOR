@@ -60,6 +60,12 @@ If images do not load, check that the image files are present and that their pat
 
 The immediate focus is reliability: preserving question layouts, improving image readability, and checking answer mappings. The longer-term goal is to grow the question bank while keeping one consistent test experience across sources.
 
+## Acknowledgements
+
+Credit and thanks to **[Eduniti](https://www.youtube.com/@eduniti)** for creating and sharing the Physics question PDFs used as a source for this project. [Access the PDF collection on Google Drive](https://drive.google.com/drive/folders/1785MiemoRxcc3o6dto6DKCdEfcW70gO_).
+
+The PDFs are credited to their original creator; this project is an independent practice tool.
+
 ## Feedback
 
 If you find an incorrect answer, a cropped or unreadable question, or a problem with test navigation or scoring, please report the issue with the relevant question number and source where possible.
