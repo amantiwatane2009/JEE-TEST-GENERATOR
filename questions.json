@@ -9,7 +9,7 @@
     "image": "questions/001_Units_Dimensions_Errors_Vectors_Jan_q1.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "image": "questions/002_Units_Dimensions_Errors_Vectors_Jan_q2.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "image": "questions/003_Units_Dimensions_Errors_Vectors_Jan_q3.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "image": "questions/004_Units_Dimensions_Errors_Vectors_Jan_q4.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "image": "questions/005_Units_Dimensions_Errors_Vectors_Jan_q5.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "image": "questions/006_Units_Dimensions_Errors_Vectors_Jan_q6.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "image": "questions/007_Units_Dimensions_Errors_Vectors_Jan_q7.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "image": "questions/008_Units_Dimensions_Errors_Vectors_Jan_q8.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "image": "questions/009_Units_Dimensions_Errors_Vectors_Jan_q10.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "image": "questions/010_Units_Dimensions_Errors_Vectors_Jan_q9.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "image": "questions/011_Units_Dimensions_Errors_Vectors_Jan_q12.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "image": "questions/012_Units_Dimensions_Errors_Vectors_Jan_q11.png",
     "flagged": false,
     "clean_answer": "35",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 13,
@@ -153,7 +153,7 @@
     "image": "questions/013_Units_Dimensions_Errors_Vectors_Jan_q13.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 14,
@@ -177,7 +177,7 @@
     "image": "questions/015_Units_Dimensions_Errors_Vectors_Jan_q15.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 16,
@@ -189,7 +189,7 @@
     "image": "questions/016_Units_Dimensions_Errors_Vectors_Jan_q16.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "image": "questions/017_Units_Dimensions_Errors_Vectors_Jan_q17.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 18,
@@ -213,7 +213,7 @@
     "image": "questions/018_Units_Dimensions_Errors_Vectors_Jan_q18.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 19,
@@ -237,7 +237,7 @@
     "image": "questions/020_Units_Dimensions_Errors_Vectors_Jan_q20.png",
     "flagged": false,
     "clean_answer": "7700",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 21,
@@ -249,7 +249,7 @@
     "image": "questions/021_Units_Dimensions_Errors_Vectors_April_q1.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 22,
@@ -261,7 +261,7 @@
     "image": "questions/022_Units_Dimensions_Errors_Vectors_April_q2.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 23,
@@ -273,7 +273,7 @@
     "image": "questions/023_Units_Dimensions_Errors_Vectors_April_q3.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 24,
@@ -285,7 +285,7 @@
     "image": "questions/024_Units_Dimensions_Errors_Vectors_April_q4.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 25,
@@ -297,7 +297,7 @@
     "image": "questions/025_Units_Dimensions_Errors_Vectors_April_q5.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 26,
@@ -309,7 +309,7 @@
     "image": "questions/026_Units_Dimensions_Errors_Vectors_April_q6.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 27,
@@ -321,7 +321,7 @@
     "image": "questions/027_Units_Dimensions_Errors_Vectors_April_q7.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 28,
@@ -333,7 +333,7 @@
     "image": "questions/028_Units_Dimensions_Errors_Vectors_April_q12.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 29,
@@ -345,7 +345,7 @@
     "image": "questions/029_Units_Dimensions_Errors_Vectors_April_q11.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 30,
@@ -357,7 +357,7 @@
     "image": "questions/030_Units_Dimensions_Errors_Vectors_April_q13.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 31,
@@ -369,7 +369,7 @@
     "image": "questions/031_Units_Dimensions_Errors_Vectors_April_q14.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 32,
@@ -381,7 +381,7 @@
     "image": "questions/032_Units_Dimensions_Errors_Vectors_April_q15.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 33,
@@ -393,7 +393,7 @@
     "image": "questions/033_Units_Dimensions_Errors_Vectors_April_q16.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 34,
@@ -405,7 +405,7 @@
     "image": "questions/034_Units_Dimensions_Errors_Vectors_April_q8.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 35,
@@ -417,7 +417,7 @@
     "image": "questions/035_Units_Dimensions_Errors_Vectors_April_q10.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 36,
@@ -429,7 +429,7 @@
     "image": "questions/036_Units_Dimensions_Errors_Vectors_April_q9.png",
     "flagged": false,
     "clean_answer": "15",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 37,
@@ -441,7 +441,7 @@
     "image": "questions/037_Kinematics_Jan_q1.png",
     "flagged": false,
     "clean_answer": "5",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 38,
@@ -453,7 +453,7 @@
     "image": "questions/038_Kinematics_Jan_q2.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 39,
@@ -465,7 +465,7 @@
     "image": "questions/039_Kinematics_Jan_q3.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 40,
@@ -477,7 +477,7 @@
     "image": "questions/040_Kinematics_Jan_q4.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 41,
@@ -489,7 +489,7 @@
     "image": "questions/041_Kinematics_Jan_q5.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 42,
@@ -501,7 +501,7 @@
     "image": "questions/042_Kinematics_Jan_q6.png",
     "flagged": false,
     "clean_answer": "2000",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 43,
@@ -513,7 +513,7 @@
     "image": "questions/043_Kinematics_Jan_q7.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 44,
@@ -525,7 +525,7 @@
     "image": "questions/044_Kinematics_April_q1.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 45,
@@ -537,7 +537,7 @@
     "image": "questions/045_Kinematics_April_q2.png",
     "flagged": false,
     "clean_answer": "10",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 46,
@@ -549,7 +549,7 @@
     "image": "questions/046_Kinematics_April_q3.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 47,
@@ -561,7 +561,7 @@
     "image": "questions/047_Kinematics_April_q4.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 48,
@@ -573,7 +573,7 @@
     "image": "questions/048_Kinematics_April_q5.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 49,
@@ -585,7 +585,7 @@
     "image": "questions/049_Kinematics_April_q6.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 50,
@@ -597,7 +597,7 @@
     "image": "questions/050_Kinematics_April_q7.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 51,
@@ -609,7 +609,7 @@
     "image": "questions/051_Kinematics_April_q10.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 52,
@@ -621,7 +621,7 @@
     "image": "questions/052_Kinematics_April_q9.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 53,
@@ -633,7 +633,7 @@
     "image": "questions/053_Kinematics_April_q8.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 54,
@@ -645,7 +645,7 @@
     "image": "questions/054_Laws_of_Motion_Jan_q1.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 55,
@@ -657,7 +657,7 @@
     "image": "questions/055_Laws_of_Motion_Jan_q2.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 56,
@@ -669,7 +669,7 @@
     "image": "questions/056_Laws_of_Motion_Jan_q3.png",
     "flagged": false,
     "clean_answer": "36",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 57,
@@ -681,7 +681,7 @@
     "image": "questions/057_Laws_of_Motion_Jan_q4.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 58,
@@ -693,7 +693,7 @@
     "image": "questions/058_Laws_of_Motion_April_q1.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 59,
@@ -705,7 +705,7 @@
     "image": "questions/059_Laws_of_Motion_April_q2.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 60,
@@ -717,7 +717,7 @@
     "image": "questions/060_Laws_of_Motion_April_q3.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 61,
@@ -729,7 +729,7 @@
     "image": "questions/061_Laws_of_Motion_April_q4.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 62,
@@ -741,7 +741,7 @@
     "image": "questions/062_Laws_of_Motion_April_q5.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 63,
@@ -753,7 +753,7 @@
     "image": "questions/063_Laws_of_Motion_April_q6.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 64,
@@ -765,7 +765,7 @@
     "image": "questions/064_Work_Energy_Power_Jan_q1.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 65,
@@ -777,7 +777,7 @@
     "image": "questions/065_Work_Energy_Power_Jan_q2.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 66,
@@ -789,7 +789,7 @@
     "image": "questions/066_Work_Energy_Power_Jan_q3.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 67,
@@ -801,7 +801,7 @@
     "image": "questions/067_Work_Energy_Power_Jan_q4.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 68,
@@ -813,7 +813,7 @@
     "image": "questions/068_Work_Energy_Power_Jan_q5.png",
     "flagged": false,
     "clean_answer": "152",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 69,
@@ -825,7 +825,7 @@
     "image": "questions/069_Work_Energy_Power_Jan_q6.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 70,
@@ -837,7 +837,7 @@
     "image": "questions/070_Work_Energy_Power_Jan_q7.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 71,
@@ -849,7 +849,7 @@
     "image": "questions/071_Work_Energy_Power_Jan_q11.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 72,
@@ -861,7 +861,7 @@
     "image": "questions/072_Work_Energy_Power_Jan_q8.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 73,
@@ -873,7 +873,7 @@
     "image": "questions/073_Work_Energy_Power_Jan_q10.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 74,
@@ -885,7 +885,7 @@
     "image": "questions/074_Work_Energy_Power_Jan_q9.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 75,
@@ -897,7 +897,7 @@
     "image": "questions/075_Work_Energy_Power_April_q1.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 76,
@@ -909,7 +909,7 @@
     "image": "questions/076_Work_Energy_Power_April_q3.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 77,
@@ -921,7 +921,7 @@
     "image": "questions/077_Work_Energy_Power_April_q2.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 78,
@@ -933,7 +933,7 @@
     "image": "questions/078_COM_and_Collision_Jan_q1.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 79,
@@ -945,7 +945,7 @@
     "image": "questions/079_COM_and_Collision_Jan_q2.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 80,
@@ -957,7 +957,7 @@
     "image": "questions/080_COM_and_Collision_Jan_q3.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 81,
@@ -969,7 +969,7 @@
     "image": "questions/081_COM_and_Collision_Jan_q4.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 82,
@@ -981,7 +981,7 @@
     "image": "questions/082_COM_and_Collision_Jan_q5.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 83,
@@ -993,7 +993,7 @@
     "image": "questions/083_COM_and_Collision_April_q1.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 84,
@@ -1005,7 +1005,7 @@
     "image": "questions/084_COM_and_Collision_April_q2.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 85,
@@ -1017,7 +1017,7 @@
     "image": "questions/085_Rotation_Jan_q1.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 86,
@@ -1029,7 +1029,7 @@
     "image": "questions/086_Rotation_Jan_q2.png",
     "flagged": false,
     "clean_answer": "90",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 87,
@@ -1041,7 +1041,7 @@
     "image": "questions/087_Rotation_Jan_q3.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 88,
@@ -1053,7 +1053,7 @@
     "image": "questions/088_Rotation_Jan_q4.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 89,
@@ -1065,7 +1065,7 @@
     "image": "questions/089_Rotation_Jan_q5.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 90,
@@ -1077,7 +1077,7 @@
     "image": "questions/090_Rotation_Jan_q6.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 91,
@@ -1089,7 +1089,7 @@
     "image": "questions/091_Rotation_Jan_q12.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 92,
@@ -1101,7 +1101,7 @@
     "image": "questions/092_Rotation_Jan_q11.png",
     "flagged": false,
     "clean_answer": "16",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 93,
@@ -1113,7 +1113,7 @@
     "image": "questions/093_Rotation_Jan_q13.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 94,
@@ -1125,7 +1125,7 @@
     "image": "questions/094_Rotation_Jan_q7.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 95,
@@ -1137,7 +1137,7 @@
     "image": "questions/095_Rotation_Jan_q8.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 96,
@@ -1149,7 +1149,7 @@
     "image": "questions/096_Rotation_Jan_q10.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 97,
@@ -1161,7 +1161,7 @@
     "image": "questions/097_Rotation_Jan_q9.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 98,
@@ -1173,7 +1173,7 @@
     "image": "questions/098_Rotation_April_q1.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 99,
@@ -1185,7 +1185,7 @@
     "image": "questions/099_Rotation_April_q3.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 100,
@@ -1197,7 +1197,7 @@
     "image": "questions/100_Rotation_April_q4.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 101,
@@ -1209,7 +1209,7 @@
     "image": "questions/101_Rotation_April_q5.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 102,
@@ -1221,7 +1221,7 @@
     "image": "questions/102_Rotation_April_q6.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 103,
@@ -1233,7 +1233,7 @@
     "image": "questions/103_Rotation_April_q7.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 104,
@@ -1245,7 +1245,7 @@
     "image": "questions/104_Rotation_April_q2.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 105,
@@ -1257,7 +1257,7 @@
     "image": "questions/105_Rotation_April_q13.png",
     "flagged": false,
     "clean_answer": "9",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 106,
@@ -1269,7 +1269,7 @@
     "image": "questions/106_Rotation_April_q12.png",
     "flagged": false,
     "clean_answer": "199",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 107,
@@ -1281,7 +1281,7 @@
     "image": "questions/107_Rotation_April_q14.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 108,
@@ -1293,7 +1293,7 @@
     "image": "questions/108_Rotation_April_q15.png",
     "flagged": false,
     "clean_answer": "40",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 109,
@@ -1317,7 +1317,7 @@
     "image": "questions/110_Rotation_April_q11.png",
     "flagged": false,
     "clean_answer": "32",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 111,
@@ -1329,7 +1329,7 @@
     "image": "questions/111_Rotation_April_q10.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 112,
@@ -1341,7 +1341,7 @@
     "image": "questions/112_Rotation_April_q8.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 113,
@@ -1353,7 +1353,7 @@
     "image": "questions/113_Gravitation_Jan_q1.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 114,
@@ -1365,7 +1365,7 @@
     "image": "questions/114_Gravitation_Jan_q2.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 115,
@@ -1377,7 +1377,7 @@
     "image": "questions/115_Gravitation_Jan_q3.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 116,
@@ -1389,7 +1389,7 @@
     "image": "questions/116_Gravitation_Jan_q4.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 117,
@@ -1401,7 +1401,7 @@
     "image": "questions/117_Gravitation_Jan_q5.png",
     "flagged": false,
     "clean_answer": "9",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 118,
@@ -1413,7 +1413,7 @@
     "image": "questions/118_Gravitation_Jan_q6.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 119,
@@ -1425,7 +1425,7 @@
     "image": "questions/119_Gravitation_Jan_q7.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 120,
@@ -1437,7 +1437,7 @@
     "image": "questions/120_Gravitation_Jan_q8.png",
     "flagged": false,
     "clean_answer": "8",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 121,
@@ -1449,7 +1449,7 @@
     "image": "questions/121_Gravitation_April_q1.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 122,
@@ -1461,7 +1461,7 @@
     "image": "questions/122_Gravitation_April_q2.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 123,
@@ -1473,7 +1473,7 @@
     "image": "questions/123_Gravitation_April_q3.png",
     "flagged": false,
     "clean_answer": "8",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 124,
@@ -1485,7 +1485,7 @@
     "image": "questions/124_Gravitation_April_q4.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 125,
@@ -1497,7 +1497,7 @@
     "image": "questions/125_Gravitation_April_q5.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 126,
@@ -1509,7 +1509,7 @@
     "image": "questions/126_Gravitation_April_q6.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 127,
@@ -1521,7 +1521,7 @@
     "image": "questions/127_Properties_of_Solids_Jan_q1.png",
     "flagged": false,
     "clean_answer": "43",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 128,
@@ -1533,7 +1533,7 @@
     "image": "questions/128_Properties_of_Solids_Jan_q2.png",
     "flagged": false,
     "clean_answer": "50",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 129,
@@ -1545,7 +1545,7 @@
     "image": "questions/129_Properties_of_Solids_Jan_q3.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 130,
@@ -1557,7 +1557,7 @@
     "image": "questions/130_Properties_of_Solids_April_q1.png",
     "flagged": false,
     "clean_answer": "25",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 131,
@@ -1569,7 +1569,7 @@
     "image": "questions/131_Properties_of_Solids_April_q2.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 132,
@@ -1581,7 +1581,7 @@
     "image": "questions/132_Properties_of_Solids_April_q3.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 133,
@@ -1593,7 +1593,7 @@
     "image": "questions/133_Properties_of_Solids_April_q4.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 134,
@@ -1605,7 +1605,7 @@
     "image": "questions/134_Properties_of_Solids_April_q5.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 135,
@@ -1617,7 +1617,7 @@
     "image": "questions/135_Properties_of_Solids_April_q6.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 136,
@@ -1629,7 +1629,7 @@
     "image": "questions/136_Properties_of_Solids_April_q7.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 137,
@@ -1641,7 +1641,7 @@
     "image": "questions/137_Fluid_Mechanics_Jan_q1.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 138,
@@ -1653,7 +1653,7 @@
     "image": "questions/138_Fluid_Mechanics_Jan_q2.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 139,
@@ -1665,7 +1665,7 @@
     "image": "questions/139_Fluid_Mechanics_Jan_q3.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 140,
@@ -1677,7 +1677,7 @@
     "image": "questions/140_Fluid_Mechanics_Jan_q4.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 141,
@@ -1689,7 +1689,7 @@
     "image": "questions/141_Fluid_Mechanics_Jan_q5.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 142,
@@ -1701,7 +1701,7 @@
     "image": "questions/142_Fluid_Mechanics_Jan_q6.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 143,
@@ -1713,7 +1713,7 @@
     "image": "questions/143_Fluid_Mechanics_Jan_q7.png",
     "flagged": false,
     "clean_answer": "2190",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 144,
@@ -1725,7 +1725,7 @@
     "image": "questions/144_Fluid_Mechanics_Jan_q8.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 145,
@@ -1737,7 +1737,7 @@
     "image": "questions/145_Fluid_Mechanics_Jan_q9.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 146,
@@ -1749,7 +1749,7 @@
     "image": "questions/146_Fluid_Mechanics_Jan_q12.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 147,
@@ -1761,7 +1761,7 @@
     "image": "questions/147_Fluid_Mechanics_Jan_q11.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 148,
@@ -1773,7 +1773,7 @@
     "image": "questions/148_Fluid_Mechanics_Jan_q13.png",
     "flagged": false,
     "clean_answer": "5",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 149,
@@ -1785,7 +1785,7 @@
     "image": "questions/149_Fluid_Mechanics_Jan_q10.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 150,
@@ -1797,7 +1797,7 @@
     "image": "questions/150_Fluid_Mechanics_April_q1.png",
     "flagged": false,
     "clean_answer": "150",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 151,
@@ -1809,7 +1809,7 @@
     "image": "questions/151_Fluid_Mechanics_April_q2.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 152,
@@ -1821,7 +1821,7 @@
     "image": "questions/152_Fluid_Mechanics_April_q3.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 153,
@@ -1833,7 +1833,7 @@
     "image": "questions/153_Fluid_Mechanics_April_q4.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 154,
@@ -1845,7 +1845,7 @@
     "image": "questions/154_Fluid_Mechanics_April_q5.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 155,
@@ -1857,7 +1857,7 @@
     "image": "questions/155_Fluid_Mechanics_April_q6.png",
     "flagged": false,
     "clean_answer": "8",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 156,
@@ -1869,7 +1869,7 @@
     "image": "questions/156_Fluid_Mechanics_April_q7.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 157,
@@ -1881,7 +1881,7 @@
     "image": "questions/157_Fluid_Mechanics_April_q8.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 158,
@@ -1893,7 +1893,7 @@
     "image": "questions/158_Fluid_Mechanics_April_q9.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 159,
@@ -1905,7 +1905,7 @@
     "image": "questions/159_Simple_Harmonic_Motion_Jan_q1.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 160,
@@ -1917,7 +1917,7 @@
     "image": "questions/160_Simple_Harmonic_Motion_Jan_q2.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 161,
@@ -1929,7 +1929,7 @@
     "image": "questions/161_Simple_Harmonic_Motion_Jan_q3.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 162,
@@ -1941,7 +1941,7 @@
     "image": "questions/162_Simple_Harmonic_Motion_Jan_q4.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 163,
@@ -1953,7 +1953,7 @@
     "image": "questions/163_Simple_Harmonic_Motion_Jan_q5.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 164,
@@ -1965,7 +1965,7 @@
     "image": "questions/164_Simple_Harmonic_Motion_Jan_q6.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 165,
@@ -1977,7 +1977,7 @@
     "image": "questions/165_Simple_Harmonic_Motion_Jan_q7.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 166,
@@ -1989,7 +1989,7 @@
     "image": "questions/166_Simple_Harmonic_Motion_April_q1.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 167,
@@ -2001,7 +2001,7 @@
     "image": "questions/167_Simple_Harmonic_Motion_April_q2.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 168,
@@ -2013,7 +2013,7 @@
     "image": "questions/168_Simple_Harmonic_Motion_April_q3.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 169,
@@ -2025,7 +2025,7 @@
     "image": "questions/169_Simple_Harmonic_Motion_April_q4.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 170,
@@ -2037,7 +2037,7 @@
     "image": "questions/170_Simple_Harmonic_Motion_April_q5.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 171,
@@ -2049,7 +2049,7 @@
     "image": "questions/171_Thermal_Properties_and_Heat_Transfer_Jan_q1.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 172,
@@ -2061,7 +2061,7 @@
     "image": "questions/172_Thermal_Properties_and_Heat_Transfer_Jan_q2.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 173,
@@ -2073,7 +2073,7 @@
     "image": "questions/173_Thermal_Properties_and_Heat_Transfer_Jan_q3.png",
     "flagged": false,
     "clean_answer": "40",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 174,
@@ -2085,7 +2085,7 @@
     "image": "questions/174_Thermal_Properties_and_Heat_Transfer_Jan_q4.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 175,
@@ -2097,7 +2097,7 @@
     "image": "questions/175_Thermal_Properties_and_Heat_Transfer_Jan_q5.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 176,
@@ -2109,7 +2109,7 @@
     "image": "questions/176_Thermal_Properties_and_Heat_Transfer_Jan_q6.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 177,
@@ -2121,7 +2121,7 @@
     "image": "questions/177_Thermal_Properties_and_Heat_Transfer_Jan_q7.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 178,
@@ -2133,7 +2133,7 @@
     "image": "questions/178_Thermal_Properties_and_Heat_Transfer_Jan_q8.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 179,
@@ -2145,7 +2145,7 @@
     "image": "questions/179_Thermal_Properties_and_Heat_Transfer_April_q1.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 180,
@@ -2157,7 +2157,7 @@
     "image": "questions/180_Thermal_Properties_and_Heat_Transfer_April_q2.png",
     "flagged": false,
     "clean_answer": "5",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 181,
@@ -2169,7 +2169,7 @@
     "image": "questions/181_Thermal_Properties_and_Heat_Transfer_April_q3.png",
     "flagged": false,
     "clean_answer": "360",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 182,
@@ -2181,7 +2181,7 @@
     "image": "questions/182_Thermal_Properties_and_Heat_Transfer_April_q4.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 183,
@@ -2193,7 +2193,7 @@
     "image": "questions/183_KTG_and_Thermodynamics_Jan_q1.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 184,
@@ -2205,7 +2205,7 @@
     "image": "questions/184_KTG_and_Thermodynamics_Jan_q2.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 185,
@@ -2217,7 +2217,7 @@
     "image": "questions/185_KTG_and_Thermodynamics_Jan_q3.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 186,
@@ -2229,7 +2229,7 @@
     "image": "questions/186_KTG_and_Thermodynamics_Jan_q4.png",
     "flagged": false,
     "clean_answer": "273",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 187,
@@ -2241,7 +2241,7 @@
     "image": "questions/187_KTG_and_Thermodynamics_Jan_q5.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 188,
@@ -2253,7 +2253,7 @@
     "image": "questions/188_KTG_and_Thermodynamics_Jan_q6.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 189,
@@ -2265,7 +2265,7 @@
     "image": "questions/189_KTG_and_Thermodynamics_Jan_q12.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 190,
@@ -2277,7 +2277,7 @@
     "image": "questions/190_KTG_and_Thermodynamics_Jan_q11.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 191,
@@ -2289,7 +2289,7 @@
     "image": "questions/191_KTG_and_Thermodynamics_Jan_q7.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 192,
@@ -2301,7 +2301,7 @@
     "image": "questions/192_KTG_and_Thermodynamics_Jan_q8.png",
     "flagged": false,
     "clean_answer": "15",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 193,
@@ -2313,7 +2313,7 @@
     "image": "questions/193_KTG_and_Thermodynamics_Jan_q10.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 194,
@@ -2325,7 +2325,7 @@
     "image": "questions/194_KTG_and_Thermodynamics_Jan_q9.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 195,
@@ -2337,7 +2337,7 @@
     "image": "questions/195_KTG_and_Thermodynamics_Jan_q13.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 196,
@@ -2349,7 +2349,7 @@
     "image": "questions/196_KTG_and_Thermodynamics_Jan_q14.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 197,
@@ -2361,7 +2361,7 @@
     "image": "questions/197_KTG_and_Thermodynamics_Jan_q15.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 198,
@@ -2373,7 +2373,7 @@
     "image": "questions/198_KTG_and_Thermodynamics_Jan_q16.png",
     "flagged": false,
     "clean_answer": "327",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 199,
@@ -2385,7 +2385,7 @@
     "image": "questions/199_KTG_and_Thermodynamics_Jan_q17.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 200,
@@ -2409,7 +2409,7 @@
     "image": "questions/201_KTG_and_Thermodynamics_April_q1.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 202,
@@ -2421,7 +2421,7 @@
     "image": "questions/202_KTG_and_Thermodynamics_April_q2.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 203,
@@ -2433,7 +2433,7 @@
     "image": "questions/203_KTG_and_Thermodynamics_April_q3.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 204,
@@ -2445,7 +2445,7 @@
     "image": "questions/204_KTG_and_Thermodynamics_April_q4.png",
     "flagged": false,
     "clean_answer": "12",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 205,
@@ -2457,7 +2457,7 @@
     "image": "questions/205_KTG_and_Thermodynamics_April_q5.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 206,
@@ -2481,7 +2481,7 @@
     "image": "questions/207_KTG_and_Thermodynamics_April_q12.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 208,
@@ -2493,7 +2493,7 @@
     "image": "questions/208_KTG_and_Thermodynamics_April_q11.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 209,
@@ -2505,7 +2505,7 @@
     "image": "questions/209_KTG_and_Thermodynamics_April_q13.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 210,
@@ -2517,7 +2517,7 @@
     "image": "questions/210_KTG_and_Thermodynamics_April_q14.png",
     "flagged": false,
     "clean_answer": "314",
-    "type": "response"
+    "type": "integer"
   },
   {
     "id": 211,
@@ -2529,7 +2529,7 @@
     "image": "questions/211_KTG_and_Thermodynamics_April_q7.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 212,
@@ -2541,7 +2541,7 @@
     "image": "questions/212_KTG_and_Thermodynamics_April_q8.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 213,
@@ -2553,7 +2553,7 @@
     "image": "questions/213_KTG_and_Thermodynamics_April_q10.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 214,
@@ -2565,7 +2565,7 @@
     "image": "questions/214_KTG_and_Thermodynamics_April_q9.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 215,
@@ -2577,7 +2577,7 @@
     "image": "questions/215_KTG_and_Thermodynamics_April_q15.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 216,
@@ -2589,7 +2589,7 @@
     "image": "questions/216_KTG_and_Thermodynamics_April_q16.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 217,
@@ -2601,7 +2601,7 @@
     "image": "questions/217_KTG_and_Thermodynamics_April_q17.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 218,
@@ -2613,7 +2613,7 @@
     "image": "questions/218_Wave_Motion_Jan_q1.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 219,
@@ -2625,7 +2625,7 @@
     "image": "questions/219_Wave_Motion_Jan_q2.png",
     "flagged": false,
     "clean_answer": "3",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 220,
@@ -2637,7 +2637,7 @@
     "image": "questions/220_Wave_Motion_Jan_q3.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 221,
@@ -2649,7 +2649,7 @@
     "image": "questions/221_Wave_Motion_April_q1.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 222,
@@ -2661,7 +2661,7 @@
     "image": "questions/222_Wave_Motion_April_q2.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 223,
@@ -2685,7 +2685,7 @@
     "image": "questions/224_Wave_Motion_April_q4.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 225,
@@ -2697,7 +2697,7 @@
     "image": "questions/225_Wave_Motion_April_q5.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 226,
@@ -2709,7 +2709,7 @@
     "image": "questions/226_Wave_Motion_April_q6.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 227,
@@ -2721,7 +2721,7 @@
     "image": "questions/227_Wave_Motion_April_q7.png",
     "flagged": false,
     "clean_answer": "1",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 228,
@@ -2733,7 +2733,7 @@
     "image": "questions/228_Wave_Motion_April_q8.png",
     "flagged": false,
     "clean_answer": "2",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 229,
@@ -2745,7 +2745,7 @@
     "image": "questions/229_Wave_Motion_April_q9.png",
     "flagged": false,
     "clean_answer": "4",
-    "type": "response"
+    "type": "mcq"
   },
   {
     "id": 230,

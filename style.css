@@ -349,3 +349,13 @@ select option,select optgroup{background:var(--panel);color:var(--text)}
 :root[data-theme="black"] .btn:not(.secondary):not(.danger){color:#000!important}
 :root[data-theme] .theme-picker{background:var(--panel);color:var(--text);border-color:var(--border)}
 :root[data-theme] select option,:root[data-theme] select optgroup{background:var(--panel);color:var(--text)}
+
+
+/* MCQ answer buttons */
+.option-buttons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:10px}
+.option-btn{min-height:52px;border:1px solid var(--border);border-radius:9px;background:var(--panel-soft);color:var(--text);font-weight:700;font-size:16px;transition:border-color .15s ease,background .15s ease}
+.option-btn:hover{border-color:var(--accent)}
+.option-btn.selected{background:var(--accent);border-color:var(--accent);color:var(--panel)}
+.option-btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+:root[data-theme="black"] .option-btn.selected{color:#101010}
+@media(max-width:600px){.option-buttons{gap:8px}.option-btn{min-height:48px}}
