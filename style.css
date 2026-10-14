@@ -387,3 +387,14 @@ select option,select optgroup{background:var(--panel);color:var(--text)}
 .coming-actions{justify-content:center;margin-top:28px}
 @media(max-width:700px){.selection-wrap{padding:26px 14px 36px}.selection-header{flex-direction:column;gap:12px;margin-bottom:22px}.selection-header .brand h1{font-size:30px}.choice-grid,.subject-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.choice-card{min-height:132px;padding:17px}.selection-heading{align-items:flex-start}}
 @media(max-width:420px){.choice-grid,.subject-grid{grid-template-columns:1fr}.choice-card{min-height:105px}.selection-heading{flex-direction:column}.coming-actions{flex-direction:column}.coming-actions .btn{width:100%}}
+
+
+/* Test timing selection */
+.timing-section{padding-top:4px}
+.timing-options{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.timing-option{border:1px solid var(--border);border-radius:8px;padding:10px 13px;background:var(--panel);color:var(--text);font-size:13px;font-weight:650;cursor:pointer;min-height:42px}
+.timing-option:hover,.timing-option:focus-visible{border-color:var(--accent)}
+.timing-option.selected{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.timing-summary{font-size:13px;font-weight:700;color:var(--accent);margin:10px 0 0}
+#testTimer{font-variant-numeric:tabular-nums;font-size:14px}
+@media(max-width:600px){.timing-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.timing-option{padding:10px 8px}}
