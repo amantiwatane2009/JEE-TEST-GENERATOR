@@ -62,7 +62,7 @@ The immediate focus is reliability: preserving question layouts, improving image
 
 ## Acknowledgements
 
-Credit and thanks to **[Eduniti]([https://www.youtube.com/@eduniti](https://www.youtube.com/@mohitgoenka99))** for creating and sharing the Physics question PDFs used as a source for this project. [Access the PDF collection on Google Drive](https://drive.google.com/drive/folders/1785MiemoRxcc3o6dto6DKCdEfcW70gO_).
+Credit and thanks to **[Eduniti](https://www.youtube.com/@mohitgoenka99)** for creating and sharing the Physics question PDFs used as a source for this project. [Access the PDF collection on Google Drive](https://drive.google.com/drive/folders/1785MiemoRxcc3o6dto6DKCdEfcW70gO_).
 
 The PDFs are credited to their original creator; this project is an independent practice tool.
 
