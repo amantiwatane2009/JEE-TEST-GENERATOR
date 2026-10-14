@@ -27,7 +27,7 @@ function history(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch{
 function saveHistory(x){const h=history();h.unshift(x);localStorage.setItem(KEY,JSON.stringify(h.slice(0,10)))}
 function norm(s){return String(s??'').trim().replace(/\s+/g,'').replace(/,/g,'').toLowerCase()}
 function sameAns(a,b){const x=norm(a),y=norm(b);if(x===y)return true;const nx=Number(x),ny=Number(y);return Number.isFinite(nx)&&Number.isFinite(ny)&&Math.abs(nx-ny)<1e-9}
-function isMcq(q){return q.type==='mcq'||(String(q.year||'')==='2019'&&q.type!=='response')}
+function isMcq(q){return q.type==='mcq'}
 function isIntegerQuestion(q){return q.type==='integer'}
 function optionIndex(v){const s=norm(v);if(/^[a-d]$/.test(s))return s.charCodeAt(0)-97;if(/^[1-4]$/.test(s))return Number(s)-1;return null}
 function optionLabels(q){return /^[1-4]$/.test(norm(q.answer))?['1','2','3','4']:['A','B','C','D']}
