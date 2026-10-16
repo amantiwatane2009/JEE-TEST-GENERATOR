@@ -62,9 +62,10 @@ The immediate focus is reliability: preserving question layouts, improving image
 
 ## Acknowledgements
 
-Credit and thanks to **[Eduniti](https://www.youtube.com/@mohitgoenka99)** for creating and sharing the Physics question PDFs used as a source for this project. [Access the PDF collection on Google Drive](https://drive.google.com/drive/folders/1785MiemoRxcc3o6dto6DKCdEfcW70gO_).
+- **Physics question PDFs:** Credit and thanks to **[Eduniti](https://www.youtube.com/@mohitgoenka99)** for creating and sharing the Physics question PDFs used as a source for this project. [Access the PDF collection on Google Drive](https://drive.google.com/drive/folders/1785MiemoRxcc3o6dto6DKCdEfcW70gO_).
+- **Chemical Kinetics question PDF:** Credit to **[ExamGOAL PDF Library](https://pdf.questions.examgoal.com/)** as the source of the Chemical Kinetics question PDF used for this project.
 
-The PDFs are credited to their original creator; this project is an independent practice tool.
+The PDFs are credited to their respective sources; this project is an independent practice tool.
 
 ## Feedback
 
