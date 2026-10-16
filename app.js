@@ -2,7 +2,10 @@ const app=document.getElementById('app');
 const KEY='jeePhysicsMockHistoryV1';
 let state=null;
 const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
-const allClean=QUESTIONS.filter(q=>!q.flagged);
+const allQuestions=QUESTIONS.filter(q=>!q.flagged);
+let selectedClass='11th';
+const classAllowed=q=>selectedClass==='11th' ? (q.class||11)===11 : selectedClass==='12th' ? q.class===12 : true;
+const allClean=allQuestions.filter(classAllowed);
 let sourceFilter='all';
 let clean=allClean;
 const chapterAliases={
@@ -19,7 +22,7 @@ const chapterName=q=>chapterAliases[q.chapter]||q.chapter;
 let chapters=[...new Set(clean.map(chapterName))];
 function setSource(v){
  sourceFilter=v;
- clean=allClean.filter(q=>sourceFilter==='all'||String(q.year||2025)===sourceFilter);
+ clean=allQuestions.filter(q=>!q.flagged&&classAllowed(q)&&(sourceFilter==='all'||String(q.year||2025)===sourceFilter));
  chapters=[...new Set(clean.map(chapterName))];
 }
 const fmt=n=>String(Math.max(0,n)).padStart(2,'0');
@@ -54,12 +57,11 @@ function selectQuestions(n=80){
  return shuffle(out.slice(0,n));
 }
 /* Entry flow: choose class, then subject. */
-let selectedClass='11th';
 let selectedSubject='Physics';
 let selectedPair='';
 function renderSelection(step){
  step=step||'class';
- const classes=[['11th','Class 11','Build your Class 11 JEE practice'],['12th','Class 12','Class 12 question bank coming soon'],['both','Both classes','Practice across Class 11 and Class 12']];
+ const classes=[['11th','Class 11','Build your Class 11 JEE practice'],['12th','Class 12','Practice Class 12 Physics PYQs'],['both','Both classes','Practice across Class 11 and Class 12']];
  const subjects=[['Physics','Physics','⚛'],['Chemistry','Chemistry','◈'],['Maths','Mathematics','∑'],['any2','Any 2 subjects','＋'],['all','All subjects','✦']];
  const pairs=[['physics-chemistry','Physics + Chemistry'],['chemistry-maths','Chemistry + Maths'],['physics-maths','Physics + Maths']];
  let body='';
@@ -71,11 +73,11 @@ function renderSelection(step){
  const back=step==='class'?'':'<button class="btn secondary" id="selectionBack">Back</button>';
  app.innerHTML='<div class="wrap selection-wrap"><header class="selection-header"><div class="brand"><p class="eyebrow">JEE TEST GENERATOR</p><h1>Your practice. Your way.</h1><p>Personalize your question practice before you begin.</p></div><div class="selection-step">'+(step==='class'?'STEP 1 OF 2':step==='subject'?'STEP 2 OF 2':'SUBJECT COMBINATION')+'</div></header><section class="card selection-card"><div class="selection-heading"><div><p class="eyebrow">SET UP YOUR SESSION</p><h2>'+heading+'</h2><p class="muted">'+sub+'</p></div>'+back+'</div><div class="choice-grid '+(step==='subject'?'subject-grid':'')+'">'+body+'</div><p class="selection-footnote">Your selection only changes this practice session.</p></section></div>';
  if(step!=='class')document.getElementById('selectionBack').onclick=()=>renderSelection(step==='pair'?'subject':'class');
- document.querySelectorAll('[data-class]').forEach(b=>b.onclick=()=>{selectedClass=b.dataset.class;renderSelection('subject')});
+ document.querySelectorAll('[data-class]').forEach(b=>b.onclick=()=>{selectedClass=b.dataset.class;setSource(sourceFilter);renderSelection('subject')});
  document.querySelectorAll('[data-subject]').forEach(b=>b.onclick=()=>{
   selectedSubject=b.dataset.subject;
   if(selectedSubject==='any2'){renderSelection('pair');return}
-  if(selectedSubject==='Physics'){if(selectedClass==='12th'){renderComingSoon('Class 12 Physics','The Class 12 Physics question bank is not added yet.');return}renderStart();return}
+  if(selectedSubject==='Physics'){setSource(sourceFilter);renderStart();return}
   renderComingSoon(selectedSubject==='all'?'All Subjects':selectedSubject==='Maths'?'Mathematics':'Chemistry','This section is under maintenance and will be available soon.');
  });
  document.querySelectorAll('[data-pair]').forEach(b=>b.onclick=()=>{selectedPair=b.dataset.pair;renderComingSoon(b.querySelector('.choice-title').textContent,'This subject combination is under maintenance and will be available soon.')});
@@ -87,9 +89,10 @@ function renderComingSoon(title,message){
 }
 
 function renderStart(){
+ setSource(sourceFilter);
  const total=clean.length;
- app.innerHTML=`<div class="wrap"><div class="top"><div class="brand"><h1>JEE Main Physics — ${selectedClass==='both'?'Class 11 + 12':'Class '+selectedClass} PYQ Simulator</h1><p>JEE Main Physics PYQ bank · ${total} usable Class 11 questions${selectedClass==='both'?' · Class 12 questions coming soon':''}</p></div><div class="row"><label class="small">Source <select id="sourceFilter"><option value="all">All years</option><option value="2019">2019 only</option><option value="2025">2025 only</option></select></label><button class="btn secondary" id="changeSelection">Change selection</button><button class="btn secondary" id="hist">History</button></div></div>
- <div class="grid"><div class="card"><h2>Build your test</h2><div class="stats"><div class="stat"><span class="muted">Questions</span><b id="previewN">80</b></div><div class="stat"><span class="muted">Time limit</span><b>None</b></div><div class="stat"><span class="muted">Scoring</span><b>+4 / −1</b></div><div class="stat"><span class="muted">Pool</span><b>${total}</b></div></div><p class="muted">Choose exactly how many questions you want. There is <b>no countdown and no time pressure</b>. The paper remains PYQ-only and is selected proportionally across the available Class 11 chapters.</p><div class="row"><label>Number of questions <input id="mainQn" type="number" min="1" max="${total}" value="80"></label><button class="btn" id="start">Start test</button><button class="btn secondary" id="custom">Choose chapters</button></div><div class="section"><h3>Current distribution preview</h3><table class="dist"><tr><th>Chapter</th><th>Q</th><th>Pool</th><th></th></tr>${chapters.map(c=>`<tr><td>${c}</td><td><b class="dcount" data-ch="${c}">—</b></td><td>${clean.filter(q=>chapterName(q)===c).length}</td><td><div class="bar"><span></span></div></td></tr>`).join('')}</table></div></div>
+ app.innerHTML=`<div class="wrap"><div class="top"><div class="brand"><h1>JEE Main Physics — ${selectedClass==='both'?'Class 11 + 12':'Class '+selectedClass} PYQ Simulator</h1><p>JEE Main Physics PYQ bank · ${total} usable ${selectedClass==='both'?'Class 11 + 12':selectedClass==='12th'?'Class 12':'Class 11'} questions</p></div><div class="row"><label class="small">Source <select id="sourceFilter"><option value="all">All years</option><option value="2019">2019 only</option><option value="2025">2025 only</option></select></label><button class="btn secondary" id="changeSelection">Change selection</button><button class="btn secondary" id="hist">History</button></div></div>
+ <div class="grid"><div class="card"><h2>Build your test</h2><div class="stats"><div class="stat"><span class="muted">Questions</span><b id="previewN">80</b></div><div class="stat"><span class="muted">Time limit</span><b>None</b></div><div class="stat"><span class="muted">Scoring</span><b>+4 / −1</b></div><div class="stat"><span class="muted">Pool</span><b>${total}</b></div></div><p class="muted">Choose exactly how many questions you want. There is <b>no countdown and no time pressure</b>. The paper remains PYQ-only and is selected proportionally across the available chapters.</p><div class="row"><label>Number of questions <input id="mainQn" type="number" min="1" max="${total}" value="80"></label><button class="btn" id="start">Start test</button><button class="btn secondary" id="custom">Choose chapters</button></div><div class="section"><h3>Current distribution preview</h3><table class="dist"><tr><th>Chapter</th><th>Q</th><th>Pool</th><th></th></tr>${chapters.map(c=>`<tr><td>${c}</td><td><b class="dcount" data-ch="${c}">—</b></td><td>${clean.filter(q=>chapterName(q)===c).length}</td><td><div class="bar"><span></span></div></td></tr>`).join('')}</table></div></div>
  <div class="card"><h2>What you get</h2><ul class="muted"><li>Original PYQ question images — diagrams preserved</li><li>Choose any test length from 1 to ${total}</li><li>No timer — take the test at your own pace</li><li>Randomized paper and question order</li><li>Answer + mark-for-review palette</li><li>Post-test chapter analysis</li><li>Incorrect/skipped question review</li><li>Local history for your previous mocks</li></ul><h3>Source flags</h3><p class="small muted">${QUESTIONS.filter(q=>q.flagged).length} questions were flagged by the PDF's own answer-key notes/ambiguities and are not used in the default paper.</p></div></div></div>`;
  const updatePreview=()=>{const n=Math.max(1,Math.min(total,+document.getElementById('mainQn').value||80));document.getElementById('previewN').textContent=n;const weights=chapters.map(c=>({c,p:clean.filter(q=>chapterName(q)===c).length}));const sum=weights.reduce((a,x)=>a+x.p,0);const counts=Object.fromEntries(weights.map(x=>[x.c,Math.floor(n*x.p/sum)]));let left=n-Object.values(counts).reduce((a,b)=>a+b,0);weights.sort((a,b)=>(n*b.p/sum)%1-(n*a.p/sum)%1);for(let i=0;i<left;i++)counts[weights[i%weights.length].c]++;document.querySelectorAll('.dcount').forEach(e=>e.textContent=counts[e.dataset.ch]||0)};
  document.getElementById('sourceFilter').value=sourceFilter;
