@@ -4,8 +4,10 @@ let state=null;
 const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
 const allQuestions=QUESTIONS;
 let selectedClass='11th';
+let selectedSubject='Physics';
+const subjectAllowed=q=>(q.subject||'Physics')===selectedSubject;
 const classAllowed=q=>selectedClass==='11th' ? (q.class||11)===11 : selectedClass==='12th' ? q.class===12 : true;
-const allClean=allQuestions.filter(q=>classAllowed(q)&&(!q.flagged||q.class===12));
+const allClean=allQuestions.filter(q=>subjectAllowed(q)&&classAllowed(q)&&(!q.flagged||q.class===12));
 let sourceFilter='all';
 let clean=allClean;
 const chapterAliases={
@@ -22,7 +24,7 @@ const chapterName=q=>chapterAliases[q.chapter]||q.chapter;
 let chapters=[...new Set(clean.map(chapterName))];
 function setSource(v){
  sourceFilter=v;
- clean=allQuestions.filter(q=>classAllowed(q)&&(!q.flagged||q.class===12)&&(sourceFilter==='all'||String(q.year||2025)===sourceFilter));
+ clean=allQuestions.filter(q=>subjectAllowed(q)&&classAllowed(q)&&(!q.flagged||q.class===12)&&(sourceFilter==='all'||String(q.year||2025)===sourceFilter));
  chapters=[...new Set(clean.map(chapterName))];
 }
 const fmt=n=>String(Math.max(0,n)).padStart(2,'0');
@@ -57,7 +59,6 @@ function selectQuestions(n=80){
  return shuffle(out.slice(0,n));
 }
 /* Entry flow: choose class, then subject. */
-let selectedSubject='Physics';
 let selectedPair='';
 function renderSelection(step){
  step=step||'class';
