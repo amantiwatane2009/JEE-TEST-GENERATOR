@@ -86,7 +86,7 @@ function renderSelection(step){
 function renderComingSoon(title,message){
  app.innerHTML='<div class="wrap selection-wrap"><header class="selection-header"><div class="brand"><p class="eyebrow">JEE TEST GENERATOR</p><h1>'+title+'</h1><p>'+(selectedClass==='both'?'Class 11 + Class 12':'Class '+selectedClass)+' · '+title+'</p></div></header><section class="card coming-card"><div class="coming-mark">✦</div><p class="eyebrow">IN DEVELOPMENT</p><h2>Under maintenance.</h2><p class="muted">'+message+'</p><p class="coming-note">We’re working on this section. Please check back soon.</p><div class="row coming-actions"><button class="btn" id="chooseAgain">Choose another option</button><button class="btn secondary" id="backHome">Back to home</button></div></section></div>';
  document.getElementById('chooseAgain').onclick=()=>renderSelection('class');
- document.getElementById('backHome').onclick=()=>{selectedClass='11th';selectedSubject='Physics';renderStart()};
+ document.getElementById('backHome').onclick=()=>{selectedClass='11th';selectedSubject='Physics';setSource('all');renderSelection('class')};
 }
 
 function renderStart(){
