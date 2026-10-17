@@ -18,3 +18,21 @@ Important validation notes:
 Run:
 - On Windows, double-click START_TEST.bat if included.
 - Or open index.html in a modern browser.
+
+
+CLASS 12 2025 PHYSICS ADDITION (LOCAL TEST BUILD)
+The class12_2025_crops folder contains question crops sourced from the supplied Eduniti 2025 PDF.
+Entries with flagged=true have answer keys that could not be read confidently and should be checked before using scored tests.
+
+
+CLASS 12 2025 PHYSICS ADDITION (LOCAL TEST BUILD)
+The class12_2025_crops folder contains question crops sourced from the supplied Eduniti 2025 PDF.
+Entries with flagged=true have answer keys that could not be read confidently and should be checked before using scored tests.
+
+
+CLASS 12 2025 PHYSICS — WORK-IN-PROGRESS LOCAL TEST BUILD
+The generated 2025 entries use image crops from the supplied PDF. Answer keys were not populated because OCR could not reliably read the scanned answer-key pages; new entries are flagged for review and must not be used for scored tests until answer keys and crop boundaries are verified.
+
+
+MODERN PHYSICS 2025 ADDITION
+Added 40 Modern Physics question crops from the supplied Eduniti JEE Main 2025 PDF: 19 January-attempt entries and 21 April-attempt entries. Answer values are mapped from the PDF answer-key pages. January Q1 is flagged because the source itself notes an NTA/correct-answer discrepancy. Numerical entries: January Q12, April Q10 and Q21.
