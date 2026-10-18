@@ -3,7 +3,7 @@ const KEY='jeePhysicsMockHistoryV1';
 let state=null;
 let timerHandle=null;
 const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
-const allQuestions=QUESTIONS;
+const allQuestions=[...new Map([...QUESTIONS,...(typeof CHEMISTRY_QUESTIONS!=='undefined'?CHEMISTRY_QUESTIONS:[])].map(q=>[String(q.id),q])).values()];
 let selectedClass='11th';
 let selectedSubject='Physics';
 const subjectAllowed=q=>selectedSubject==='Physics + Chemistry' ? ['Physics','Chemistry'].includes(q.subject||'Physics') : (q.subject||'Physics')===selectedSubject;
@@ -25,7 +25,7 @@ const chapterName=q=>chapterAliases[q.chapter]||q.chapter;
 let chapters=[...new Set(clean.map(chapterName))];
 function setSource(v){
  sourceFilter=v;
- clean=allQuestions.filter(q=>subjectAllowed(q)&&classAllowed(q)&&(!q.flagged||q.class===12)&&(sourceFilter==='all'||String(q.year||2025)===sourceFilter));
+ clean=[...new Map(allQuestions.filter(q=>subjectAllowed(q)&&classAllowed(q)&&(!q.flagged||q.class===12)&&(sourceFilter==='all'||String(q.year||2025)===sourceFilter)).map(q=>[String(q.id),q])).values()];
  chapters=[...new Set(clean.map(chapterName))];
 }
 const fmt=n=>String(Math.max(0,n)).padStart(2,'0');
