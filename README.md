@@ -70,3 +70,27 @@ The PDFs are credited to their respective sources; this project is an independen
 ## Feedback
 
 If you find an incorrect answer, a cropped or unreadable question, or a problem with test navigation or scoring, please report the issue with the relevant question number and source where possible.
+
+## Added question bank: d and f Block Elements (Class 12 Chemistry)
+
+The supplied `JEE Main d and f Block Elements Previous Year Questions with Answer Key` PDF has been integrated as a separate bank in `d_f_block_data.js` with one image crop per question under `assets/questions/d_f_block/`.
+
+- 245 questions added (Q1–Q245), with unique IDs 10430–10674.
+- Single-correct MCQ: Q1–Q204; numerical response: Q205–Q244.
+- Q108 is flagged and excluded from scoring because the source answer key says “Scan QR”.
+- Q245 is flagged and excluded from scoring because it is multiple-correct while the current UI supports single-select MCQs.
+- Import audit: `DF_BLOCK_IMPORT_QA.json`.
+
+### Test locally
+
+1. Extract this ZIP into a new folder.
+2. Double-click `START_TEST.bat` (or open `index.html` in a browser if your browser allows local assets).
+3. Choose **Class 12**, then **Chemistry**.
+4. Use the chapter selection to select **d and f Block Elements**, and run a short test first.
+5. Check chemical notation and question images, numerical answer entry, and answer review. Q108 and Q245 should be marked unscored.
+
+This import preserves the source's question images and answer-key entries; it is not a claim that every chemistry answer was independently re-solved. Review the flagged entries before any production deployment.
+
+
+### Multiple-correct question support
+Question 245 in the d- and f-block import is implemented as a multi-select MCQ. Click options A–D to toggle selections; the exact answer set A,D is scored using the simulator’s standard +4/−1 scheme (an unattempted question earns 0). It is no longer excluded from scoring. The source-key-only QR question Q108 remains flagged and excluded from scoring.
