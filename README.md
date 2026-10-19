@@ -94,3 +94,24 @@ This import preserves the source's question images and answer-key entries; it is
 
 ### Multiple-correct question support
 Question 245 in the d- and f-block import is implemented as a multi-select MCQ. Click options A–D to toggle selections; the exact answer set A,D is scored using the simulator’s standard +4/−1 scheme (an unattempted question earns 0). It is no longer excluded from scoring. The source-key-only QR question Q108 remains flagged and excluded from scoring.
+
+## Added question bank: Class 12 Mathematics — Integration and Area Under the Curves
+
+The supplied `integration + aoi pyq.pdf` has been added as a separate question bank in `maths_integration_aoi_data.js`, with 569 question crops under `assets/questions/maths_integration_aoi/`.
+
+- **Indefinite Integrals:** 90 questions (76 single-correct MCQs, 14 numerical).
+- **Definite Integration:** 309 in-syllabus questions (231 single-correct MCQs, 77 numerical, 1 multiple-correct MCQ).
+- **Area Under the Curves:** 170 questions (124 single-correct MCQs, 46 numerical).
+- **Excluded:** Definite Integration Q310–Q331, marked out of syllabus in the supplied PDF.
+- Question IDs: 10675–11243; printed question numbers restart per chapter and are preserved alongside chapter metadata.
+- `MATHS_INTEGRATION_AOI_IMPORT_QA.json` records counts and import checks.
+
+The mathematical notation is preserved as question images. Answer keys were transcribed from the PDF; they have not all been independently re-solved. The multi-correct question uses the existing multi-select interface.
+
+### Test locally
+
+1. Extract the ZIP into a folder.
+2. Double-click `START_TEST.bat` or open `index.html` in a browser.
+3. Select **Class 12 → Mathematics**.
+4. Run a short test, then try **Choose chapters** to test each of the three chapters individually.
+5. Check question images, MCQ selection, numerical entry, the multi-correct question, and answer review.

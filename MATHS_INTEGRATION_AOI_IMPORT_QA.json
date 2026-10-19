@@ -1,0 +1,149 @@
+{
+  "source": "integration + aoi pyq.pdf",
+  "class": 12,
+  "subject": "Maths",
+  "excluded_out_of_syllabus": [
+    {
+      "chapter": "Definite Integration",
+      "question_no": 310
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 311
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 312
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 313
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 314
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 315
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 316
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 317
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 318
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 319
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 320
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 321
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 322
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 323
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 324
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 325
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 326
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 327
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 328
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 329
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 330
+    },
+    {
+      "chapter": "Definite Integration",
+      "question_no": 331
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": "Indefinite Integrals",
+      "questions_added": 90,
+      "expected_questions": 90,
+      "headers_found": 90,
+      "missing_question_numbers": [],
+      "types": {
+        "mcq": 76,
+        "numerical": 14,
+        "multi": 0
+      },
+      "answer_key_entries_parsed": 90,
+      "flagged_for_key_review": []
+    },
+    {
+      "chapter": "Definite Integration",
+      "questions_added": 309,
+      "expected_questions": 309,
+      "headers_found": 309,
+      "missing_question_numbers": [],
+      "types": {
+        "mcq": 231,
+        "numerical": 77,
+        "multi": 1
+      },
+      "answer_key_entries_parsed": 309,
+      "flagged_for_key_review": []
+    },
+    {
+      "chapter": "Area Under the Curves",
+      "questions_added": 170,
+      "expected_questions": 170,
+      "headers_found": 170,
+      "missing_question_numbers": [],
+      "types": {
+        "mcq": 124,
+        "numerical": 46,
+        "multi": 0
+      },
+      "answer_key_entries_parsed": 170,
+      "flagged_for_key_review": []
+    }
+  ],
+  "notes": [
+    "Question images preserve mathematical notation from the supplied PDF. Answer keys are transcribed from the PDF answer-key pages; not independently re-solved."
+  ],
+  "questions_added": 569,
+  "id_range": [
+    10675,
+    11243
+  ],
+  "flagged_count": 0,
+  "question_images": 569
+}
