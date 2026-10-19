@@ -1,0 +1,41 @@
+{
+  "source": "JEE Main d and f Block Elements PYQs",
+  "questions_added": 245,
+  "id_range": [
+    10430,
+    10674
+  ],
+  "question_types": {
+    "single_correct_mcq": 204,
+    "numerical": 40,
+    "multiple_correct_mcq": 1
+  },
+  "flagged_questions": [
+    {
+      "question_no": 108,
+      "reason": "Answer key missing/QR-only; excluded from scoring"
+    }
+  ],
+  "answer_key_entries_parsed": 245,
+  "question_images": 245,
+  "notes": [
+    "This is a source-faithful image-based import; not all scientific answers were independently re-solved.",
+    "Question 108 has no printed answer other than Scan QR in the supplied PDF.",
+    "Original source metadata is retained as printed, including the source typo in Q240 date.",
+    "Question 245 is implemented as a multi-select MCQ with exact-match scoring; it is no longer flagged or excluded from scoring."
+  ],
+  "multiple_correct_question": {
+    "question_no": 245,
+    "id": 10674,
+    "type": "multi",
+    "answer": "A,D",
+    "flagged": false,
+    "scoring": "Exact-match; +4 for all correct options and no incorrect options, -1 for an attempted incorrect combination, 0 if unattempted. Uses the simulator’s standard +4/-1 scheme."
+  },
+  "bonus_question": {
+    "question_no": 108,
+    "answer": "All options A, B, C, D accepted",
+    "scoring": "Any non-empty response is correct (+4); unanswered receives 0",
+    "flagged": false
+  }
+}

@@ -35,6 +35,18 @@
         "Wave Motion"
       ],
       "notes": "Import only after each question crop and answer-key mapping has been checked. Preserve bonus/corrected-answer notes as flags; do not silently guess."
+    },
+    {
+      "sourceId": "jee-main-d-f-block-elements-pyq-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "class": 12,
+      "sourceType": "PYQ",
+      "status": "imported-needs-content-review",
+      "originalFilename": "JEE Main d and f Block Elements Previous Year Questions with Answer Key(1).pdf",
+      "questionBankFile": "d_f_block_data.js",
+      "questionCount": 245,
+      "notes": "Integrated as a separate question bank. Image crops preserve the printed source. Q108 answer key says Scan QR and remains flagged/excluded from scoring. Q245 supports multiple selection and is scored."
     }
   ],
   "questionMetadataContract": {
