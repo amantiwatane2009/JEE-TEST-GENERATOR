@@ -47,6 +47,18 @@
       "questionBankFile": "d_f_block_data.js",
       "questionCount": 245,
       "notes": "Integrated as a separate question bank. Image crops preserve the printed source. Q108 answer key says Scan QR and remains flagged/excluded from scoring. Q245 supports multiple selection and is scored."
+    },
+    {
+      "sourceId": "jee-main-maths-integration-aoi-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 12,
+      "sourceType": "PYQ",
+      "status": "imported-needs-visual-review",
+      "originalFilename": "integration + aoi pyq.pdf",
+      "questionBankFile": "maths_integration_aoi_data.js",
+      "questionCount": 569,
+      "notes": "Includes Indefinite Integrals Q1-Q90, Definite Integration Q1-Q309 (excludes OOS Q310-Q331), and Area Under the Curves Q1-Q170. Crops preserve printed mathematical notation. Answer keys transcribed from PDF; flagged malformed/missing entries are excluded from scoring."
     }
   ],
   "questionMetadataContract": {
