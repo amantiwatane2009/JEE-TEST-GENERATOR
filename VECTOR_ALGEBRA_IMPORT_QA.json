@@ -1,0 +1,10 @@
+{
+  "questions": 225,
+  "mcq": 176,
+  "numerical": 49,
+  "out_of_syllabus_excluded": 56,
+  "images_found": 225,
+  "answers_detected": 125,
+  "warning": "Answer key OCR may contain errors; verify before relying on scores.",
+  "missing_images": []
+}

@@ -36,3 +36,11 @@ The generated 2025 entries use image crops from the supplied PDF. Answer keys we
 
 MODERN PHYSICS 2025 ADDITION
 Added 40 Modern Physics question crops from the supplied Eduniti JEE Main 2025 PDF: 19 January-attempt entries and 21 April-attempt entries. Answer values are mapped from the PDF answer-key pages. January Q1 is flagged because the source itself notes an NTA/correct-answer discrepancy. Numerical entries: January Q12, April Q10 and Q21.
+
+
+VECTOR ALGEBRA ADDITION
+Added 225 in-syllabus questions under Class 12 Mathematics > Vector Algebra: Q1–176 MCQs and Q177–225 numerical-answer questions. The source PDF marks 56 additional questions as out of syllabus; these are excluded. Questions are displayed as individual image crops. The source answer key was OCR-imported and may contain recognition errors; verify answers before relying on scores.
+
+
+VECTOR ALGEBRA ADDITION
+Added 225 in-syllabus questions under Class 12 Mathematics > Vector Algebra: Q1–176 MCQs and Q177–225 numerical-answer questions. The source PDF marks 56 additional questions as out of syllabus; these are excluded. Questions are displayed as individual image crops. The source answer key was OCR-imported and may contain recognition errors; verify answers before relying on scores.
