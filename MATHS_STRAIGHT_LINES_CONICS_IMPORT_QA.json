@@ -1,0 +1,39 @@
+{
+  "source_pdf": "stl lines + conics .pdf",
+  "chapters": {
+    "Straight Lines": {
+      "total": 179,
+      "mcq": 144,
+      "numerical": 22,
+      "out_of_syllabus": 13
+    },
+    "Circles": {
+      "total": 187,
+      "mcq": 89,
+      "numerical": 31,
+      "out_of_syllabus": 67
+    },
+    "Parabola": {
+      "total": 152,
+      "mcq": 66,
+      "numerical": 18,
+      "out_of_syllabus": 68
+    },
+    "Ellipse": {
+      "total": 117,
+      "mcq": 74,
+      "numerical": 7,
+      "out_of_syllabus": 36
+    },
+    "Hyperbola": {
+      "total": 97,
+      "mcq": 52,
+      "numerical": 16,
+      "out_of_syllabus": 29
+    }
+  },
+  "total": 732,
+  "out_of_syllabus": 213,
+  "answer_key_status": "Answers are blank; answer key pages were not mapped to individual question objects, so automated scoring is not reliable for these imported questions yet.",
+  "notes": "Question images are crops from the supplied PDF. Inspect boundaries in local testing. Questions split into five individual Class 11 Maths chapters. Category/OOS tags were assigned from audited chapter counts and assumed section ordering (MCQ, Numerical, Out of syllabus)."
+}

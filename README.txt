@@ -44,3 +44,12 @@ Added 225 in-syllabus questions under Class 12 Mathematics > Vector Algebra: Q1�
 
 VECTOR ALGEBRA ADDITION
 Added 225 in-syllabus questions under Class 12 Mathematics > Vector Algebra: Q1–176 MCQs and Q177–225 numerical-answer questions. The source PDF marks 56 additional questions as out of syllabus; these are excluded. Questions are displayed as individual image crops. The source answer key was OCR-imported and may contain recognition errors; verify answers before relying on scores.
+
+STRAIGHT LINES + CONICS IMPORT (2026-10-20)
+- Added 732 question-image crops from the supplied stl lines + conics PDF.
+- New separate Class 11 Maths chapters: Straight Lines, Circles, Parabola, Ellipse, Hyperbola.
+- Includes all 213 questions marked out-of-syllabus in the source chapter counts.
+- Data file: maths_straight_lines_conics_data.js
+- Images: assets/questions/straight_lines_conics/
+- QA summary: MATHS_STRAIGHT_LINES_CONICS_IMPORT_QA.json
+IMPORTANT: Answer-key mapping has not been completed. The imported questions have blank answers, so do not use the test scores as meaningful until answer keys are mapped. Category and OOS tags were assigned from audited totals and assumed section ordering; please inspect locally, especially the OOS boundary/crop edges.
