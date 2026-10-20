@@ -3,7 +3,7 @@ const KEY='jeePhysicsMockHistoryV1';
 let state=null;
 let timerHandle=null;
 const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
-const allQuestions=[...new Map([...QUESTIONS,...(typeof CHEMISTRY_QUESTIONS!=='undefined'?CHEMISTRY_QUESTIONS:[]),...(typeof D_F_BLOCK_QUESTIONS!=='undefined'?D_F_BLOCK_QUESTIONS:[]),...(typeof MATHS_INTEGRATION_AOI_QUESTIONS!=='undefined'?MATHS_INTEGRATION_AOI_QUESTIONS:[])].map(q=>[String(q.id),q])).values()];
+const allQuestions=[...new Map([...QUESTIONS,...(typeof CHEMISTRY_QUESTIONS!=='undefined'?CHEMISTRY_QUESTIONS:[]),...(typeof D_F_BLOCK_QUESTIONS!=='undefined'?D_F_BLOCK_QUESTIONS:[]),...(typeof MATHS_INTEGRATION_AOI_QUESTIONS!=='undefined'?MATHS_INTEGRATION_AOI_QUESTIONS:[]),...(typeof VECTOR_ALGEBRA_QUESTIONS!=='undefined'?VECTOR_ALGEBRA_QUESTIONS:[])].map(q=>[String(q.id),q])).values()];
 let selectedClass='11th';
 let selectedSubject='Physics';
 const subjectAllowed=q=>selectedSubject==='all' ? true : selectedSubject==='Physics + Chemistry' ? ['Physics','Chemistry'].includes(q.subject||'Physics') : selectedSubject==='Chemistry + Maths' ? ['Chemistry','Maths'].includes(q.subject||'Physics') : selectedSubject==='Physics + Maths' ? ['Physics','Maths'].includes(q.subject||'Physics') : (q.subject||'Physics')===selectedSubject;
