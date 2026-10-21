@@ -3,7 +3,7 @@ const KEY='jeePhysicsMockHistoryV1';
 let state=null;
 let timerHandle=null;
 const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
-const allQuestions=[...new Map([...QUESTIONS,...(typeof CHEMISTRY_QUESTIONS!=='undefined'?CHEMISTRY_QUESTIONS:[]),...(typeof D_F_BLOCK_QUESTIONS!=='undefined'?D_F_BLOCK_QUESTIONS:[]),...(typeof MATHS_INTEGRATION_AOI_QUESTIONS!=='undefined'?MATHS_INTEGRATION_AOI_QUESTIONS:[]),...(typeof VECTOR_ALGEBRA_QUESTIONS!=='undefined'?VECTOR_ALGEBRA_QUESTIONS:[]),...(typeof MATHS_STRAIGHT_LINES_CONICS_QUESTIONS!=='undefined'?MATHS_STRAIGHT_LINES_CONICS_QUESTIONS:[])].map(q=>[String(q.id),q])).values()];
+const allQuestions=[...new Map([...QUESTIONS,...(typeof CHEMISTRY_QUESTIONS!=='undefined'?CHEMISTRY_QUESTIONS:[]),...(typeof D_F_BLOCK_QUESTIONS!=='undefined'?D_F_BLOCK_QUESTIONS:[]),...(typeof MATHS_INTEGRATION_AOI_QUESTIONS!=='undefined'?MATHS_INTEGRATION_AOI_QUESTIONS:[]),...(typeof VECTOR_ALGEBRA_QUESTIONS!=='undefined'?VECTOR_ALGEBRA_QUESTIONS:[]),...(typeof MATHS_STRAIGHT_LINES_CONICS_QUESTIONS!=='undefined'?MATHS_STRAIGHT_LINES_CONICS_QUESTIONS:[]),...(typeof SOLID_STATE_SOLUTIONS_ELECTROCHEM_QUESTIONS!=='undefined'?SOLID_STATE_SOLUTIONS_ELECTROCHEM_QUESTIONS:[])].map(q=>[String(q.id),q])).values()];
 let selectedClass='11th';
 let selectedSubject='Physics';
 const subjectAllowed=q=>selectedSubject==='all' ? true : selectedSubject==='Physics + Chemistry' ? ['Physics','Chemistry'].includes(q.subject||'Physics') : selectedSubject==='Chemistry + Maths' ? ['Chemistry','Maths'].includes(q.subject||'Physics') : selectedSubject==='Physics + Maths' ? ['Physics','Maths'].includes(q.subject||'Physics') : (q.subject||'Physics')===selectedSubject;
@@ -32,7 +32,7 @@ const fmt=n=>String(Math.max(0,n)).padStart(2,'0');
 function history(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch{return[]}}
 function saveHistory(x){const h=history();h.unshift(x);localStorage.setItem(KEY,JSON.stringify(h.slice(0,10)))}
 function norm(s){return String(s??'').trim().replace(/\s+/g,'').replace(/,/g,'').toLowerCase()}
-function sameAns(a,b){const x=norm(a),y=norm(b);if(x===''||y==='')return false;if(x===y)return true;const nx=Number(x),ny=Number(y);return Number.isFinite(nx)&&Number.isFinite(ny)&&Math.abs(nx-ny)<1e-9}
+function sameAns(a,b){const x=norm(a),raw=String(b??'').trim();if(x===' '||x===''||raw==='')return false;if(x===norm(raw))return true;const range=raw.match(/^\s*(-?\d+(?:\.\d+)?)\s+to\s+(-?\d+(?:\.\d+)?)\s*$/i);const nx=Number(x);if(range&&Number.isFinite(nx)){const lo=Number(range[1]),hi=Number(range[2]);return nx>=Math.min(lo,hi)-1e-9&&nx<=Math.max(lo,hi)+1e-9}const ny=Number(norm(raw));return Number.isFinite(nx)&&Number.isFinite(ny)&&Math.abs(nx-ny)<1e-9}
 function isMcq(q){return q.type==='mcq'||q.type==='multi'}
 function isMultiSelect(q){return q.type==='multi'}
 function isIntegerQuestion(q){return q.type==='integer'}

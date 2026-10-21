@@ -115,3 +115,17 @@ The mathematical notation is preserved as question images. Answer keys were tran
 3. Select **Class 12 → Mathematics**.
 4. Run a short test, then try **Choose chapters** to test each of the three chapters individually.
 5. Check question images, MCQ selection, numerical entry, the multi-correct question, and answer review.
+
+## Added Class 12 Chemistry chapters
+
+This build includes three additional chapter banks from the supplied chapter-wise PYQ PDF:
+
+- **Solid State** — 69 questions. The source marks this chapter as out of the current JEE Main syllabus; it is included for optional legacy practice.
+- **Solutions** — 195 questions.
+- **Electrochemistry** — 225 questions.
+
+Question images are cropped in grayscale to preserve formulas and diagrams. One Solutions answer-key entry (Q32) was marked for manual checking because the source key says “Scan QR”; it is excluded from scoring until verified. The included `CHEMISTRY_CHAPTERS_IMPORT_QA.json` records the import counts and caveats.
+
+### Run locally
+
+Extract the ZIP, then double-click `START_TEST.bat` or open `index.html` in a modern browser. If your browser blocks local assets, use a local static server (for example, run `python -m http.server 8000` in the extracted folder and open `http://localhost:8000`).

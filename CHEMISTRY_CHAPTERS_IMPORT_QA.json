@@ -1,0 +1,40 @@
+{
+  "source_pdf": "solid state+ solutions + electrochem.pdf",
+  "chapters": [
+    {
+      "chapter": "Solid State",
+      "questions": 69,
+      "mcq": 46,
+      "numerical": 23,
+      "multi": 0,
+      "answer_missing_or_unparsed": [],
+      "images": "assets/questions/solid_state/"
+    },
+    {
+      "chapter": "Solutions",
+      "questions": 195,
+      "mcq": 112,
+      "numerical": 82,
+      "multi": 1,
+      "answer_missing_or_unparsed": [
+        32
+      ],
+      "images": "assets/questions/solutions/"
+    },
+    {
+      "chapter": "Electrochemistry",
+      "questions": 225,
+      "mcq": 133,
+      "numerical": 92,
+      "multi": 0,
+      "answer_missing_or_unparsed": [],
+      "images": "assets/questions/electrochemistry/"
+    }
+  ],
+  "notes": [
+    "Questions are displayed as cropped grayscale source images to preserve formulas and diagrams.",
+    "Solid State is retained as requested but tagged out_of_current_syllabus because the source PDF itself marks it out of syllabus.",
+    "Some answer-key entries are not machine-readable/are explicitly marked Scan QR; these are flagged and should be checked manually.",
+    "Question and answer-key mapping is based on printed question numbering in the source PDF."
+  ]
+}
