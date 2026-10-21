@@ -1,4 +1,4 @@
-JEE Main Physics PYQ Simulator — Unified 2019 + 2025 Preview
+JEE/NEET Test Generator — Unified PYQ Practice
 
 This test build combines the existing 2025 Class 11 Physics question bank with 200 question crops from the uploaded chapter-wise JEE Main 2019 PDF.
 
