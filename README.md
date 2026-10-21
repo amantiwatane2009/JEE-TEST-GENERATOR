@@ -1,6 +1,6 @@
-# JEE Main Class 11 Physics Test Maker
+# JEE/NEET Test Generator
 
-A browser-based practice tool for working through JEE Main previous-year questions (PYQs) from Class 11 Physics. It is designed to make focused practice easy: choose a test length, select chapters, answer questions at your own pace, and review your performance when you're done.
+A browser-based practice tool for JEE and NEET preparation, with subject-wise question banks for Physics, Chemistry, Mathematics, and a Biology section being added. It is designed to make focused practice easy: choose a test length, select chapters, answer questions at your own pace, and review your performance when you're done.
 
 **Live app:** https://jee11testgenerator.vercel.app/
 
@@ -9,6 +9,7 @@ A browser-based practice tool for working through JEE Main previous-year questio
 - **Custom test length** — create a paper with the number of questions you want to attempt.
 - **Chapter selection** — practise the full available question bank or focus on selected chapters.
 - **Source filtering** — filter questions by available year/source.
+- **Biology section** — the Biology option is now available in the subject menu; its question bank is being integrated.
 - **Untimed practice** — work without a countdown clock.
 - **Question navigation** — move between questions using the question palette.
 - **Answer review** — clear responses and mark questions to revisit before submitting.
