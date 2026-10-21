@@ -53,3 +53,12 @@ STRAIGHT LINES + CONICS IMPORT (2026-10-20)
 - Images: assets/questions/straight_lines_conics/
 - QA summary: MATHS_STRAIGHT_LINES_CONICS_IMPORT_QA.json
 IMPORTANT: Answer-key mapping has not been completed. The imported questions have blank answers, so do not use the test scores as meaningful until answer keys are mapped. Category and OOS tags were assigned from audited totals and assumed section ordering; please inspect locally, especially the OOS boundary/crop edges.
+
+
+Added Class 12 Chemistry chapters
+- Solid State: 69 questions (source marks it out of current JEE Main syllabus; optional legacy practice).
+- Solutions: 195 questions.
+- Electrochemistry: 225 questions.
+- Solutions Q32 is flagged for manual answer-key checking because the source says “Scan QR”.
+
+Run locally: extract the ZIP and double-click START_TEST.bat or open index.html. If local file access is blocked, run: python -m http.server 8000, then open http://localhost:8000.
