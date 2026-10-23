@@ -72,6 +72,18 @@
       "excludedOutOfSyllabusQuestions": 56,
       "sourceFile": "Vector_Algebra_JEE_Main_PYQs_Clean_BW.pdf",
       "notes": "176 MCQs and 49 numerical questions. Answer key OCR-imported; verify answers before relying on scoring."
+    },
+    {
+      "sourceId": "jee-main-ionic-equilibrium-pyq-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-needs-answer-review",
+      "originalFilename": "JEE Main Ionic Equilibrium Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "ionic_equilibrium_data.js",
+      "questionCount": 154,
+      "notes": "Added as Class 11 Chemistry. 108 MCQs and 46 numerical questions from 2002-2026. Source images preserve notation. Q83 answer key says Scan QR and remains flagged/excluded from scoring. Other keys were transcribed from the PDF and have not all been independently re-solved."
     }
   ],
   "questionMetadataContract": {
