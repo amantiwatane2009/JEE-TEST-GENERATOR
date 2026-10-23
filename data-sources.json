@@ -86,6 +86,32 @@
       "notes": "Added as Class 11 Chemistry. 108 MCQs and 46 numerical questions from 2002-2026. Source images preserve notation. Q83 answer key says Scan QR and remains flagged/excluded from scoring. Other keys were transcribed from the PDF and have not all been independently re-solved."
     },
     {
+      "sourceId": "jee-main-chemical-equilibrium-pyq-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "class": 11,
+      "chapter": "Chemical Equilibrium",
+      "sourceType": "PYQ",
+      "status": "imported-needs-answer-review",
+      "originalFilename": "JEE Main Chemical Equilibrium Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "chemical_equilibrium_data.js",
+      "questionCount": 127,
+      "questionIdRange": [
+        13152,
+        13278
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 77,
+        "numerical": 49,
+        "multiple_correct_mcq": 1
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "notes": "Available locally in Class 11 Chemistry and synced to public.jee_questions as 127 rows under source_file chemical_equilibrium_data.js. Question images are under assets/questions/chemical_equilibrium/. Answers were transcribed from the PDF key and have not all been independently re-solved. Q122 accepts 72 to 75; Q127 is multiple-correct with A,B. The local chapter remains usable if Supabase is unavailable. Static website deployment is separate. See CHEMICAL_EQUILIBRIUM_IMPORT_QA.json."
+    },
+    {
       "sourceId": "neet-biology-3-chapters-pdf",
       "year": null,
       "subject": "Biology",

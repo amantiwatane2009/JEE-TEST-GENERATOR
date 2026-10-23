@@ -1,0 +1,44 @@
+{
+  "source_pdf": "JEE Main Chemical Equilibrium Previous Year Questions with Answer Key.pdf",
+  "sourceId": "jee-main-chemical-equilibrium-pyq-pdf",
+  "chapter": "Chemical Equilibrium",
+  "class": 11,
+  "subject": "Chemistry",
+  "questions": 127,
+  "mcq": 77,
+  "numerical": 49,
+  "multi": 1,
+  "answer_missing_or_unparsed": [],
+  "flagged_unscored": [],
+  "year_range": [
+    2002,
+    2026
+  ],
+  "source_pages": [
+    2,
+    34
+  ],
+  "question_ids": [
+    13152,
+    13278
+  ],
+  "supabase_sync": {
+    "target_table": "public.jee_questions",
+    "source_file": "chemical_equilibrium_data.js",
+    "rows_inserted": 127,
+    "question_ids": [
+      13152,
+      13278
+    ],
+    "existing_rows_overwritten": 0,
+    "schema_changed": false,
+    "website_deployed": false
+  },
+  "images": "assets/questions/chemical_equilibrium/",
+  "notes": [
+    "Question images are source-faithful grayscale crops with formulas and options preserved.",
+    "Answers were transcribed from the supplied printed key and have not all been independently re-solved.",
+    "Q122 accepts the printed range 72 to 75 using the simulator’s range scoring.",
+    "Q127 is a multiple-correct MCQ with answers A and B; the simulator uses exact-match scoring."
+  ]
+}

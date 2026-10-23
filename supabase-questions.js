@@ -39,4 +39,11 @@ async function loadQuestionBank() {
   return questions;
 }
 
-window.JEE_BANK_READY = loadQuestionBank();
+const localQuestions = window.CHEMICAL_EQUILIBRIUM_QUESTIONS || [];
+window.JEE_BANK_READY = loadQuestionBank()
+  .then(questions => [...questions, ...localQuestions])
+  .catch(error => {
+    if (!localQuestions.length) throw error;
+    console.warn('Supabase is unavailable; loading the local Chemical Equilibrium bank.');
+    return localQuestions;
+  });

@@ -143,6 +143,18 @@ The supplied `JEE Main Ionic Equilibrium Previous Year Questions with Answer Key
 
 Choose **Class 11 -> Chemistry** to practise this bank. Questions use source image crops to preserve formulas and answer choices.
 
+## Added question bank: Class 11 Chemistry - Chemical Equilibrium
+
+The supplied `JEE Main Chemical Equilibrium Previous Year Questions with Answer Key.pdf` adds 127 question-image crops under `assets/questions/chemical_equilibrium/` and local question metadata in `chemical_equilibrium_data.js`.
+
+- 77 single-correct MCQs, 49 numerical questions, and 1 multiple-correct MCQ.
+- Covers JEE Main/AIEEE questions from 2002-2026; question numbering and source pages are preserved.
+- Q122 accepts the printed numerical range 72-75; Q127 uses exact-match multi-select scoring for answers A and B.
+- Answers were transcribed from the printed PDF key and have not all been independently re-solved. See `CHEMICAL_EQUILIBRIUM_IMPORT_QA.json`.
+- The local bank is merged with Supabase questions in the browser, and its 127 records are synced to `public.jee_questions`. If Supabase is unreachable, the local Chemical Equilibrium chapter still loads for testing. The new image assets are local; the hosted static website needs a separate deployment to serve them.
+
+Choose **Class 11 -> Chemistry -> Chemical Equilibrium** to practise it locally.
+
 ## Added NEET Biology chapters
 
 `Biology 3 chaps.pdf` adds 266 Class 11 single-correct questions to Supabase, with source image crops under `assets/questions/biology/`:
