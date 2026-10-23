@@ -84,6 +84,32 @@
       "questionBankFile": "ionic_equilibrium_data.js",
       "questionCount": 154,
       "notes": "Added as Class 11 Chemistry. 108 MCQs and 46 numerical questions from 2002-2026. Source images preserve notation. Q83 answer key says Scan QR and remains flagged/excluded from scoring. Other keys were transcribed from the PDF and have not all been independently re-solved."
+    },
+    {
+      "sourceId": "neet-biology-3-chapters-pdf",
+      "year": null,
+      "subject": "Biology",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-needs-answer-review",
+      "originalFilename": "Biology 3 chaps.pdf",
+      "questionBankFile": "biology_three_chapters_data.json",
+      "questionCount": 266,
+      "chapters": [
+        {
+          "name": "Biomolecules",
+          "count": 102
+        },
+        {
+          "name": "Cell Cycle and Cell Division",
+          "count": 82
+        },
+        {
+          "name": "Photosynthesis in Higher Plants",
+          "count": 82
+        }
+      ],
+      "notes": "NEET Biology chapter-wise questions and answer keys from the supplied PDF. Original question image crops are in assets/questions/biology/. Answer keys were transcribed from the source PDF."
     }
   ],
   "questionMetadataContract": {

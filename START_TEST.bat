@@ -1,2 +1,2 @@
 @echo off
-start "JEE Physics Test" "%~dp0index.html"
+start "JEE NEET Test" "%~dp0index.html"

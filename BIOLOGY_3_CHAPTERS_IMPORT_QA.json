@@ -1,0 +1,49 @@
+{
+  "source": "Biology 3 chaps.pdf",
+  "sourceId": "neet-biology-3-chapters-pdf",
+  "class": 11,
+  "subject": "Biology",
+  "questionCount": 266,
+  "questionIdRange": [
+    12886,
+    13151
+  ],
+  "chapters": [
+    {
+      "chapter": "Biomolecules",
+      "questionCount": 102,
+      "questionNumbers": [
+        1,
+        102
+      ],
+      "answerKeyEntries": 102
+    },
+    {
+      "chapter": "Cell Cycle and Cell Division",
+      "questionCount": 82,
+      "questionNumbers": [
+        1,
+        82
+      ],
+      "answerKeyEntries": 82
+    },
+    {
+      "chapter": "Photosynthesis in Higher Plants",
+      "questionCount": 82,
+      "questionNumbers": [
+        1,
+        82
+      ],
+      "answerKeyEntries": 82
+    }
+  ],
+  "questionType": "single-correct MCQ",
+  "imagesExtracted": 266,
+  "validation": {
+    "uniqueIds": true,
+    "uniqueImages": true,
+    "allAnswerKeysPresent": true,
+    "allClass11": true
+  },
+  "answerKeyNote": "Answer letters were transcribed from the supplied PDF answer keys; they have not all been independently re-solved."
+}

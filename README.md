@@ -1,8 +1,8 @@
-# JEE Main Class 11 Physics Test Maker
+# JEE/NEET PCM and Biology Test Generator
 
-A browser-based practice tool for working through JEE Main previous-year questions (PYQs) from Class 11 Physics. It is designed to make focused practice easy: choose a test length, select chapters, answer questions at your own pace, and review your performance when you're done.
+A browser-based practice tool for JEE Main Physics, Chemistry, and Mathematics and NEET Biology PYQs. Choose a class, subject, and chapters, build a timed or untimed test, and review your results.
 
-**Live app:** https://jee11testgenerator.vercel.app/
+**Existing hosted app:** https://jee11testgenerator.vercel.app/ (the local JEE/NEET changes here have not been deployed)
 
 ## Features
 
@@ -19,7 +19,7 @@ The current scoring scheme is **+4 for a correct answer and −1 for an incorrec
 
 ## Question bank
 
-Questions are presented using image assets to preserve the original equations, diagrams, and formatting as closely as possible. The bank is being expanded and reviewed over time, so image crops and answer-key mappings should be checked when issues are reported. Source-specific flags are retained rather than silently treating uncertain answers as verified.
+Questions are loaded from the Supabase `jee_questions` table. Original question images remain in this repository so diagrams, equations, and printed options stay readable. The browser uses a publishable key with read-only row-level security; it does not contain a database write key. Test history and theme preference remain in the browser.
 
 ## Screenshots
 
@@ -48,13 +48,13 @@ The test interface keeps the original question image beside the question palette
 
 ## Getting started
 
-This is a static web project and does not require a build step.
+This is a static web project and does not require a build step. It needs an internet connection to load its question bank from Supabase.
 
 1. Clone or download this repository.
-2. Keep the JavaScript, HTML, CSS, data files, and question-image folders in their existing relative locations.
-3. Open `index.html` in a browser, or run `START_TEST.bat` on Windows.
-
-If images do not load, check that the image files are present and that their paths match the references in the question data.
+2. Keep the HTML, CSS, Supabase configuration, question loader, and image folders in their existing relative locations.
+3. For Windows testing, open PowerShell in the project folder and run `python -m http.server 8000`.
+4. Open `http://localhost:8000` in your browser. Keep the server window open while practising.
+5. If question images do not load, check that the `assets/questions` folder is present.
 
 ## Project direction
 
@@ -64,6 +64,7 @@ The immediate focus is reliability: preserving question layouts, improving image
 
 - **Physics question PDFs:** Credit and thanks to **[Eduniti](https://www.youtube.com/@mohitgoenka99)** for creating and sharing the Physics question PDFs used as a source for this project. [Access the PDF collection on Google Drive](https://drive.google.com/drive/folders/1785MiemoRxcc3o6dto6DKCdEfcW70gO_).
 - **Chemical Kinetics question PDF:** Credit to **[ExamGOAL PDF Library](https://pdf.questions.examgoal.com/)** as the source of the Chemical Kinetics question PDF used for this project.
+- **Biology question PDF:** Credit to **[ExamGOAL PDF Library](https://pdf.questions.examgoal.com/)** as the source of the NEET Biology chapter-wise PYQs used for this project.
 
 The PDFs are credited to their respective sources; this project is an independent practice tool.
 
@@ -141,3 +142,15 @@ The supplied `JEE Main Ionic Equilibrium Previous Year Questions with Answer Key
 - Answer keys were transcribed from the PDF and have not all been independently re-solved. See `IONIC_EQUILIBRIUM_IMPORT_QA.json`.
 
 Choose **Class 11 -> Chemistry** to practise this bank. Questions use source image crops to preserve formulas and answer choices.
+
+## Added NEET Biology chapters
+
+`Biology 3 chaps.pdf` adds 266 Class 11 single-correct questions to Supabase, with source image crops under `assets/questions/biology/`:
+
+- Biomolecules: 102 questions.
+- Cell Cycle and Cell Division: 82 questions.
+- Photosynthesis in Higher Plants: 82 questions.
+
+The answer keys were transcribed from the PDF and stored with each question; they have not all been independently re-solved. The import audit is in `BIOLOGY_3_CHAPTERS_IMPORT_QA.json`; the local source records are in `biology_three_chapters_data.json`.
+
+Choose **Class 11 -> Biology** to practise these questions. Biology is also available in subject combinations and All Subjects; Class 12 filtering excludes these Class 11 questions.
