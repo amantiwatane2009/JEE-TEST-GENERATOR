@@ -1,0 +1,28 @@
+{
+  "source_pdf": "JEE Main Ionic Equilibrium Previous Year Questions with Answer Key.pdf",
+  "chapter": "Ionic Equilibrium",
+  "class": 11,
+  "subject": "Chemistry",
+  "questions": 154,
+  "mcq": 108,
+  "numerical": 46,
+  "multi": 0,
+  "answer_missing_or_unparsed": [],
+  "flagged_unscored": [
+    83
+  ],
+  "year_range": [
+    2002,
+    2026
+  ],
+  "source_pages": [
+    2,
+    35
+  ],
+  "images": "assets/questions/ionic_equilibrium/",
+  "notes": [
+    "Question images were cropped from pages 2-35 to preserve chemical notation and complete answer choices.",
+    "Answers were transcribed from the printed PDF key; they have not all been independently re-solved.",
+    "Q83 is flagged and excluded from scoring because its printed answer key says Scan QR."
+  ]
+}

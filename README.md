@@ -130,3 +130,15 @@ Question images are cropped in grayscale to preserve formulas and diagrams. One 
 ### Run locally
 
 Extract the ZIP, then double-click `START_TEST.bat` or open `index.html` in a modern browser. If your browser blocks local assets, use a local static server (for example, run `python -m http.server 8000` in the extracted folder and open `http://localhost:8000`).
+
+## Added question bank: Class 11 Chemistry - Ionic Equilibrium
+
+The supplied `JEE Main Ionic Equilibrium Previous Year Questions with Answer Key.pdf` is integrated in `ionic_equilibrium_data.js` with one source image per question under `assets/questions/ionic_equilibrium/`.
+
+- 154 questions: 108 single-correct MCQs and 46 numerical questions.
+- Covers JEE Main questions from 2002-2026; printed question numbers are preserved.
+- Question IDs: 12732-12885.
+- Q83 is flagged and excluded from scoring because the printed answer key says "Scan QR".
+- Answer keys were transcribed from the PDF and have not all been independently re-solved. See `IONIC_EQUILIBRIUM_IMPORT_QA.json`.
+
+Choose **Class 11 -> Chemistry** to practise this bank. Questions use source image crops to preserve formulas and answer choices.
