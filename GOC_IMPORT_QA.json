@@ -1,0 +1,67 @@
+{
+  "source_pdf": "GOC.pdf",
+  "sourceId": "jee-main-goc-pyq-pdf",
+  "chapter": "GOC",
+  "class": 11,
+  "subject": "Chemistry",
+  "questions": 316,
+  "sections": [
+    {
+      "source_section": "Isomerism",
+      "questions": 5,
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "source_section": "IUPAC Nomenclature",
+      "questions": 1,
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "source_section": "Basics of Organic Chemistry",
+      "questions": 310,
+      "source_pages": [
+        11,
+        149
+      ]
+    }
+  ],
+  "types": {
+    "integer": 41,
+    "mcq": 272,
+    "multi": 3
+  },
+  "answer_missing_or_unparsed": [],
+  "flagged_out_of_syllabus": [
+    {
+      "source_section": "Basics of Organic Chemistry",
+      "question_no": 310,
+      "answer": "B"
+    }
+  ],
+  "year_range": [
+    2002,
+    2026
+  ],
+  "question_ids": [
+    13279,
+    13594
+  ],
+  "image_directory": "assets/questions/goc/",
+  "question_data_file": "goc_data.js",
+  "supabase_sync": {
+    "performed": false,
+    "website_deployed": false
+  },
+  "notes": [
+    "The Isomerism, IUPAC Nomenclature, and Basics of Organic Chemistry sections are combined under the single chapter label GOC as requested.",
+    "Printed question numbers and source PDF pages are preserved; source_section disambiguates the repeated numbers across the PDF sections.",
+    "Answers are transcribed from the printed answer keys and have not all been independently re-solved.",
+    "Basics of Organic Chemistry Q310 is labeled out of syllabus by the source and remains visible but unscored.",
+    "Source-faithful grayscale crops preserve the question text, options, and diagrams."
+  ]
+}

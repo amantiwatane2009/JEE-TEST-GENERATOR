@@ -155,6 +155,17 @@ The supplied `JEE Main Chemical Equilibrium Previous Year Questions with Answer 
 
 Choose **Class 11 -> Chemistry -> Chemical Equilibrium** to practise it locally.
 
+## Added Class 11 Chemistry chapter: GOC
+
+`GOC.pdf` combines three source sections into one **GOC (General Organic Chemistry)** chapter: Isomerism (5 questions), IUPAC Nomenclature (1 question), and Basics of Organic Chemistry (310 questions). The local bank has 316 questions total under `goc_data.js`, with question crops in `assets/questions/goc/`.
+
+- 272 single-correct MCQs, 3 multiple-correct MCQs, and 41 numerical questions.
+- Printed question numbers and original PDF pages are preserved; `source_section` distinguishes repeated numbering across the three sections.
+- Basics of Organic Chemistry Q310 is marked out of syllabus in the source; it remains visible but is not scored.
+- Answers were transcribed from the printed keys and have not all been independently re-solved. See `GOC_IMPORT_QA.json`.
+
+Choose **Class 11 -> Chemistry -> GOC** to practise the combined chapter. The local bank is available even if Supabase is unreachable; Supabase sync is still pending.
+
 ## Added NEET Biology chapters
 
 `Biology 3 chaps.pdf` adds 266 Class 11 single-correct questions to Supabase, with source image crops under `assets/questions/biology/`:
