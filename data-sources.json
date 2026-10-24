@@ -136,6 +136,46 @@
         }
       ],
       "notes": "NEET Biology chapter-wise questions and answer keys from the supplied PDF. Original question image crops are in assets/questions/biology/. Answer keys were transcribed from the source PDF."
+    },
+    {
+      "sourceId": "jee-main-goc-pyq-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "class": 11,
+      "chapter": "GOC",
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "GOC.pdf",
+      "questionBankFile": "goc_data.js",
+      "questionCount": 316,
+      "questionIdRange": [
+        13279,
+        13594
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 272,
+        "numerical": 41,
+        "multiple_correct_mcq": 3
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "chaptersCombined": [
+        {
+          "name": "Isomerism",
+          "count": 5
+        },
+        {
+          "name": "IUPAC Nomenclature",
+          "count": 1
+        },
+        {
+          "name": "Basics of Organic Chemistry",
+          "count": 310
+        }
+      ],
+      "notes": "The three source sections are combined under the requested single chapter GOC. Question images are in assets/questions/goc/. Basics of Organic Chemistry Q310 is marked out of syllabus and remains visible but unscored. This local bank has not been synced to Supabase or deployed. Answer keys were transcribed from the PDF and have not all been independently re-solved. See GOC_IMPORT_QA.json."
     }
   ],
   "questionMetadataContract": {
