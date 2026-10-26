@@ -176,6 +176,38 @@
         }
       ],
       "notes": "The three source sections are combined under the requested single chapter GOC. Question images are in assets/questions/goc/. Basics of Organic Chemistry Q310 is marked out of syllabus and remains visible but unscored. Supabase sync is still pending. Answer keys were transcribed from the PDF and have not all been independently re-solved. See GOC_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-differential-equations-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 12,
+      "chapter": "Differential Equations",
+      "sourceType": "PYQ",
+      "status": "imported-needs-answer-review",
+      "originalFilename": "JEE Main Differential Equations Previous Year Questions with Answer Key (1).pdf",
+      "questionBankFile": "differential_equations_data.js",
+      "questionCount": 243,
+      "questionIdRange": [
+        14000,
+        14242
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 193,
+        "numerical": 50
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "excludedOutOfSyllabus": {
+        "count": 23,
+        "questionNumbers": [
+          244,
+          266
+        ]
+      },
+      "notes": "Available locally in Class 12 Maths; Supabase sync is pending because the configured publishable key has no write authorization. Question images are under assets/questions/maths_differential_equations/. Answers were transcribed from the printed key and have not all been independently re-solved; Q12 has no printed answer and remains flagged. See DIFFERENTIAL_EQUATIONS_IMPORT_QA.json."
     }
   ],
   "questionMetadataContract": {

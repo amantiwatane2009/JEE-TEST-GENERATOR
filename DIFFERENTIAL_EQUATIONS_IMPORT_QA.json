@@ -1,0 +1,76 @@
+{
+  "source_pdf": "JEE Main Differential Equations Previous Year Questions with Answer Key (1).pdf",
+  "sourceId": "jee-main-maths-differential-equations-pyq-pdf",
+  "chapter": "Differential Equations",
+  "class": 12,
+  "subject": "Maths",
+  "questions": 243,
+  "mcq": 193,
+  "numerical": 50,
+  "out_of_syllabus_excluded": [
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266
+  ],
+  "answer_missing_or_unparsed": [
+    12
+  ],
+  "flagged_unscored": [
+    12
+  ],
+  "year_range": [
+    2002,
+    2026
+  ],
+  "source_pages": [
+    2,
+    41
+  ],
+  "question_ids": [
+    14000,
+    14242
+  ],
+  "supabase_sync": {
+    "target_table": "public.jee_questions",
+    "source_file": "differential_equations_data.js",
+    "rows_inserted": 0,
+    "question_ids": [
+      14000,
+      14242
+    ],
+    "existing_rows_overwritten": 0,
+    "schema_changed": false,
+    "website_deployed": false,
+    "status": "pending-authorization",
+    "error": "Supabase returned HTTP 401 for the configured publishable key; it has no database write authorization."
+  },
+  "images": "assets/questions/maths_differential_equations/",
+  "notes": [
+    "The PDF's 23 out-of-syllabus questions (Q244-Q266) are excluded.",
+    "Question images are source-faithful page crops preserving formulas and options.",
+    "Answers were transcribed from the printed key; Q12 has no answer and is flagged for manual review.",
+    "Numeric answers follow the simulator's integer response format.",
+    "Supabase rows were not inserted because the available publishable key has no write authorization.",
+    "Question image assets require static-site deployment to be served by the hosted website."
+  ]
+}
