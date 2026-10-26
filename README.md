@@ -177,3 +177,14 @@ Choose **Class 11 -> Chemistry -> GOC** to practise the combined chapter. The lo
 The answer keys were transcribed from the PDF and stored with each question; they have not all been independently re-solved. The import audit is in `BIOLOGY_3_CHAPTERS_IMPORT_QA.json`; the local source records are in `biology_three_chapters_data.json`.
 
 Choose **Class 11 -> Biology** to practise these questions. Biology is also available in subject combinations and All Subjects; Class 12 filtering excludes these Class 11 questions.
+
+## Added Class 12 Mathematics chapter: Differential Equations
+
+The supplied `JEE Main Differential Equations Previous Year Questions with Answer Key (1).pdf` adds 243 in-syllabus questions to `differential_equations_data.js`, with question crops in `assets/questions/maths_differential_equations/`.
+
+- 193 single-correct MCQs and 50 numerical questions from 2002–2026.
+- The 23 questions marked out of syllabus in the PDF (Q244–Q266) are excluded.
+- Q12 is flagged and left unscored because the printed key says “Scan QR” instead of giving an answer.
+- Answers were transcribed from the printed key and have not all been independently re-solved. See `DIFFERENTIAL_EQUATIONS_IMPORT_QA.json`.
+
+Choose **Class 12 -> Maths -> Differential Equations** to practise this chapter locally. Supabase sync is pending because the configured publishable key has no write authorization. The image assets need a static-site deployment before the hosted site can serve them.
