@@ -164,7 +164,7 @@ Choose **Class 11 -> Chemistry -> Chemical Equilibrium** to practise it locally.
 - Basics of Organic Chemistry Q310 is marked out of syllabus in the source; it remains visible but is not scored.
 - Answers were transcribed from the printed keys and have not all been independently re-solved. See `GOC_IMPORT_QA.json`.
 
-Choose **Class 11 -> Chemistry -> GOC** to practise the combined chapter. The local bank is available even if Supabase is unreachable; Supabase sync is still pending.
+Choose **Class 11 -> Chemistry -> GOC** to practise the combined chapter. Its 316 question records are synced to Supabase; the local bank remains available if Supabase is unreachable.
 
 ## Added NEET Biology chapters
 
@@ -187,4 +187,4 @@ The supplied `JEE Main Differential Equations Previous Year Questions with Answe
 - Q12 is flagged and left unscored because the printed key says “Scan QR” instead of giving an answer.
 - Answers were transcribed from the printed key and have not all been independently re-solved. See `DIFFERENTIAL_EQUATIONS_IMPORT_QA.json`.
 
-Choose **Class 12 -> Maths -> Differential Equations** to practise this chapter locally. Supabase sync is pending because the configured publishable key has no write authorization. The image assets need a static-site deployment before the hosted site can serve them.
+Choose **Class 12 -> Maths -> Differential Equations** to practise this chapter. Its 243 question records are synced to Supabase. The image assets still need a static-site deployment before the hosted site can serve them.

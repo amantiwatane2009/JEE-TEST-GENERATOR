@@ -42,7 +42,8 @@ async function loadQuestionBank() {
 const localQuestions = [
   ...(window.CHEMICAL_EQUILIBRIUM_QUESTIONS || []),
   ...(window.GOC_QUESTIONS || []),
-  ...(window.MATHS_DIFFERENTIAL_EQUATIONS_QUESTIONS || [])
+  ...(window.MATHS_DIFFERENTIAL_EQUATIONS_QUESTIONS || []),
+  ...(window.RESPIRATION_IN_PLANTS_QUESTIONS || [])
 ];
 window.JEE_BANK_READY = loadQuestionBank()
   .then(questions => [...questions, ...localQuestions])

@@ -1,0 +1,75 @@
+{
+  "source_pdf": "NEET Respiration in Plants Previous Year Questions with Answer Key.pdf",
+  "sourceId": "neet-biology-respiration-in-plants-pdf",
+  "class": 11,
+  "subject": "Biology",
+  "chapter": "Respiration in Plants",
+  "questionCount": 74,
+  "questionIdRange": [
+    14243,
+    14316
+  ],
+  "yearRange": [
+    1988,
+    2026
+  ],
+  "yearCounts": {
+    "2026": 3,
+    "2025": 1,
+    "2024": 4,
+    "2023": 4,
+    "2022": 4,
+    "2021": 1,
+    "2020": 2,
+    "2019": 3,
+    "2018": 2,
+    "2017": 1,
+    "2016": 2,
+    "2015": 1,
+    "2014": 1,
+    "2013": 2,
+    "2011": 1,
+    "2010": 1,
+    "2009": 1,
+    "2008": 2,
+    "2007": 2,
+    "2006": 1,
+    "2005": 1,
+    "2004": 1,
+    "2003": 2,
+    "2002": 2,
+    "2001": 1,
+    "1999": 1,
+    "1997": 4,
+    "1996": 3,
+    "1994": 4,
+    "1993": 3,
+    "1992": 7,
+    "1990": 4,
+    "1988": 2
+  },
+  "questionType": "single-correct MCQ",
+  "sourcePages": [
+    2,
+    15
+  ],
+  "imagesExtracted": 74,
+  "answerKeyEntries": 74,
+  "questionDataFile": "respiration_in_plants_data.js",
+  "imageDirectory": "assets/questions/biology/respiration_in_plants/",
+  "validation": {
+    "uniqueIds": true,
+    "uniqueImages": true,
+    "allAnswerKeysPresent": true,
+    "allClass11": true,
+    "allQuestionsHaveYear": true,
+    "allImagesExist": true
+  },
+  "answerKeyNote": "Answer letters were transcribed from the supplied PDF answer key and have not all been independently re-solved.",
+  "supabase_sync": {
+    "performed": false,
+    "inserted_rows": 0,
+    "reason": "The anonymous role is denied by the jee_questions row-level security policy (HTTP 401, Postgres 42501); no server-side credential is available in this session.",
+    "source_file": "respiration_in_plants_data.js"
+  }
+}
