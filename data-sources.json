@@ -112,6 +112,88 @@
       "notes": "Available locally in Class 11 Chemistry and synced to public.jee_questions as 127 rows under source_file chemical_equilibrium_data.js. Question images are under assets/questions/chemical_equilibrium/. Answers were transcribed from the PDF key and have not all been independently re-solved. Q122 accepts 72 to 75; Q127 is multiple-correct with A,B. The local chapter remains usable if Supabase is unavailable. Static website deployment is separate. See CHEMICAL_EQUILIBRIUM_IMPORT_QA.json."
     },
     {
+      "sourceId": "jee-main-chemistry-hydrocarbons-haloalkanes-pyq-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "ilovepdf_merged (2).pdf",
+      "questionBankFile": "hydrocarbons_haloalkanes_data.js",
+      "questionCount": 390,
+      "questionIdRange": [
+        14317,
+        14706
+      ],
+      "chapters": [
+        {
+          "name": "Hydrocarbons",
+          "class": 11,
+          "count": 188
+        },
+        {
+          "name": "Haloalkanes and Haloarenes",
+          "class": 12,
+          "count": 202
+        }
+      ],
+      "questionTypes": {
+        "Hydrocarbons": {
+          "single_correct_mcq": 158,
+          "numerical": 28,
+          "multiple_correct_mcq": 2
+        },
+        "Haloalkanes and Haloarenes": {
+          "single_correct_mcq": 189,
+          "numerical": 13
+        }
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "notes": "The merged ExamGOAL PDF contains Class 11 Hydrocarbons and Class 12 Haloalkanes and Haloarenes. All 390 questions are available locally. Supabase sync is pending because the configured publishable key has read-only access (HTTP 401 on insert). Question images are in assets/questions/hydrocarbons/ and assets/questions/haloalkanes_haloarenes/. Answers were transcribed from the printed key and have not all been independently re-solved. Hydrocarbons Q167 accepts either 8 or 6. See HYDROCARBONS_HALOALKANES_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-chemistry-organic-chapters-pyq-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "class": 12,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "ilovepdf_merged (4).pdf",
+      "questionBankFile": "alcohols_aldehydes_data.js",
+      "questionCount": 494,
+      "questionIdRange": [
+        14707,
+        15200
+      ],
+      "chapters": [
+        {
+          "name": "Alcohols, Phenols and Ethers",
+          "class": 12,
+          "count": 203
+        },
+        {
+          "name": "Aldehydes, Ketones and Carboxylic Acids",
+          "class": 12,
+          "count": 291
+        }
+      ],
+      "questionTypes": {
+        "Alcohols, Phenols and Ethers": {
+          "single_correct_mcq": 187,
+          "numerical": 14,
+          "multiple_correct_mcq": 2
+        },
+        "Aldehydes, Ketones and Carboxylic Acids": {
+          "single_correct_mcq": 260,
+          "numerical": 27,
+          "multiple_correct_mcq": 4
+        }
+      },
+      "notes": "Both chapters are loaded locally with source-page crops and printed answer keys. Images are under assets/questions/alcohols_phenols_ethers/ and assets/questions/aldehydes_ketones_carboxylic_acids/. Answers have not all been independently re-solved. Supabase sync is pending because the configured key previously returned HTTP 401 on insert. See ALCOHOLS_ALDEHYDES_IMPORT_QA.json."
+    },
+    {
       "sourceId": "neet-biology-3-chapters-pdf",
       "year": null,
       "subject": "Biology",

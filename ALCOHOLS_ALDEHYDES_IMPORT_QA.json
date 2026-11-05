@@ -1,0 +1,137 @@
+{
+  "source_pdf": "ilovepdf_merged (4).pdf",
+  "sourceId": "jee-main-chemistry-organic-chapters-pyq-pdf",
+  "question_data_file": "alcohols_aldehydes_data.js",
+  "question_count": 494,
+  "chapters": [
+    {
+      "chapter": "Alcohols, Phenols and Ethers",
+      "class": 12,
+      "subject": "Chemistry",
+      "questions": 203,
+      "question_types": {
+        "mcq": 187,
+        "integer": 14,
+        "multi": 2
+      },
+      "answer_missing_or_unparsed": [],
+      "flagged_unscored": [],
+      "year_range": [
+        2003,
+        2026
+      ],
+      "question_pdf_pages": [
+        2,
+        136
+      ],
+      "answer_key_pdf_pages": [
+        137,
+        138
+      ],
+      "question_id_range": [
+        14707,
+        14909
+      ],
+      "images": "assets/questions/alcohols_phenols_ethers/",
+      "questions_with_page_continuations": [
+        {
+          "question_no": 38,
+          "pdf_pages": [
+            23,
+            24
+          ]
+        },
+        {
+          "question_no": 83,
+          "pdf_pages": [
+            59,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+      "class": 12,
+      "subject": "Chemistry",
+      "questions": 291,
+      "question_types": {
+        "mcq": 260,
+        "integer": 27,
+        "multi": 4
+      },
+      "answer_missing_or_unparsed": [],
+      "flagged_unscored": [],
+      "year_range": [
+        2002,
+        2026
+      ],
+      "question_pdf_pages": [
+        141,
+        338
+      ],
+      "answer_key_pdf_pages": [
+        339,
+        340
+      ],
+      "question_id_range": [
+        14910,
+        15200
+      ],
+      "images": "assets/questions/aldehydes_ketones_carboxylic_acids/",
+      "questions_with_page_continuations": [
+        {
+          "question_no": 7,
+          "pdf_pages": [
+            144,
+            145
+          ]
+        },
+        {
+          "question_no": 86,
+          "pdf_pages": [
+            205,
+            206
+          ]
+        },
+        {
+          "question_no": 103,
+          "pdf_pages": [
+            221,
+            222
+          ]
+        },
+        {
+          "question_no": 174,
+          "pdf_pages": [
+            276,
+            277
+          ]
+        },
+        {
+          "question_no": 288,
+          "pdf_pages": [
+            337,
+            338
+          ]
+        }
+      ]
+    }
+  ],
+  "supabase_sync": {
+    "performed": false,
+    "attempted": false,
+    "target_table": "public.jee_questions",
+    "source_file": "alcohols_aldehydes_data.js",
+    "rows_inserted": 0,
+    "existing_rows_overwritten": 0,
+    "reason": "Not attempted: the configured publishable key previously returned HTTP 401 on insert; questions are available from the local bank."
+  },
+  "notes": [
+    "Question images are color crops from the supplied PDF. Questions split by a page break include the continuation page crop.",
+    "source_page is the physical page number in the supplied merged PDF.",
+    "Answers were transcribed from the printed key and have not all been independently re-solved.",
+    "The printed numerical answer range for Aldehydes, Ketones and Carboxylic Acids Q287 is preserved; the app accepts values within the range.",
+    "Supabase sync and deployment were not performed."
+  ]
+}

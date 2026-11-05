@@ -1,0 +1,84 @@
+{
+  "source_pdf": "ilovepdf_merged (2).pdf",
+  "sourceId": "jee-main-chemistry-hydrocarbons-haloalkanes-pyq-pdf",
+  "question_data_file": "hydrocarbons_haloalkanes_data.js",
+  "question_count": 390,
+  "chapters": [
+    {
+      "chapter": "Hydrocarbons",
+      "class": 11,
+      "subject": "Chemistry",
+      "questions": 188,
+      "question_types": {
+        "mcq": 158,
+        "integer": 28,
+        "multi": 2
+      },
+      "answer_missing_or_unparsed": [],
+      "flagged_unscored": [],
+      "year_range": [
+        2002,
+        2026
+      ],
+      "question_pdf_pages": [
+        2,
+        113
+      ],
+      "answer_key_pdf_pages": [
+        114,
+        115
+      ],
+      "question_id_range": [
+        14317,
+        14504
+      ],
+      "images": "assets/questions/hydrocarbons/"
+    },
+    {
+      "chapter": "Haloalkanes and Haloarenes",
+      "class": 12,
+      "subject": "Chemistry",
+      "questions": 202,
+      "question_types": {
+        "mcq": 189,
+        "integer": 13
+      },
+      "answer_missing_or_unparsed": [],
+      "flagged_unscored": [],
+      "year_range": [
+        2002,
+        2026
+      ],
+      "question_pdf_pages": [
+        118,
+        253
+      ],
+      "answer_key_pdf_pages": [
+        254,
+        255
+      ],
+      "question_id_range": [
+        14505,
+        14706
+      ],
+      "images": "assets/questions/haloalkanes_haloarenes/"
+    }
+  ],
+  "supabase_sync": {
+    "performed": false,
+    "attempted": true,
+    "target_table": "public.jee_questions",
+    "source_file": "hydrocarbons_haloalkanes_data.js",
+    "rows_inserted": 0,
+    "existing_rows_overwritten": 0,
+    "http_status": 401,
+    "reason": "The configured publishable key has read-only access."
+  },
+  "notes": [
+    "The source is one merged PDF: Hydrocarbons occupies merged PDF pages 1-116; Haloalkanes and Haloarenes occupies pages 117-255.",
+    "Each question image is a source-faithful color crop; diagrams, options, watermarks, and printed question numbering are retained.",
+    "source_page records the physical page number in the supplied merged PDF, not the chapter-local printed page number.",
+    "Answers are transcribed from the printed answer keys and have not all been independently re-solved.",
+    "Hydrocarbons Q167 preserves both printed accepted values, 8 or 6; the simulator scorer supports either value."
+  ]
+}

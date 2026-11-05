@@ -188,3 +188,25 @@ The supplied `JEE Main Differential Equations Previous Year Questions with Answe
 - Answers were transcribed from the printed key and have not all been independently re-solved. See `DIFFERENTIAL_EQUATIONS_IMPORT_QA.json`.
 
 Choose **Class 12 -> Maths -> Differential Equations** to practise this chapter. Its 243 question records are synced to Supabase. The image assets still need a static-site deployment before the hosted site can serve them.
+
+## Added Chemistry chapters: Hydrocarbons and Haloalkanes and Haloarenes
+
+The supplied merged ExamGOAL PDF adds two image-backed chapters in `hydrocarbons_haloalkanes_data.js`:
+
+- **Class 11 Hydrocarbons:** 188 questions (158 single-correct MCQs, 28 numerical, and 2 multiple-correct MCQs).
+- **Class 12 Haloalkanes and Haloarenes:** 202 questions (189 single-correct MCQs and 13 numerical).
+
+Question crops are in `assets/questions/hydrocarbons/` and `assets/questions/haloalkanes_haloarenes/`. Printed question numbers, source pages, years, shifts, and answer keys are preserved. Hydrocarbons Q167 accepts either printed answer, 8 or 6; both are scored as correct. The answer keys were transcribed from the PDF and have not all been independently re-solved. See `HYDROCARBONS_HALOALKANES_IMPORT_QA.json`.
+
+Both chapters are loaded locally. Supabase sync is pending because the configured publishable key has read-only access (HTTP 401 on insert). Deploy the static site separately for hosted users to receive the new question images.
+
+## Added Class 12 Chemistry chapters: Alcohols and Carbonyl Compounds
+
+The supplied ExamGOAL PDF adds two image-backed chapters in `alcohols_aldehydes_data.js`:
+
+- **Alcohols, Phenols and Ethers:** 203 questions (187 single-correct MCQs, 14 numerical, and 2 multiple-correct MCQs).
+- **Aldehydes, Ketones and Carboxylic Acids:** 291 questions (260 single-correct MCQs, 27 numerical, and 4 multiple-correct MCQs).
+
+Question crops are in `assets/questions/alcohols_phenols_ethers/` and `assets/questions/aldehydes_ketones_carboxylic_acids/`. Printed question numbers, source pages, years, shifts, and answer keys are preserved, including questions split across page breaks. The printed numerical answer range for Aldehydes, Ketones and Carboxylic Acids Q287 is retained and accepted by the scorer. Answers were transcribed from the PDF and have not all been independently re-solved. See `ALCOHOLS_ALDEHYDES_IMPORT_QA.json`.
+
+Both chapters are available from the local question bank. Supabase sync is pending because the configured key previously returned HTTP 401 on insert. Deploy the static site separately for hosted users to receive the new question images.

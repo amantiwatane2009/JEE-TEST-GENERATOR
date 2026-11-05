@@ -42,7 +42,7 @@ function saveHistory(x){const h=history();h.unshift(x);localStorage.setItem(KEY,
 function subjectDisplayName(subject){return subject==='Maths'?'Mathematics':subject==='all'?'All Subjects':subject;}
 function selectedExamLabel(){return selectedSubject==='Biology'?'NEET':selectedSubject==='Physics'||selectedSubject==='Chemistry'||selectedSubject==='Maths'?'JEE Main':'JEE/NEET';}
 function norm(s){return String(s??'').trim().replace(/\s+/g,'').replace(/,/g,'').toLowerCase()}
-function sameAns(a,b){const x=norm(a),raw=String(b??'').trim();if(x===' '||x===''||raw==='')return false;if(x===norm(raw))return true;const range=raw.match(/^\s*(-?\d+(?:\.\d+)?)\s+to\s+(-?\d+(?:\.\d+)?)\s*$/i);const nx=Number(x);if(range&&Number.isFinite(nx)){const lo=Number(range[1]),hi=Number(range[2]);return nx>=Math.min(lo,hi)-1e-9&&nx<=Math.max(lo,hi)+1e-9}const ny=Number(norm(raw));return Number.isFinite(nx)&&Number.isFinite(ny)&&Math.abs(nx-ny)<1e-9}
+function sameAns(a,b){const x=norm(a),raw=String(b??'').trim();if(x===' '||x===''||raw==='')return false;if(x===norm(raw))return true;const alternatives=raw.split(/\s+or\s+/i);if(alternatives.length>1)return alternatives.some(answer=>sameAns(a,answer));const range=raw.match(/^\s*(-?\d+(?:\.\d+)?)\s+to\s+(-?\d+(?:\.\d+)?)\s*$/i);const nx=Number(x);if(range&&Number.isFinite(nx)){const lo=Number(range[1]),hi=Number(range[2]);return nx>=Math.min(lo,hi)-1e-9&&nx<=Math.max(lo,hi)+1e-9}const ny=Number(norm(raw));return Number.isFinite(nx)&&Number.isFinite(ny)&&Math.abs(nx-ny)<1e-9}
 function isMcq(q){return q.type==='mcq'||q.type==='multi'}
 function isMultiSelect(q){return q.type==='multi'}
 function isIntegerQuestion(q){return q.type==='integer'}
