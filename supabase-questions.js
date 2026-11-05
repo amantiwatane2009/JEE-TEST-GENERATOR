@@ -47,7 +47,9 @@ const localQuestions = [
   ...(window.HYDROCARBONS_QUESTIONS || []),
   ...(window.HALOALKANES_HALOARENES_QUESTIONS || []),
   ...(window.ALCOHOLS_PHENOLS_ETHERS_QUESTIONS || []),
-  ...(window.ALDEHYDES_KETONES_CARBOXYLIC_ACIDS_QUESTIONS || [])
+  ...(window.ALDEHYDES_KETONES_CARBOXYLIC_ACIDS_QUESTIONS || []),
+  ...(window.BIOMOLECULES_QUESTIONS || []),
+  ...(window.COMPOUNDS_CONTAINING_NITROGEN_QUESTIONS || [])
 ];
 window.JEE_BANK_READY = loadQuestionBank()
   .then(questions => [...questions, ...localQuestions])

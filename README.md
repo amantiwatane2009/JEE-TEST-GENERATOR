@@ -63,7 +63,7 @@ The immediate focus is reliability: preserving question layouts, improving image
 ## Acknowledgements
 
 - **Physics question PDFs:** Credit and thanks to **[Eduniti](https://www.youtube.com/@mohitgoenka99)** for creating and sharing the Physics question PDFs used as a source for this project. [Access the PDF collection on Google Drive](https://drive.google.com/drive/folders/1785MiemoRxcc3o6dto6DKCdEfcW70gO_).
-- **Chemical Kinetics question PDF:** Credit to **[ExamGOAL PDF Library](https://pdf.questions.examgoal.com/)** as the source of the Chemical Kinetics question PDF used for this project.
+- **Chemistry question PDFs:** Credit to **[ExamGOAL PDF Library](https://pdf.questions.examgoal.com/)** as the source of the Chemical Kinetics, Biomolecules, and Compounds Containing Nitrogen question PDFs used for this project.
 - **Biology question PDF:** Credit to **[ExamGOAL PDF Library](https://pdf.questions.examgoal.com/)** as the source of the NEET Biology chapter-wise PYQs used for this project.
 
 The PDFs are credited to their respective sources; this project is an independent practice tool.
@@ -210,3 +210,27 @@ The supplied ExamGOAL PDF adds two image-backed chapters in `alcohols_aldehydes_
 Question crops are in `assets/questions/alcohols_phenols_ethers/` and `assets/questions/aldehydes_ketones_carboxylic_acids/`. Printed question numbers, source pages, years, shifts, and answer keys are preserved, including questions split across page breaks. The printed numerical answer range for Aldehydes, Ketones and Carboxylic Acids Q287 is retained and accepted by the scorer. Answers were transcribed from the PDF and have not all been independently re-solved. See `ALCOHOLS_ALDEHYDES_IMPORT_QA.json`.
 
 Both chapters are available from the local question bank. Supabase sync is pending because the configured key previously returned HTTP 401 on insert. Deploy the static site separately for hosted users to receive the new question images.
+
+## Added Class 12 Chemistry chapter: Biomolecules
+
+The supplied `JEE Main Biomolecules Previous Year Questions with Answer Key.pdf` is integrated in `biomolecules_data.js`, with one source-faithful image crop per question under `assets/questions/biomolecules/`.
+
+- **214 in-syllabus questions:** 191 single-correct MCQs and 23 numerical questions, covering 2002-2026.
+- **Out of syllabus:** Q215 and Q216 are retained for reference and marked unscored because the source labels them out of syllabus.
+- Question IDs are 15201-15416. `BIOMOLECULES_IMPORT_QA.json` records the counts, answer mapping, and source pages.
+- The local question bank is merged with Supabase results in the browser and remains available if Supabase is unreachable. Supabase sync is pending because the configured publishable key returned HTTP 401 on upsert. The hosted website needs a separate deployment to serve the new data and images.
+- Answers were transcribed from the printed key and have not all been independently re-solved.
+
+Choose **Class 12 -> Chemistry -> Biomolecules** to practise this bank locally.
+
+## Added Class 12 Chemistry chapter: Compounds Containing Nitrogen
+
+The supplied `JEE Main Compounds Containing Nitrogen Previous Year Questions with Answer Key.pdf` is integrated in `compounds_containing_nitrogen_data.js`, with one source-faithful image crop per question under `assets/questions/compounds_containing_nitrogen/`.
+
+- 265 questions from 2002-2026: 237 single-correct MCQs and 28 numerical questions.
+- Question IDs are 15417-15681. Q24, Q38, Q66, Q101, Q172, and Q190 include content that continues across PDF pages.
+- Q265 preserves the printed accepted range, 37.80 to 38.20, supported by the simulator's numerical range scoring.
+- The local question bank is merged with Supabase results and remains available if Supabase is unreachable. The hosted website needs a separate deployment to serve the new data and images.
+- Answers were transcribed from the printed key and have not all been independently re-solved. See `COMPOUNDS_CONTAINING_NITROGEN_IMPORT_QA.json`.
+
+Choose **Class 12 -> Chemistry -> Compounds Containing Nitrogen** to practise this bank locally.

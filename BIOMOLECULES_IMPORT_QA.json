@@ -1,0 +1,58 @@
+{
+  "source_pdf": "JEE Main Biomolecules Previous Year Questions with Answer Key.pdf",
+  "sourceId": "jee-main-biomolecules-pyq-pdf",
+  "chapter": "Biomolecules",
+  "class": 12,
+  "subject": "Chemistry",
+  "questions": 216,
+  "in_syllabus_questions": 214,
+  "types": {
+    "mcq": 193,
+    "integer": 23
+  },
+  "answer_missing_or_unparsed": [],
+  "flagged_out_of_syllabus": [
+    {
+      "question_no": 215,
+      "answer": "A"
+    },
+    {
+      "question_no": 216,
+      "answer": "B"
+    }
+  ],
+  "year_range": [
+    2002,
+    2026
+  ],
+  "question_pdf_pages": [
+    2,
+    76
+  ],
+  "answer_key_pdf_pages": [
+    77,
+    78
+  ],
+  "question_ids": [
+    15201,
+    15416
+  ],
+  "image_directory": "assets/questions/biomolecules/",
+  "question_data_file": "biomolecules_data.js",
+  "supabase_sync": {
+    "performed": false,
+    "attempted": true,
+    "target_table": "public.jee_questions",
+    "source_file": "biomolecules_data.js",
+    "rows_inserted": 0,
+    "existing_rows_overwritten": 0,
+    "http_status": 401,
+    "reason": "The configured publishable key is read-only; a write-capable Supabase credential is not available in this environment."
+  },
+  "notes": [
+    "Question crops preserve the source color, formulas, tables, and QR codes; Q35 is composed from its continuation across two PDF pages.",
+    "Q215 and Q216 are marked out of syllabus by the source; they remain visible and are excluded from scoring.",
+    "Answers are transcribed from the printed answer key and have not all been independently re-solved.",
+    "source_page records the physical page in the supplied PDF."
+  ]
+}

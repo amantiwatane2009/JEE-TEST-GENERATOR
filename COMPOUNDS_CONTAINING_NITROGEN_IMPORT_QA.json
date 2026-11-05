@@ -1,0 +1,49 @@
+{
+  "source_pdf": "JEE Main Compounds Containing Nitrogen Previous Year Questions with Answer Key.pdf",
+  "sourceId": "jee-main-compounds-containing-nitrogen-pyq-pdf",
+  "chapter": "Compounds Containing Nitrogen",
+  "class": 12,
+  "subject": "Chemistry",
+  "questions": 265,
+  "types": {
+    "mcq": 237,
+    "integer": 28
+  },
+  "answer_missing_or_unparsed": [],
+  "year_range": [
+    2002,
+    2026
+  ],
+  "question_pdf_pages": [
+    2,
+    171
+  ],
+  "answer_key_pdf_pages": [
+    172,
+    173
+  ],
+  "questions_with_page_continuations": [
+    24,
+    38,
+    66,
+    101,
+    172,
+    190
+  ],
+  "question_ids": [
+    15417,
+    15681
+  ],
+  "image_directory": "assets/questions/compounds_containing_nitrogen/",
+  "question_data_file": "compounds_containing_nitrogen_data.js",
+  "supabase_sync": {
+    "performed": false,
+    "reason": "The chapter is registered as a local question bank; the configured browser key is read-only."
+  },
+  "notes": [
+      "Question crops preserve source color, formulas, tables, and QR codes; Q24, Q38, Q66, Q101, Q172, and Q190 include continuation content from adjacent PDF pages.",
+    "The printed key range for Q265 (37.80 to 38.20) is retained and accepted by the simulator range scorer.",
+    "Answers are transcribed from the printed answer key and have not all been independently re-solved.",
+    "source_page records the physical page in the supplied PDF."
+  ]
+}
