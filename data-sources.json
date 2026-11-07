@@ -46,7 +46,7 @@
       "originalFilename": "JEE Main d and f Block Elements Previous Year Questions with Answer Key(1).pdf",
       "questionBankFile": "d_f_block_data.js",
       "questionCount": 245,
-      "notes": "Integrated as a separate question bank. Image crops preserve the printed source. Q108 answer key says Scan QR and remains flagged/excluded from scoring. Q245 supports multiple selection and is scored."
+      "notes": "Integrated as a separate question bank. Image crops preserve the printed source. Q108's QR-only key is handled as an unflagged bonus question: any non-empty response scores. Q245 supports multiple selection and is scored."
     },
     {
       "sourceId": "jee-main-maths-integration-aoi-pyq-pdf",
@@ -67,11 +67,60 @@
       "class": 12,
       "chapter": "Vector Algebra",
       "sourceType": "PYQ",
-      "status": "active",
+      "status": "imported-local-needs-answer-key-mapping",
       "includedQuestions": 225,
       "excludedOutOfSyllabusQuestions": 56,
       "sourceFile": "Vector_Algebra_JEE_Main_PYQs_Clean_BW.pdf",
-      "notes": "176 MCQs and 49 numerical questions. Answer key OCR-imported; verify answers before relying on scoring."
+      "questionBankFile": "vector_algebra_data.js",
+      "questionCount": 225,
+      "questionIdRange": [
+        11245,
+        11469
+      ],
+      "notes": "Loaded locally for Class 12 Maths practice. 100 of 225 questions have blank answer fields and remain unscored until their keys are mapped."
+    },
+    {
+      "sourceId": "jee-main-maths-straight-lines-conics-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-key-mapping",
+      "originalFilename": "stl lines + conics .pdf",
+      "questionBankFile": "maths_straight_lines_conics_data.js",
+      "questionCount": 732,
+      "questionIdRange": [
+        12000,
+        12731
+      ],
+      "chapters": [
+        {
+          "name": "Straight Lines",
+          "class": 11,
+          "count": 179
+        },
+        {
+          "name": "Circles",
+          "class": 11,
+          "count": 187
+        },
+        {
+          "name": "Parabola",
+          "class": 11,
+          "count": 152
+        },
+        {
+          "name": "Ellipse",
+          "class": 11,
+          "count": 117
+        },
+        {
+          "name": "Hyperbola",
+          "class": 11,
+          "count": 97
+        }
+      ],
+      "notes": "Loaded locally for Class 11 Maths practice with image crops under assets/questions/maths_straight_lines_conics/. All 732 answer fields are blank and remain unscored until their keys are mapped. See MATHS_STRAIGHT_LINES_CONICS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-ionic-equilibrium-pyq-pdf",
@@ -260,6 +309,124 @@
       "notes": "The three source sections are combined under the requested single chapter GOC. Question images are in assets/questions/goc/. Basics of Organic Chemistry Q310 is marked out of syllabus and remains visible but unscored. Supabase sync is still pending. Answer keys were transcribed from the PDF and have not all been independently re-solved. See GOC_IMPORT_QA.json."
     },
     {
+      "sourceId": "jee-main-chemistry-bonding-periodic-salt-analysis-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "class": 11,
+      "classes": [
+        11,
+        12
+      ],
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "chem bonding + periodic table + salt analysis.pdf",
+      "questionBankFile": "chemistry_bonding_periodic_salt_data.js",
+      "questionCount": 556,
+      "questionIdRange": [
+        15682,
+        16237
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 477,
+        "numerical": 76,
+        "multiple_correct_mcq": 3
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "chaptersCombined": [
+        {
+          "name": "Periodic Table & Periodicity",
+          "class": 11,
+          "count": 179,
+          "flaggedOutOfSyllabus": [
+            179
+          ]
+        },
+        {
+          "name": "Chemical Bonding & Molecular Structure",
+          "class": 11,
+          "count": 309
+        },
+        {
+          "name": "Salt Analysis",
+          "classes": [
+            11,
+            12
+          ],
+          "count": 68,
+          "flaggedOutOfSyllabus": [
+            67,
+            68
+          ]
+        }
+      ],
+      "notes": "Question images are under assets/questions/periodic-table/, assets/questions/chemical-bonding/, and assets/questions/salt-analysis/. Chemical Bonding Q23 spans two source pages and is kept as one image. Salt Analysis questions are shared by Class 11 and Class 12 without duplicate records. The source-marked out-of-syllabus questions remain visible and unscored. Answers were transcribed from the printed key and have not all been independently re-solved. Supabase was not modified. See CHEMISTRY_BONDING_PERIODIC_SALT_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-chemistry-s-block-p-block-coordination-compounds-pyq-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "class": 11,
+      "classes": [
+        11,
+        12
+      ],
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "COORDINATION + S BLOCK + P BLOCK.pdf",
+      "questionBankFile": "chemistry_s_p_block_coordination_data.js",
+      "questionCount": 791,
+      "questionIdRange": [
+        16238,
+        17028
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 684,
+        "numerical": 105,
+        "multiple_correct_mcq": 2
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "chaptersCombined": [
+        {
+          "name": "s-Block Elements",
+          "class": 11,
+          "count": 129,
+          "flaggedOutOfSyllabus": [
+            1,
+            129
+          ]
+        },
+        {
+          "name": "p-Block Elements",
+          "class": 11,
+          "count": 282,
+          "flaggedOutOfSyllabus": [
+            135,
+            282
+          ],
+          "flaggedAnswerKeyIssues": [
+            243
+          ]
+        },
+        {
+          "name": "Coordination Compounds",
+          "class": 12,
+          "count": 380,
+          "flaggedAnswerKeyIssues": [
+            110,
+            174,
+            200
+          ]
+        }
+      ],
+      "notes": "Question images are under assets/questions/s_block/, assets/questions/p_block/, and assets/questions/coordination_compounds/. All s-Block questions and p-Block Q135-Q282 are marked out of syllabus in the source and remain visible but unscored. The printed key says Scan QR for p-Block Q243 and Coordination Compounds Q110, Q174, and Q200; these remain visible but unscored. Answers were transcribed from the printed key and have not all been independently re-solved. Supabase was not modified. See CHEMISTRY_S_P_BLOCK_COORDINATION_IMPORT_QA.json."
+    },
+    {
       "sourceId": "jee-main-maths-differential-equations-pyq-pdf",
       "year": null,
       "subject": "Maths",
@@ -290,6 +457,603 @@
         ]
       },
       "notes": "Available locally in Class 12 Maths; Supabase sync is pending because the configured publishable key has no write authorization. Question images are under assets/questions/maths_differential_equations/. Answers were transcribed from the printed key and have not all been independently re-solved; Q12 has no printed answer and remains flagged. See DIFFERENTIAL_EQUATIONS_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-chemistry-basic-concepts-structure-atom-redox-pyq-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "ilovepdf_merged (9).pdf",
+      "questionBankFile": "chemistry_basic_structure_redox_data.js",
+      "questionCount": 572,
+      "questionIdRange": [
+        17029,
+        17600
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 356,
+        "numerical": 216
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "outOfSyllabus": {
+        "count": 9,
+        "chapters": {
+          "Some Basic Concepts of Chemistry": [
+            251,
+            255
+          ],
+          "Structure of Atom": [
+            227,
+            230
+          ]
+        }
+      },
+      "notes": "Added as three Class 11 Chemistry chapters with source-faithful per-question image crops. The nine source-marked out-of-syllabus questions retain their tags and are scored using the printed keys. Answers have not all been independently re-solved. The question bank is loaded locally; Supabase was not modified. See CHEMISTRY_BASIC_STRUCTURE_REDOX_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-chemistry-chemical-thermodynamics-pyq-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main Thermodynamics Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "chemical_thermodynamics_data.js",
+      "questionCount": 243,
+      "questionIdRange": [
+        17601,
+        17843
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 141,
+        "numerical": 102
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "notes": "Added as Class 11 Chemistry Chemical Thermodynamics with source-page crops. The PDF does not mark any questions out of syllabus; all 243 printed answers are included and numerical ranges are preserved for scoring. Answers have not all been independently re-solved. The question bank loads locally; Supabase was not modified. See CHEMICAL_THERMODYNAMICS_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-functions-limits-differentiation-aod-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 11,
+      "classes": [
+        11,
+        12
+      ],
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "functions, limits, differentiation , aod .pdf",
+      "questionBankFile": "maths_functions_limits_differentiation_aod_data.js",
+      "questionCount": 823,
+      "questionIdRange": [
+        17844,
+        18666
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 678,
+        "numerical": 145
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "outOfSyllabus": {
+        "count": 71,
+        "chapters": {
+          "Differentiation": [
+            88
+          ],
+          "Application of Derivatives": [
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262
+          ]
+        }
+      },
+      "chaptersCombined": [
+        {
+          "name": "Functions",
+          "class": 11,
+          "count": 184
+        },
+        {
+          "name": "Limits",
+          "class": 11,
+          "count": 289,
+          "sourceTitle": "Limits, Continuity and Differentiability"
+        },
+        {
+          "name": "Differentiation",
+          "class": 12,
+          "count": 88,
+          "flaggedOutOfSyllabus": [
+            88
+          ],
+          "flaggedAnswerKeyIssues": [
+            9
+          ]
+        },
+        {
+          "name": "Application of Derivatives",
+          "class": 12,
+          "count": 262,
+          "flaggedOutOfSyllabus": [
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262
+          ],
+          "flaggedAnswerKeyIssues": [
+            52
+          ]
+        }
+      ],
+      "notes": "Adds Class 11 Functions and Limits plus Class 12 Differentiation and Application of Derivatives. The source marks Differentiation Q88 and Application of Derivatives Q193-Q262 out of syllabus; all have printed answers and remain scored. Differentiation Q9 and Application of Derivatives Q52 say Scan QR and remain unscored. No Supabase rows were written. See MATHS_FUNCTIONS_LIMITS_DIFFERENTIATION_AOD_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-trigonometric-equations-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main Trigonometric Equations Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "maths_trigonometry_data.js",
+      "chapter": "Trigonometry",
+      "questionCount": 66,
+      "questionIdRange": [
+        18667,
+        18732
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 49,
+        "numerical": 17
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "outOfSyllabus": {
+        "count": 45,
+        "chapters": {
+          "Trigonometry": [22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66]
+        }
+      },
+      "notes": "Added under the Class 11 Trigonometry chapter alongside Trigonometric Ratio and Identities. The source marks Q22-Q66 out of syllabus; all 45 have printed answers and remain scored. No Supabase rows were written. See MATHS_TRIGONOMETRY_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-trigonometric-ratio-identities-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main Trigonometric Ratio and Identites Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "maths_trigonometry_data.js",
+      "chapter": "Trigonometry",
+      "questionCount": 74,
+      "questionIdRange": [
+        18733,
+        18806
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 65,
+        "numerical": 9
+      },
+      "yearRange": [
+        2004,
+        2026
+      ],
+      "notes": "Combined with the Trigonometric Equations source under the Class 11 Trigonometry chapter, as requested. No Supabase rows were written. See MATHS_TRIGONOMETRY_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-inverse-trigonometric-functions-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 12,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main Inverse Trigonometric Functions Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "maths_trigonometry_data.js",
+      "chapter": "Inverse Trigonometric Functions",
+      "questionCount": 108,
+      "questionIdRange": [
+        18807,
+        18914
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 90,
+        "numerical": 17,
+        "multiple_correct_mcq": 1
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "outOfSyllabus": {
+        "count": 1,
+        "chapters": {
+          "Inverse Trigonometric Functions": [108]
+        }
+      },
+      "notes": "The source marks Q108 out of syllabus; its printed answer is included and it remains scored. Q107 is multiple-correct with printed answers A and D. No Supabase rows were written. See MATHS_TRIGONOMETRY_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-chemistry-chemical-kinetics-pyq-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "class": 12,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "questionBankFile": "chemical_kinetics_data.js",
+      "questionCount": 223,
+      "questionIdRange": [
+        18915,
+        19137
+      ],
+      "chapter": "Chemical Kinetics",
+      "notes": "Loaded locally with 223 answer-keyed questions and source-page crops under assets/questions/chemical_kinetics/. Answers were transcribed from the printed key and have not all been independently re-solved."
+    },
+    {
+      "sourceId": "jee-main-chemistry-solid-state-solutions-electrochemistry-pyq-pdf",
+      "year": null,
+      "subject": "Chemistry",
+      "class": 12,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "solid state+ solutions + electrochem.pdf",
+      "questionBankFile": "solid_state_solutions_electrochemistry_data.js",
+      "questionCount": 489,
+      "questionIdRange": [
+        19138,
+        19626
+      ],
+      "chapters": [
+        {
+          "name": "Solid State",
+          "class": 12,
+          "count": 69
+        },
+        {
+          "name": "Solutions",
+          "class": 12,
+          "count": 195
+        },
+        {
+          "name": "Electrochemistry",
+          "class": 12,
+          "count": 225
+        }
+      ],
+      "notes": "Loaded locally with image crops under assets/questions/solid_state/, assets/questions/solutions/, and assets/questions/electrochemistry/. Solid State is retained for optional legacy practice because the source marks it out of the current JEE Main syllabus. Solutions Q32 has no answer key and remains flagged/unscored. See CHEMISTRY_CHAPTERS_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-sets-logarithm-quadratic-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "sets + log + quadratic .pdf",
+      "questionBankFile": "maths_sets_log_quadratic_data.js",
+      "questionCount": 348,
+      "questionIdRange": [
+        19627,
+        19974
+      ],
+      "chapters": [
+        {
+          "name": "Sets and Relations",
+          "class": 11,
+          "count": 125
+        },
+        {
+          "name": "Logarithm",
+          "class": 11,
+          "count": 11
+        },
+        {
+          "name": "Quadratic Equation and Inequalities",
+          "class": 11,
+          "count": 212
+        }
+      ],
+      "questionTypes": {
+        "single_correct_mcq": 268,
+        "numerical": 80
+      },
+      "yearRange": [
+        2002,
+        2026
+      ],
+      "outOfSyllabus": {
+        "count": 1,
+        "chapters": {
+          "Quadratic Equation and Inequalities": [
+            212
+          ]
+        }
+      },
+      "notes": "All 348 printed answer-key entries are mapped. The source marks Quadratic Equation and Inequalities Q212 out of syllabus; its printed answer is 4 and it remains scored. Images are under assets/questions/maths_sets_log_quadratic/. The bank is local; no Supabase rows were written. See MATHS_SETS_LOG_QUADRATIC_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-sequences-and-series-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main Sequences and Series Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "maths_sequences_series_binomial_theorem_data.js",
+      "chapter": "Sequences and Series",
+      "questionCount": 341,
+      "questionIdRange": [19975, 20315],
+      "questionTypes": {
+        "single_correct_mcq": 263,
+        "numerical": 78
+      },
+      "yearRange": [2002, 2026],
+      "notes": "Question pages 2-52 and answer-key pages 53-55. Q231-Q341 are marked out of syllabus and remain scored when answered. Q164, Q240, and Q301 have Scan QR keys and remain unscored. See MATHS_SEQUENCES_BINOMIAL_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-binomial-theorem-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main Binomial Theorem Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "maths_sequences_series_binomial_theorem_data.js",
+      "chapter": "Binomial Theorem",
+      "questionCount": 268,
+      "questionIdRange": [20316, 20583],
+      "questionTypes": {
+        "single_correct_mcq": 179,
+        "numerical": 89
+      },
+      "yearRange": [2002, 2026],
+      "notes": "Question pages 2-41 and answer-key pages 42-43. Q193-Q268 are marked out of syllabus and remain scored when answered. Q39 has a Scan QR key and remains unscored. Q245-Q248 are MCQs; the numerical section begins at Q249. See MATHS_SEQUENCES_BINOMIAL_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-complex-numbers-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main Complex Numbers Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "chapter": "Complex Numbers",
+      "questionCount": 224,
+      "questionIdRange": [20584, 20807],
+      "questionTypes": { "single_correct_mcq": 185, "numerical": 39 },
+      "yearRange": [2002, 2026],
+      "outOfSyllabus": { "count": 1, "questionNumberRange": [224, 224] },
+      "notes": "Question pages 2-36; answer-key pages 37-38. Q224 is out of syllabus and remains scored using its printed key. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-3d-geometry-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 12,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main 3D Geometry Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "chapter": "3D Geometry",
+      "questionCount": 418,
+      "questionIdRange": [20808, 21225],
+      "questionTypes": { "single_correct_mcq": 331, "numerical": 87 },
+      "yearRange": [2002, 2026],
+      "outOfSyllabus": { "count": 219, "questionNumberRange": [200, 418] },
+      "notes": "Question pages 2-68; answer-key pages 69-71. Q200-Q418 are out of syllabus and remain scored using their printed keys. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-statistics-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main Statistics Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "chapter": "Statistics",
+      "questionCount": 160,
+      "questionIdRange": [21226, 21385],
+      "questionTypes": { "single_correct_mcq": 123, "numerical": 37 },
+      "yearRange": [2002, 2026],
+      "notes": "Question pages 2-28; answer-key pages 29-30. All 160 printed answer keys are mapped. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-matrices-determinants-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 12,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main Matrices and Determinants Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "chapter": "Matrices and Determinants",
+      "questionCount": 414,
+      "questionIdRange": [21386, 21799],
+      "questionTypes": { "single_correct_mcq": 334, "numerical": 80 },
+      "yearRange": [2002, 2026],
+      "outOfSyllabus": { "count": 57, "questionNumberRange": [358, 414] },
+      "notes": "Question pages 2-89; answer-key pages 90-92. Q358-Q414 are out of syllabus and remain scored. Q239 has a Scan QR key and remains unscored. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-permutations-combinations-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 11,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main Permutations and Combinations Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "chapter": "Permutations and Combinations",
+      "questionCount": 236,
+      "questionIdRange": [21800, 22035],
+      "questionTypes": { "single_correct_mcq": 140, "numerical": 96 },
+      "yearRange": [2002, 2026],
+      "notes": "Question pages 2-35; answer-key pages 36-37. Q106 has a Scan QR key and remains unscored. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
+    },
+    {
+      "sourceId": "jee-main-maths-probability-pyq-pdf",
+      "year": null,
+      "subject": "Maths",
+      "class": 12,
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilename": "JEE Main Probability Previous Year Questions with Answer Key.pdf",
+      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "chapter": "Probability",
+      "questionCount": 255,
+      "questionIdRange": [22036, 22290],
+      "questionTypes": { "single_correct_mcq": 219, "numerical": 36 },
+      "yearRange": [2002, 2026],
+      "outOfSyllabus": { "count": 39, "questionNumberRange": [217, 255] },
+      "notes": "Question pages 2-43; answer-key pages 44-45. Q217-Q255 are out of syllabus and remain scored using their printed keys. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
     }
   ],
   "questionMetadataContract": {
@@ -307,10 +1071,15 @@
       "type",
       "flagged"
     ],
+    "optional": [
+      "classes",
+      "out_of_syllabus"
+    ],
     "rules": [
       "Question IDs must be globally unique across all sources.",
       "Never overwrite existing questions when importing another PDF.",
       "Keep original source page and chapter numbering.",
+      "Use classes when one question bank belongs to more than one class; class remains its primary class.",
       "Use sourceId/year metadata for user-facing source filters; users still see one unified question bank.",
       "Flag ambiguous, bonus, unreadable, or unverified answers instead of treating them as verified.",
       "Image crops must contain exactly one complete question, including all options and diagrams."

@@ -1,0 +1,53 @@
+{
+  "source_pdf": "JEE Main Thermodynamics Previous Year Questions with Answer Key.pdf",
+  "sourceId": "jee-main-chemistry-chemical-thermodynamics-pyq-pdf",
+  "source_name": "JEE Main Chemistry Chemical Thermodynamics PYQs",
+  "question_count": 243,
+  "question_id_range": [
+    17601,
+    17843
+  ],
+  "chapters": [
+    {
+      "name": "Chemical Thermodynamics",
+      "class": [
+        11
+      ],
+      "question_count": 243,
+      "question_types": {
+        "numerical": 102,
+        "mcq": 141
+      },
+      "out_of_syllabus": [],
+      "source_pages": [
+        2,
+        65
+      ],
+      "answer_key_pages": [
+        66,
+        67
+      ],
+      "answer_key_entries": 243,
+      "year_range": [
+        2002,
+        2026
+      ],
+      "question_id_range": [
+        17601,
+        17843
+      ],
+      "image_directory": "assets/questions/chemical_thermodynamics/"
+    }
+  ],
+  "answer_missing_or_unparsed": [],
+  "supabase_sync": {
+    "performed": false,
+    "website_deployed": false
+  },
+  "notes": [
+    "Each question is represented by a source-page crop preserving its printed question number, attempt metadata, formulas, options, and diagrams.",
+    "The PDF does not mark any questions out of syllabus. All 243 printed answers are present; numerical answer ranges are preserved verbatim and supported by the app scorer.",
+    "Answers were transcribed from the printed key and have not all been independently re-solved.",
+    "The question bank is loaded locally; Supabase was not modified and the website was not deployed."
+  ]
+}

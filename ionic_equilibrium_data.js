@@ -1,4 +1,4 @@
-const IONIC_EQUILIBRIUM_QUESTIONS = [
+window.IONIC_EQUILIBRIUM_QUESTIONS = [
   {
     "id": 12732,
     "sourceId": "jee-main-ionic-equilibrium-pyq-pdf",

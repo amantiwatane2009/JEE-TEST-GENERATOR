@@ -10,19 +10,19 @@
     "numerical": 40,
     "multiple_correct_mcq": 1
   },
-  "flagged_questions": [
+  "answer_key_caveats": [
     {
       "question_no": 108,
-      "reason": "Answer key missing/QR-only; excluded from scoring"
+      "reason": "Answer key says Scan QR; represented as an unflagged bonus question. Any non-empty response is accepted for +4, while an unanswered question receives 0."
     }
   ],
   "answer_key_entries_parsed": 245,
   "question_images": 245,
   "notes": [
     "This is a source-faithful image-based import; not all scientific answers were independently re-solved.",
-    "Question 108 has no printed answer other than Scan QR in the supplied PDF.",
+    "Question 108 has no printed answer other than Scan QR in the supplied PDF and is modeled as a scored bonus question.",
     "Original source metadata is retained as printed, including the source typo in Q240 date.",
-    "Question 245 is implemented as a multi-select MCQ with exact-match scoring; it is no longer flagged or excluded from scoring."
+    "Question 245 is implemented as a multi-select MCQ with exact-match scoring."
   ],
   "multiple_correct_question": {
     "question_no": 245,

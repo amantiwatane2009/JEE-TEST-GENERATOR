@@ -1,0 +1,153 @@
+{
+  "source_pdf": "ilovepdf_merged (9).pdf",
+  "sourceId": "jee-main-chemistry-basic-concepts-structure-atom-redox-pyq-pdf",
+  "source_name": "JEE Main Chemistry Some Basic Concepts of Chemistry, Structure of Atom and Redox Reactions PYQs",
+  "question_count": 572,
+  "question_id_range": [
+    17029,
+    17600
+  ],
+  "chapters": [
+    {
+      "name": "Some Basic Concepts of Chemistry",
+      "class": [
+        11
+      ],
+      "question_count": 255,
+      "in_syllabus_question_count": 250,
+      "question_types": {
+        "mcq": 133,
+        "integer": 122
+      },
+      "out_of_syllabus": [
+        {
+          "question_no": 251,
+          "answer": "A"
+        },
+        {
+          "question_no": 252,
+          "answer": "B"
+        },
+        {
+          "question_no": 253,
+          "answer": "3"
+        },
+        {
+          "question_no": 254,
+          "answer": "8"
+        },
+        {
+          "question_no": 255,
+          "answer": "2120 to 2140"
+        }
+      ],
+      "source_pages": [
+        2,
+        44
+      ],
+      "answer_key_pages": [
+        45,
+        46
+      ],
+      "answer_key_entries": 255,
+      "year_range": [
+        2002,
+        2026
+      ],
+      "question_id_range": [
+        17029,
+        17283
+      ],
+      "image_directory": "assets/questions/some_basic_concepts_of_chemistry/"
+    },
+    {
+      "name": "Structure of Atom",
+      "class": [
+        11
+      ],
+      "question_count": 230,
+      "in_syllabus_question_count": 226,
+      "question_types": {
+        "mcq": 171,
+        "integer": 59
+      },
+      "out_of_syllabus": [
+        {
+          "question_no": 227,
+          "answer": "1"
+        },
+        {
+          "question_no": 228,
+          "answer": "D"
+        },
+        {
+          "question_no": 229,
+          "answer": "D"
+        },
+        {
+          "question_no": 230,
+          "answer": "D"
+        }
+      ],
+      "source_pages": [
+        49,
+        104
+      ],
+      "answer_key_pages": [
+        105,
+        106
+      ],
+      "answer_key_entries": 230,
+      "year_range": [
+        2002,
+        2026
+      ],
+      "question_id_range": [
+        17284,
+        17513
+      ],
+      "image_directory": "assets/questions/structure_of_atom/"
+    },
+    {
+      "name": "Redox Reactions",
+      "class": [
+        11
+      ],
+      "question_count": 87,
+      "question_types": {
+        "mcq": 52,
+        "integer": 35
+      },
+      "out_of_syllabus": [],
+      "source_pages": [
+        109,
+        125
+      ],
+      "answer_key_pages": [
+        126
+      ],
+      "answer_key_entries": 87,
+      "year_range": [
+        2002,
+        2026
+      ],
+      "question_id_range": [
+        17514,
+        17600
+      ],
+      "image_directory": "assets/questions/redox_reactions/"
+    }
+  ],
+  "answer_missing_or_unparsed": [],
+  "supabase_sync": {
+    "performed": false,
+    "website_deployed": false
+  },
+  "notes": [
+    "Each source question is represented by one page crop that preserves its question number, attempt metadata, formulas, options, and diagrams.",
+    "The nine questions marked out of syllabus in the PDF are retained with out_of_syllabus tags and valid printed answers; the current scorer includes them.",
+    "Accepted answers are transcribed from the answer key. Numerical alternatives and ranges are preserved as printed, including Structure of Atom Q10 and Some Basic Concepts Q248-Q250 and Q255.",
+    "The answer keys do not contain any missing or Scan QR entries for these chapters.",
+    "Answers were not independently re-solved. The question banks load locally; Supabase was not modified."
+  ]
+}

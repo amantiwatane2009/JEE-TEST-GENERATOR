@@ -1,0 +1,87 @@
+{
+  "source_pdf": "sets + log + quadratic .pdf",
+  "subject": "Maths",
+  "class": 11,
+  "question_count": 348,
+  "question_id_range": [
+    19627,
+    19974
+  ],
+  "question_types": {
+    "single_correct_mcq": 268,
+    "numerical": 80
+  },
+  "year_range": [
+    2002,
+    2026
+  ],
+  "chapters": [
+    {
+      "name": "Sets and Relations",
+      "count": 125,
+      "question_types": {
+        "single_correct_mcq": 92,
+        "numerical": 33
+      },
+      "question_pages": [
+        2,
+        25
+      ],
+      "answer_key_pages": [
+        26
+      ],
+      "source_ids": "sets-and-relations-q001 through sets-and-relations-q125"
+    },
+    {
+      "name": "Logarithm",
+      "count": 11,
+      "question_types": {
+        "single_correct_mcq": 5,
+        "numerical": 6
+      },
+      "question_pages": [
+        29,
+        30
+      ],
+      "answer_key_pages": [
+        31
+      ],
+      "source_ids": "logarithm-q001 through logarithm-q011"
+    },
+    {
+      "name": "Quadratic Equation and Inequalities",
+      "count": 212,
+      "question_types": {
+        "single_correct_mcq": 171,
+        "numerical": 41
+      },
+      "question_pages": [
+        34,
+        65
+      ],
+      "answer_key_pages": [
+        66,
+        67
+      ],
+      "out_of_syllabus_scored": [
+        {
+          "question_no": 212,
+          "printed_answer": "4"
+        }
+      ],
+      "source_ids": "quadratic-equation-inequalities-q001 through quadratic-equation-inequalities-q212"
+    }
+  ],
+  "answer_missing_or_unparsed": [],
+  "image_directory": "assets/questions/maths_sets_log_quadratic/",
+  "supabase_sync": {
+    "performed": false,
+    "website_deployed": false
+  },
+  "notes": [
+    "Each question is preserved as a source-page image crop, including mathematical notation, answer choices, and the source QR area.",
+    "Question IDs are globally unique and continue after the existing local maximum of 19626.",
+    "Answer keys were transcribed from the printed PDF and have not all been independently re-solved.",
+    "Quadratic Equation and Inequalities Q212 is source-marked out of syllabus and has printed numerical answer 4; it remains scored."
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "source_pdf": "chem bonding + periodic table + salt analysis.pdf",
+  "sourceId": "jee-main-chemistry-bonding-periodic-salt-analysis-pdf",
+  "source_name": "JEE Main Chemistry Periodic Table, Chemical Bonding and Salt Analysis PYQs",
+  "question_count": 556,
+  "question_id_range": [
+    15682,
+    16237
+  ],
+  "chapters": [
+    {
+      "name": "Periodic Table & Periodicity",
+      "class": [
+        11
+      ],
+      "question_count": 179,
+      "question_types": {
+        "mcq": 173,
+        "integer": 5,
+        "multi": 1
+      },
+      "out_of_syllabus": [
+        {
+          "question_no": 179,
+          "answer": "C"
+        }
+      ],
+      "source_pages": [
+        2,
+        42
+      ],
+      "question_id_range": [
+        15682,
+        15860
+      ],
+      "answer_key_entries": 179,
+      "year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/periodic-table/"
+    },
+    {
+      "name": "Chemical Bonding & Molecular Structure",
+      "class": [
+        11
+      ],
+      "question_count": 309,
+      "question_types": {
+        "mcq": 244,
+        "integer": 64,
+        "multi": 1
+      },
+      "out_of_syllabus": [],
+      "source_pages": [
+        47,
+        118
+      ],
+      "question_id_range": [
+        15861,
+        16169
+      ],
+      "answer_key_entries": 309,
+      "year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/chemical-bonding/"
+    },
+    {
+      "name": "Salt Analysis",
+      "class": [
+        11,
+        12
+      ],
+      "question_count": 68,
+      "question_types": {
+        "mcq": 60,
+        "integer": 7,
+        "multi": 1
+      },
+      "out_of_syllabus": [
+        {
+          "question_no": 67,
+          "answer": "B"
+        },
+        {
+          "question_no": 68,
+          "answer": "C"
+        }
+      ],
+      "source_pages": [
+        124,
+        139
+      ],
+      "question_id_range": [
+        16170,
+        16237
+      ],
+      "answer_key_entries": 68,
+      "year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/salt-analysis/"
+    }
+  ],
+  "answer_missing_or_unparsed": [],
+  "supabase_sync": {
+    "performed": false,
+    "website_deployed": false
+  },
+  "notes": [
+    "Question images are source-faithful crops rendered from the supplied PDF; Chemical Bonding Q23 spans PDF pages 54-55 and is combined into one image.",
+    "Periodic Table Q179 and Salt Analysis Q67-Q68 are tagged out of syllabus and scored using their printed answer keys.",
+    "Salt Analysis is tagged for both classes in one record per question, avoiding duplicate questions when both classes are selected.",
+    "Answers were transcribed from the printed answer key and have not all been independently re-solved.",
+    "The question banks are loaded locally by the existing browser fallback. Supabase was not modified."
+  ]
+}

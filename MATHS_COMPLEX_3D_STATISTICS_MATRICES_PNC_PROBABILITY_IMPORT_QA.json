@@ -1,0 +1,318 @@
+{
+  "source_files": [
+    "JEE Main Complex Numbers Previous Year Questions with Answer Key.pdf",
+    "JEE Main 3D Geometry Previous Year Questions with Answer Key.pdf",
+    "JEE Main Statistics Previous Year Questions with Answer Key.pdf",
+    "JEE Main Matrices and Determinants Previous Year Questions with Answer Key.pdf",
+    "JEE Main Permutations and Combinations Previous Year Questions with Answer Key.pdf",
+    "JEE Main Probability Previous Year Questions with Answer Key.pdf"
+  ],
+  "question_count": 1707,
+  "question_id_range": [
+    20584,
+    22290
+  ],
+  "subject": "Maths",
+  "year_range": [
+    2002,
+    2026
+  ],
+  "question_types": {
+    "mcq": 1332,
+    "numerical": 375
+  },
+  "out_of_syllabus_count": 316,
+  "answer_key_coverage": {
+    "entries": 1707,
+    "missing_or_unparsed": [],
+    "qr_only_questions": [
+      {
+        "chapter": "Matrices and Determinants",
+        "question_no": 239
+      },
+      {
+        "chapter": "Permutations and Combinations",
+        "question_no": 106
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "name": "Complex Numbers",
+      "class": 11,
+      "question_count": 224,
+      "question_id_range": [
+        20584,
+        20807
+      ],
+      "question_types": {
+        "mcq": 185,
+        "numerical": 39
+      },
+      "question_type_ranges": {
+        "mcq": [
+          [
+            1,
+            184
+          ],
+          [
+            224,
+            224
+          ]
+        ],
+        "numerical": [
+          [
+            185,
+            223
+          ]
+        ]
+      },
+      "out_of_syllabus_range": [
+        224,
+        224
+      ],
+      "question_pages": [
+        2,
+        36
+      ],
+      "answer_key_pages": [
+        37,
+        38
+      ],
+      "image_directory": "assets/questions/maths_complex_numbers/"
+    },
+    {
+      "name": "3D Geometry",
+      "class": 12,
+      "question_count": 418,
+      "question_id_range": [
+        20808,
+        21225
+      ],
+      "question_types": {
+        "mcq": 331,
+        "numerical": 87
+      },
+      "question_type_ranges": {
+        "mcq": [
+          [
+            1,
+            157
+          ],
+          [
+            200,
+            373
+          ]
+        ],
+        "numerical": [
+          [
+            158,
+            199
+          ],
+          [
+            374,
+            418
+          ]
+        ]
+      },
+      "out_of_syllabus_range": [
+        200,
+        418
+      ],
+      "question_pages": [
+        2,
+        68
+      ],
+      "answer_key_pages": [
+        69,
+        71
+      ],
+      "image_directory": "assets/questions/maths_3d_geometry/"
+    },
+    {
+      "name": "Statistics",
+      "class": 11,
+      "question_count": 160,
+      "question_id_range": [
+        21226,
+        21385
+      ],
+      "question_types": {
+        "mcq": 123,
+        "numerical": 37
+      },
+      "question_type_ranges": {
+        "mcq": [
+          [
+            1,
+            123
+          ]
+        ],
+        "numerical": [
+          [
+            124,
+            160
+          ]
+        ]
+      },
+      "out_of_syllabus_range": null,
+      "question_pages": [
+        2,
+        28
+      ],
+      "answer_key_pages": [
+        29,
+        30
+      ],
+      "image_directory": "assets/questions/maths_statistics/"
+    },
+    {
+      "name": "Matrices and Determinants",
+      "class": 12,
+      "question_count": 414,
+      "question_id_range": [
+        21386,
+        21799
+      ],
+      "question_types": {
+        "mcq": 334,
+        "numerical": 80
+      },
+      "question_type_ranges": {
+        "mcq": [
+          [
+            1,
+            286
+          ],
+          [
+            358,
+            405
+          ]
+        ],
+        "numerical": [
+          [
+            287,
+            357
+          ],
+          [
+            406,
+            414
+          ]
+        ]
+      },
+      "out_of_syllabus_range": [
+        358,
+        414
+      ],
+      "qr_only_questions": [
+        239
+      ],
+      "question_pages": [
+        2,
+        89
+      ],
+      "answer_key_pages": [
+        90,
+        92
+      ],
+      "image_directory": "assets/questions/maths_matrices_determinants/"
+    },
+    {
+      "name": "Permutations and Combinations",
+      "class": 11,
+      "question_count": 236,
+      "question_id_range": [
+        21800,
+        22035
+      ],
+      "question_types": {
+        "mcq": 140,
+        "numerical": 96
+      },
+      "question_type_ranges": {
+        "mcq": [
+          [
+            1,
+            140
+          ]
+        ],
+        "numerical": [
+          [
+            141,
+            236
+          ]
+        ]
+      },
+      "out_of_syllabus_range": null,
+      "qr_only_questions": [
+        106
+      ],
+      "question_pages": [
+        2,
+        35
+      ],
+      "answer_key_pages": [
+        36,
+        37
+      ],
+      "image_directory": "assets/questions/maths_permutations_combinations/"
+    },
+    {
+      "name": "Probability",
+      "class": 12,
+      "question_count": 255,
+      "question_id_range": [
+        22036,
+        22290
+      ],
+      "question_types": {
+        "mcq": 219,
+        "numerical": 36
+      },
+      "question_type_ranges": {
+        "mcq": [
+          [
+            1,
+            184
+          ],
+          [
+            217,
+            251
+          ]
+        ],
+        "numerical": [
+          [
+            185,
+            216
+          ],
+          [
+            252,
+            255
+          ]
+        ]
+      },
+      "out_of_syllabus_range": [
+        217,
+        255
+      ],
+      "question_pages": [
+        2,
+        43
+      ],
+      "answer_key_pages": [
+        44,
+        45
+      ],
+      "image_directory": "assets/questions/maths_probability/"
+    }
+  ],
+  "supabase_sync": {
+    "performed": false,
+    "website_deployed": false
+  },
+  "notes": [
+    "The six sources span 2002-2026 and were imported as distinct Class 11 or Class 12 Maths chapters. Question numbering is continuous within every PDF, and the answer-key pages cover every question.",
+    "All out-of-syllabus questions have mapped printed answers and remain scored. Matrices and Determinants Q239 and Permutations and Combinations Q106 have Scan QR keys and remain unscored.",
+    "Answer keys were transcribed from the PDFs and have not all been independently re-solved. Some mathematical glyphs are not preserved in extracted text; the original question images preserve the printed notation. No Supabase rows were written."
+  ]
+}

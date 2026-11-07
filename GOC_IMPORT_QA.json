@@ -36,7 +36,7 @@
     "multi": 3
   },
   "answer_missing_or_unparsed": [],
-  "flagged_out_of_syllabus": [
+  "out_of_syllabus": [
     {
       "source_section": "Basics of Organic Chemistry",
       "question_no": 310,
@@ -61,7 +61,7 @@
     "The Isomerism, IUPAC Nomenclature, and Basics of Organic Chemistry sections are combined under the single chapter label GOC as requested.",
     "Printed question numbers and source PDF pages are preserved; source_section disambiguates the repeated numbers across the PDF sections.",
     "Answers are transcribed from the printed answer keys and have not all been independently re-solved.",
-    "Basics of Organic Chemistry Q310 is labeled out of syllabus by the source and remains visible but unscored.",
+    "Basics of Organic Chemistry Q310 is labeled out of syllabus by the source and is scored using its printed answer key.",
     "Source-faithful grayscale crops preserve the question text, options, and diagrams."
   ]
 }

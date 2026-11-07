@@ -1,0 +1,164 @@
+{
+  "source_pdf": "COORDINATION + S BLOCK + P BLOCK.pdf",
+  "sourceId": "jee-main-chemistry-s-block-p-block-coordination-compounds-pyq-pdf",
+  "source_name": "JEE Main Chemistry s-Block, p-Block and Coordination Compounds PYQs",
+  "question_count": 791,
+  "question_id_range": [
+    16238,
+    17028
+  ],
+  "chapters": [
+    {
+      "name": "s-Block Elements",
+      "class": 11,
+      "question_count": 129,
+      "question_types": {
+        "mcq": 125,
+        "integer": 4,
+        "multi": 0
+      },
+      "question_id_range": [
+        16238,
+        16366
+      ],
+      "source_pages": [
+        2,
+        30
+      ],
+      "year_range": [
+        2002,
+        2024
+      ],
+      "image_directory": "assets/questions/s_block/",
+      "out_of_syllabus": {
+        "count": 129,
+        "ranges": [
+          [
+            1,
+            129
+          ]
+        ]
+      },
+      "flagged_answer_key_issues": [],
+      "answer_key_entries": 129
+    },
+    {
+      "name": "p-Block Elements",
+      "class": 11,
+      "question_count": 282,
+      "question_types": {
+        "mcq": 260,
+        "integer": 21,
+        "multi": 1
+      },
+      "question_id_range": [
+        16367,
+        16648
+      ],
+      "source_pages": [
+        34,
+        93
+      ],
+      "year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/p_block/",
+      "out_of_syllabus": {
+        "count": 148,
+        "ranges": [
+          [
+            135,
+            282
+          ]
+        ]
+      },
+      "flagged_answer_key_issues": [
+        {
+          "question_no": 243,
+          "source_answer": "Scan QR"
+        }
+      ],
+      "answer_key_entries": 282
+    },
+    {
+      "name": "Coordination Compounds",
+      "class": 12,
+      "question_count": 380,
+      "question_types": {
+        "mcq": 299,
+        "integer": 80,
+        "multi": 1
+      },
+      "question_id_range": [
+        16649,
+        17028
+      ],
+      "source_pages": [
+        98,
+        181
+      ],
+      "year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/coordination_compounds/",
+      "out_of_syllabus": {
+        "count": 0,
+        "ranges": []
+      },
+      "flagged_answer_key_issues": [
+        {
+          "question_no": 110,
+          "source_answer": "Scan QR"
+        },
+        {
+          "question_no": 174,
+          "source_answer": "Scan QR"
+        },
+        {
+          "question_no": 200,
+          "source_answer": "Scan QR"
+        }
+      ],
+      "answer_key_entries": 380
+    }
+  ],
+  "answer_missing_or_unparsed": [
+    {
+      "chapter": "p-Block Elements",
+      "question_no": 243,
+      "source_answer": "Scan QR",
+      "reason": "The printed answer key says Scan QR."
+    },
+    {
+      "chapter": "Coordination Compounds",
+      "question_no": 110,
+      "source_answer": "Scan QR",
+      "reason": "The printed answer key says Scan QR."
+    },
+    {
+      "chapter": "Coordination Compounds",
+      "question_no": 174,
+      "source_answer": "Scan QR",
+      "reason": "The printed answer key says Scan QR."
+    },
+    {
+      "chapter": "Coordination Compounds",
+      "question_no": 200,
+      "source_answer": "Scan QR",
+      "reason": "The printed answer key says Scan QR."
+    }
+  ],
+  "supabase_sync": {
+    "performed": false,
+    "website_deployed": false
+  },
+  "notes": [
+    "Question images are source-faithful crops rendered from the supplied PDF.",
+    "All 129 s-Block questions and p-Block Q135-Q282 are tagged out of syllabus and scored when an answer key is available. p-Block Q243 remains unscored because its printed key says Scan QR.",
+    "Coordination Compounds Q110, Q174, and Q200 remain visible but unscored because the printed answer key says Scan QR.",
+    "Answers were transcribed from the printed answer key and have not all been independently re-solved.",
+    "The question banks are loaded locally by the existing browser fallback. Supabase was not modified."
+  ]
+}

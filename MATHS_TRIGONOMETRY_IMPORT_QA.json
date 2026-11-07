@@ -1,0 +1,261 @@
+{
+  "source_files": [
+    "JEE Main Trigonometric Equations Previous Year Questions with Answer Key.pdf",
+    "JEE Main Trigonometric Ratio and Identites Previous Year Questions with Answer Key.pdf",
+    "JEE Main Inverse Trigonometric Functions Previous Year Questions with Answer Key.pdf"
+  ],
+  "question_count": 248,
+  "question_id_range": [
+    18667,
+    18914
+  ],
+  "chapters": [
+    {
+      "name": "Trigonometry",
+      "class": [
+        11
+      ],
+      "question_count": 140,
+      "source_sections": [
+        "Trigonometric Equations",
+        "Trigonometric Ratio and Identites"
+      ],
+      "question_types": {
+        "mcq": 114,
+        "numerical": 26
+      },
+      "out_of_syllabus": {
+        "Trigonometric Equations": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66
+        ]
+      },
+      "question_id_range": [
+        18667,
+        18806
+      ],
+      "image_directory": "assets/questions/maths_trigonometry/"
+    },
+    {
+      "name": "Inverse Trigonometric Functions",
+      "class": [
+        12
+      ],
+      "question_count": 108,
+      "question_types": {
+        "mcq": 90,
+        "numerical": 17,
+        "multi": 1
+      },
+      "out_of_syllabus": [
+        108
+      ],
+      "question_id_range": [
+        18807,
+        18914
+      ],
+      "image_directory": "assets/questions/maths_inverse_trigonometric_functions/"
+    }
+  ],
+  "source_details": [
+    {
+      "source_pdf": "JEE Main Trigonometric Equations Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-maths-trigonometric-equations-pyq-pdf",
+      "source_name": "JEE Main Mathematics Trigonometric Equations PYQs",
+      "source_chapter": "Trigonometric Equations",
+      "app_chapter": "Trigonometry",
+      "class": 11,
+      "question_count": 66,
+      "question_types": {
+        "mcq": 49,
+        "numerical": 17
+      },
+      "out_of_syllabus": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "source_pages": [
+        2,
+        11
+      ],
+      "answer_key_pages": [
+        12
+      ],
+      "answer_key_entries": 66,
+      "missing_or_unparsed_answers": [],
+      "year_range": [
+        2002,
+        2026
+      ],
+      "question_id_range": [
+        18667,
+        18732
+      ],
+      "image_directory": "assets/questions/maths_trigonometry/"
+    },
+    {
+      "source_pdf": "JEE Main Trigonometric Ratio and Identites Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-maths-trigonometric-ratio-identities-pyq-pdf",
+      "source_name": "JEE Main Mathematics Trigonometric Ratio and Identities PYQs",
+      "source_chapter": "Trigonometric Ratio and Identites",
+      "app_chapter": "Trigonometry",
+      "class": 11,
+      "question_count": 74,
+      "question_types": {
+        "mcq": 65,
+        "numerical": 9
+      },
+      "out_of_syllabus": [],
+      "source_pages": [
+        2,
+        12
+      ],
+      "answer_key_pages": [
+        13
+      ],
+      "answer_key_entries": 74,
+      "missing_or_unparsed_answers": [],
+      "year_range": [
+        2004,
+        2026
+      ],
+      "question_id_range": [
+        18733,
+        18806
+      ],
+      "image_directory": "assets/questions/maths_trigonometry/"
+    },
+    {
+      "source_pdf": "JEE Main Inverse Trigonometric Functions Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-maths-inverse-trigonometric-functions-pyq-pdf",
+      "source_name": "JEE Main Mathematics Inverse Trigonometric Functions PYQs",
+      "source_chapter": "Inverse Trigonometric Functions",
+      "app_chapter": "Inverse Trigonometric Functions",
+      "class": 12,
+      "question_count": 108,
+      "question_types": {
+        "mcq": 90,
+        "numerical": 17,
+        "multi": 1
+      },
+      "out_of_syllabus": [
+        108
+      ],
+      "source_pages": [
+        2,
+        18
+      ],
+      "answer_key_pages": [
+        19
+      ],
+      "answer_key_entries": 108,
+      "missing_or_unparsed_answers": [],
+      "year_range": [
+        2002,
+        2026
+      ],
+      "question_id_range": [
+        18807,
+        18914
+      ],
+      "image_directory": "assets/questions/maths_inverse_trigonometric_functions/"
+    }
+  ],
+  "answer_missing_or_unparsed": [],
+  "supabase_sync": {
+    "performed": false,
+    "website_deployed": false
+  },
+  "notes": [
+    "Trigonometric Equations and Trigonometric Ratio and Identites are combined under the Class 11 app chapter Trigonometry, as requested; original question numbers and source IDs are preserved within each source PDF.",
+    "The PDFs mark Trigonometric Equations Q22-Q66 and Inverse Trigonometric Functions Q108 out of syllabus. All 46 have printed answers and remain scored.",
+    "Inverse Trigonometric Functions Q107 is a multiple-correct question with printed answer A,D.",
+    "All 248 questions have printed answer-key entries. Answers were transcribed and have not all been independently re-solved. The banks load locally; Supabase was not modified."
+  ]
+}
