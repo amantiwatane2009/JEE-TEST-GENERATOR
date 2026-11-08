@@ -67,6 +67,7 @@ const localQuestions = [
   ...(window.MATHS_FUNCTIONS_LIMITS_DIFF_AOD_QUESTIONS || []),
   ...(window.MATHS_TRIGONOMETRY_QUESTIONS || []),
   ...(window.RESPIRATION_IN_PLANTS_QUESTIONS || []),
+  ...(window.BIOLOGY_PDF_QUESTIONS || []),
   ...(window.HYDROCARBONS_QUESTIONS || []),
   ...(window.HALOALKANES_HALOARENES_QUESTIONS || []),
   ...(window.ALCOHOLS_PHENOLS_ETHERS_QUESTIONS || []),

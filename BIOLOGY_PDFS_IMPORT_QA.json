@@ -1,0 +1,1393 @@
+{
+  "sourceFolder": "questions/biology questions/",
+  "sourceId": "neet-biology-chapter-pdfs",
+  "subject": "Biology",
+  "questionBankFile": "biology_pdf_data.js",
+  "questionCount": 4293,
+  "questionIdRange": [
+    28014,
+    32306
+  ],
+  "pdfCount": 34,
+  "answerKeyEntries": 4293,
+  "missingAnswerKeyCount": 0,
+  "missingAnswerKeyQuestionNumbers": {},
+  "outOfSyllabusCount": 612,
+  "multipleCorrectCount": 10,
+  "unscoredQrQuestions": [
+    {
+      "chapter": "Cell - The Unit of Life",
+      "questionNumbers": [
+        178
+      ]
+    },
+    {
+      "chapter": "Strategies for Enhancement in Food Production",
+      "questionNumbers": [
+        62
+      ]
+    }
+  ],
+  "existingBiologyChaptersUnchanged": [
+    "Biomolecules",
+    "Cell Cycle and Cell Division",
+    "Photosynthesis in Higher Plants",
+    "Respiration in Plants"
+  ],
+  "skippedExistingPdfChapters": [],
+  "chapters": [
+    {
+      "name": "Anatomy of Flowering Plants",
+      "class": 11,
+      "originalFilename": "NEET Anatomy of Flowering Plants Previous Year Questions with Answer Key.pdf",
+      "questionCount": 127,
+      "questionIdRange": [
+        28014,
+        28140
+      ],
+      "answerKeyEntries": 127,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [
+        93
+      ],
+      "outOfSyllabusCount": 34,
+      "outOfSyllabusQuestionNumbers": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Animal Kingdom",
+      "class": 11,
+      "originalFilename": "NEET Animal Kingdom Previous Year Questions with Answer Key.pdf",
+      "questionCount": 202,
+      "questionIdRange": [
+        28141,
+        28342
+      ],
+      "answerKeyEntries": 202,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 1,
+      "outOfSyllabusQuestionNumbers": [
+        202
+      ],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Biodiversity and Conservation",
+      "class": 12,
+      "originalFilename": "NEET Biodiversity and Conservation Previous Year Questions with Answer Key.pdf",
+      "questionCount": 104,
+      "questionIdRange": [
+        28343,
+        28446
+      ],
+      "answerKeyEntries": 104,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1993,
+        2026
+      ]
+    },
+    {
+      "name": "Biological Classification",
+      "class": 11,
+      "originalFilename": "NEET Biological Classification Previous Year Questions with Answer Key.pdf",
+      "questionCount": 177,
+      "questionIdRange": [
+        28447,
+        28623
+      ],
+      "answerKeyEntries": 177,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1989,
+        2026
+      ]
+    },
+    {
+      "name": "Biotechnology and It's Applications",
+      "class": 12,
+      "originalFilename": "NEET Biotechnology and It's Applications Previous Year Questions with Answer Key.pdf",
+      "questionCount": 99,
+      "questionIdRange": [
+        28624,
+        28722
+      ],
+      "answerKeyEntries": 99,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1995,
+        2026
+      ]
+    },
+    {
+      "name": "Biotechnology: Principles and Processes",
+      "class": 12,
+      "originalFilename": "NEET Biotechnology Principles and Processes Previous Year Questions with Answer Key.pdf",
+      "questionCount": 143,
+      "questionIdRange": [
+        28723,
+        28865
+      ],
+      "answerKeyEntries": 143,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [
+        143
+      ],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1994,
+        2026
+      ]
+    },
+    {
+      "name": "Body Fluids and Its Circulation",
+      "class": 11,
+      "originalFilename": "NEET Body Fluids and Its Circulation Previous Year Questions with Answer Key.pdf",
+      "questionCount": 112,
+      "questionIdRange": [
+        28866,
+        28977
+      ],
+      "answerKeyEntries": 112,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 2,
+      "outOfSyllabusQuestionNumbers": [
+        111,
+        112
+      ],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Breathing and Exchange of Gases",
+      "class": 11,
+      "originalFilename": "NEET Breathing and Exchange of Gases Previous Year Questions with Answer Key.pdf",
+      "questionCount": 72,
+      "questionIdRange": [
+        28978,
+        29049
+      ],
+      "answerKeyEntries": 72,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1990,
+        2026
+      ]
+    },
+    {
+      "name": "Cell - The Unit of Life",
+      "class": 11,
+      "originalFilename": "NEET Cell - The Unit of Life Previous Year Questions with Answer Key.pdf",
+      "questionCount": 195,
+      "questionIdRange": [
+        29050,
+        29244
+      ],
+      "answerKeyEntries": 195,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [
+        178
+      ],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Chemical Coordination and Integration",
+      "class": 11,
+      "originalFilename": "NEET Chemical Coordination and Integration Previous Year Questions with Answer Key.pdf",
+      "questionCount": 109,
+      "questionIdRange": [
+        29245,
+        29353
+      ],
+      "answerKeyEntries": 109,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 2,
+      "outOfSyllabusQuestionNumbers": [
+        108,
+        109
+      ],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Digestion and Absorption",
+      "class": 11,
+      "originalFilename": "NEET Digestion and Absorption Previous Year Questions with Answer Key.pdf",
+      "questionCount": 89,
+      "questionIdRange": [
+        29354,
+        29442
+      ],
+      "answerKeyEntries": 89,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [
+        89
+      ],
+      "outOfSyllabusCount": 89,
+      "outOfSyllabusQuestionNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ],
+      "yearRange": [
+        1988,
+        2023
+      ]
+    },
+    {
+      "name": "Ecosystem",
+      "class": 12,
+      "originalFilename": "NEET Ecosystem Previous Year Questions with Answer Key.pdf",
+      "questionCount": 111,
+      "questionIdRange": [
+        29443,
+        29553
+      ],
+      "answerKeyEntries": 111,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 26,
+      "outOfSyllabusQuestionNumbers": [
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111
+      ],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Environmental Issues",
+      "class": 12,
+      "originalFilename": "NEET Environmental Issues Previous Year Questions with Answer Key.pdf",
+      "questionCount": 152,
+      "questionIdRange": [
+        29554,
+        29705
+      ],
+      "answerKeyEntries": 152,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 152,
+      "outOfSyllabusQuestionNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152
+      ],
+      "yearRange": [
+        1988,
+        2023
+      ]
+    },
+    {
+      "name": "Evolution",
+      "class": 12,
+      "originalFilename": "NEET Evolution Previous Year Questions with Answer Key.pdf",
+      "questionCount": 189,
+      "questionIdRange": [
+        29706,
+        29894
+      ],
+      "answerKeyEntries": 189,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [
+        189
+      ],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Excretory Products and Their Elimination",
+      "class": 11,
+      "originalFilename": "NEET Excretory Products and Their Elimination Previous Year Questions with Answer Key.pdf",
+      "questionCount": 72,
+      "questionIdRange": [
+        29895,
+        29966
+      ],
+      "answerKeyEntries": 72,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Human Health and Diseases",
+      "class": 12,
+      "originalFilename": "NEET Human Health and Diseases Previous Year Questions with Answer Key.pdf",
+      "questionCount": 171,
+      "questionIdRange": [
+        29967,
+        30137
+      ],
+      "answerKeyEntries": 171,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 1,
+      "outOfSyllabusQuestionNumbers": [
+        171
+      ],
+      "yearRange": [
+        1989,
+        2026
+      ]
+    },
+    {
+      "name": "Human Reproduction",
+      "class": 12,
+      "originalFilename": "NEET Human Reproduction Previous Year Questions with Answer Key.pdf",
+      "questionCount": 149,
+      "questionIdRange": [
+        30138,
+        30286
+      ],
+      "answerKeyEntries": 149,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 1,
+      "outOfSyllabusQuestionNumbers": [
+        149
+      ],
+      "yearRange": [
+        1989,
+        2026
+      ]
+    },
+    {
+      "name": "Locomotion and Movement",
+      "class": 11,
+      "originalFilename": "NEET Locomotion and Movement Previous Year Questions with Answer Key.pdf",
+      "questionCount": 78,
+      "questionIdRange": [
+        30287,
+        30364
+      ],
+      "answerKeyEntries": 78,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [
+        78
+      ],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Microbes in Human Welfare",
+      "class": 12,
+      "originalFilename": "NEET Microbes in Human Welfare Previous Year Questions with Answer Key.pdf",
+      "questionCount": 99,
+      "questionIdRange": [
+        30365,
+        30463
+      ],
+      "answerKeyEntries": 99,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1994,
+        2026
+      ]
+    },
+    {
+      "name": "Mineral Nutrition",
+      "class": 11,
+      "originalFilename": "NEET Mineral Nutrition Previous Year Questions with Answer Key.pdf",
+      "questionCount": 62,
+      "questionIdRange": [
+        30464,
+        30525
+      ],
+      "answerKeyEntries": 62,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 62,
+      "outOfSyllabusQuestionNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ],
+      "yearRange": [
+        1989,
+        2023
+      ]
+    },
+    {
+      "name": "Molecular Basis of Inheritance",
+      "class": 12,
+      "originalFilename": "NEET Molecular Basis of Inheritance Previous Year Questions with Answer Key.pdf",
+      "questionCount": 255,
+      "questionIdRange": [
+        30526,
+        30780
+      ],
+      "answerKeyEntries": 255,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [
+        254,
+        255
+      ],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Morphology of Flowering Plants",
+      "class": 11,
+      "originalFilename": "NEET Morphology of Flowering Plants Previous Year Questions with Answer Key.pdf",
+      "questionCount": 162,
+      "questionIdRange": [
+        30781,
+        30942
+      ],
+      "answerKeyEntries": 162,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Neural Control and Coordination",
+      "class": 11,
+      "originalFilename": "NEET Neural Control and Coordination Previous Year Questions with Answer Key.pdf",
+      "questionCount": 82,
+      "questionIdRange": [
+        30943,
+        31024
+      ],
+      "answerKeyEntries": 82,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 31,
+      "outOfSyllabusQuestionNumbers": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "yearRange": [
+        1989,
+        2026
+      ]
+    },
+    {
+      "name": "Organisms and Populations",
+      "class": 12,
+      "originalFilename": "NEET Organisms and Populations Previous Year Questions with Answer Key.pdf",
+      "questionCount": 124,
+      "questionIdRange": [
+        31025,
+        31148
+      ],
+      "answerKeyEntries": 124,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Plant Growth and Development",
+      "class": 11,
+      "originalFilename": "NEET Plant Growth and Development Previous Year Questions with Answer Key.pdf",
+      "questionCount": 135,
+      "questionIdRange": [
+        31149,
+        31283
+      ],
+      "answerKeyEntries": 135,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [
+        115
+      ],
+      "outOfSyllabusCount": 20,
+      "outOfSyllabusQuestionNumbers": [
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135
+      ],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Plant Kingdom",
+      "class": 11,
+      "originalFilename": "NEET Plant Kingdom Previous Year Questions with Answer Key.pdf",
+      "questionCount": 176,
+      "questionIdRange": [
+        31284,
+        31459
+      ],
+      "answerKeyEntries": 176,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 4,
+      "outOfSyllabusQuestionNumbers": [
+        173,
+        174,
+        175,
+        176
+      ],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Principles of Inheritance and Variation",
+      "class": 12,
+      "originalFilename": "NEET Principles of Inheritance and Variation Previous Year Questions with Answer Key.pdf",
+      "questionCount": 272,
+      "questionIdRange": [
+        31460,
+        31731
+      ],
+      "answerKeyEntries": 272,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Reproduction in Organisms",
+      "class": 12,
+      "originalFilename": "NEET Reproduction in Organisms Previous Year Questions with Answer Key.pdf",
+      "questionCount": 27,
+      "questionIdRange": [
+        31732,
+        31758
+      ],
+      "answerKeyEntries": 27,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 26,
+      "outOfSyllabusQuestionNumbers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Reproductive Health",
+      "class": 12,
+      "originalFilename": "NEET Reproductive Health Previous Year Questions with Answer Key.pdf",
+      "questionCount": 69,
+      "questionIdRange": [
+        31759,
+        31827
+      ],
+      "answerKeyEntries": 69,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [
+        68,
+        69
+      ],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1994,
+        2026
+      ]
+    },
+    {
+      "name": "Sexual Reproduction in Flowering Plants",
+      "class": 12,
+      "originalFilename": "NEET Sexual Reproduction in Flowering Plants Previous Year Questions with Answer Key.pdf",
+      "questionCount": 163,
+      "questionIdRange": [
+        31828,
+        31990
+      ],
+      "answerKeyEntries": 163,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 0,
+      "outOfSyllabusQuestionNumbers": [],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Strategies for Enhancement in Food Production",
+      "class": 12,
+      "originalFilename": "NEET Strategies for Enhancement in Food Production Previous Year Questions with Answer Key.pdf",
+      "questionCount": 73,
+      "questionIdRange": [
+        31991,
+        32063
+      ],
+      "answerKeyEntries": 73,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [
+        62
+      ],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 72,
+      "outOfSyllabusQuestionNumbers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "yearRange": [
+        1989,
+        2026
+      ]
+    },
+    {
+      "name": "Structural Organisation in Animals",
+      "class": 11,
+      "originalFilename": "NEET Structural Organisation in Animals Previous Year Questions with Answer Key.pdf",
+      "questionCount": 130,
+      "questionIdRange": [
+        32064,
+        32193
+      ],
+      "answerKeyEntries": 130,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 15,
+      "outOfSyllabusQuestionNumbers": [
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "The Living World",
+      "class": 11,
+      "originalFilename": "NEET The Living World Previous Year Questions with Answer Key.pdf",
+      "questionCount": 44,
+      "questionIdRange": [
+        32194,
+        32237
+      ],
+      "answerKeyEntries": 44,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 5,
+      "outOfSyllabusQuestionNumbers": [
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "yearRange": [
+        1988,
+        2026
+      ]
+    },
+    {
+      "name": "Transport in Plants",
+      "class": 11,
+      "originalFilename": "NEET Transport in Plants Previous Year Questions with Answer Key.pdf",
+      "questionCount": 69,
+      "questionIdRange": [
+        32238,
+        32306
+      ],
+      "answerKeyEntries": 69,
+      "missingAnswerKeyQuestionNumbers": [],
+      "scanQrQuestionNumbers": [],
+      "multiCorrectQuestionNumbers": [],
+      "outOfSyllabusCount": 69,
+      "outOfSyllabusQuestionNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "yearRange": [
+        1988,
+        2023
+      ]
+    }
+  ],
+  "validation": {
+    "allPdfQuestionCountsMatched": true,
+    "allQuestionLabelsSequential": true,
+    "allPrintedAnswerKeyEntriesMapped": true,
+    "questionIdsUnique": true,
+    "questionImagesCreated": 4293,
+    "outOfSyllabusFlagsApplied": true,
+    "multipleCorrectQuestionsTyped": true,
+    "existingChapterQuestionDataChanged": false,
+    "questionImagesStopBeforeNextQuestionOrSection": true,
+    "crossPageQuestionsChecked": true
+  },
+  "notes": [
+    "Question images are source-page crops with diagrams and options preserved.",
+    "Out-of-syllabus blocks stay in the bank and are flagged from the PDF section counts.",
+    "The two Scan QR answer entries remain visible and unscored.",
+    "Answers were transcribed from the printed PDF keys; they have not all been independently re-solved.",
+    "No Supabase database rows or schema were changed."
+  ],
+  "crossPageQuestionCount": 0,
+  "questionImageCropBoundary": "The question content ends before the next question or source section heading."
+}

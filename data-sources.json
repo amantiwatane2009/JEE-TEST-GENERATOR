@@ -1866,6 +1866,360 @@
         2026
       ],
       "notes": "281 crops under assets/questions/physics_examgoal/geometrical_optics/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json. Q24, 46, 183 have Scan QR keys and remain unscored."
+    },
+    {
+      "sourceId": "neet-biology-chapter-pdfs",
+      "year": null,
+      "subject": "Biology",
+      "classes": [
+        11,
+        12
+      ],
+      "sourceType": "PYQ",
+      "status": "imported-local-needs-answer-review",
+      "originalFilenames": [
+        "NEET Anatomy of Flowering Plants Previous Year Questions with Answer Key.pdf",
+        "NEET Animal Kingdom Previous Year Questions with Answer Key.pdf",
+        "NEET Biodiversity and Conservation Previous Year Questions with Answer Key.pdf",
+        "NEET Biological Classification Previous Year Questions with Answer Key.pdf",
+        "NEET Biotechnology and It's Applications Previous Year Questions with Answer Key.pdf",
+        "NEET Biotechnology Principles and Processes Previous Year Questions with Answer Key.pdf",
+        "NEET Body Fluids and Its Circulation Previous Year Questions with Answer Key.pdf",
+        "NEET Breathing and Exchange of Gases Previous Year Questions with Answer Key.pdf",
+        "NEET Cell - The Unit of Life Previous Year Questions with Answer Key.pdf",
+        "NEET Chemical Coordination and Integration Previous Year Questions with Answer Key.pdf",
+        "NEET Digestion and Absorption Previous Year Questions with Answer Key.pdf",
+        "NEET Ecosystem Previous Year Questions with Answer Key.pdf",
+        "NEET Environmental Issues Previous Year Questions with Answer Key.pdf",
+        "NEET Evolution Previous Year Questions with Answer Key.pdf",
+        "NEET Excretory Products and Their Elimination Previous Year Questions with Answer Key.pdf",
+        "NEET Human Health and Diseases Previous Year Questions with Answer Key.pdf",
+        "NEET Human Reproduction Previous Year Questions with Answer Key.pdf",
+        "NEET Locomotion and Movement Previous Year Questions with Answer Key.pdf",
+        "NEET Microbes in Human Welfare Previous Year Questions with Answer Key.pdf",
+        "NEET Mineral Nutrition Previous Year Questions with Answer Key.pdf",
+        "NEET Molecular Basis of Inheritance Previous Year Questions with Answer Key.pdf",
+        "NEET Morphology of Flowering Plants Previous Year Questions with Answer Key.pdf",
+        "NEET Neural Control and Coordination Previous Year Questions with Answer Key.pdf",
+        "NEET Organisms and Populations Previous Year Questions with Answer Key.pdf",
+        "NEET Plant Growth and Development Previous Year Questions with Answer Key.pdf",
+        "NEET Plant Kingdom Previous Year Questions with Answer Key.pdf",
+        "NEET Principles of Inheritance and Variation Previous Year Questions with Answer Key.pdf",
+        "NEET Reproduction in Organisms Previous Year Questions with Answer Key.pdf",
+        "NEET Reproductive Health Previous Year Questions with Answer Key.pdf",
+        "NEET Sexual Reproduction in Flowering Plants Previous Year Questions with Answer Key.pdf",
+        "NEET Strategies for Enhancement in Food Production Previous Year Questions with Answer Key.pdf",
+        "NEET Structural Organisation in Animals Previous Year Questions with Answer Key.pdf",
+        "NEET The Living World Previous Year Questions with Answer Key.pdf",
+        "NEET Transport in Plants Previous Year Questions with Answer Key.pdf"
+      ],
+      "questionBankFile": "biology_pdf_data.js",
+      "questionCount": 4293,
+      "questionIdRange": [
+        28014,
+        32306
+      ],
+      "yearRange": [
+        1988,
+        2026
+      ],
+      "chapters": [
+        {
+          "name": "Anatomy of Flowering Plants",
+          "class": 11,
+          "questionCount": 127,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [
+            93
+          ],
+          "outOfSyllabusCount": 34
+        },
+        {
+          "name": "Animal Kingdom",
+          "class": 11,
+          "questionCount": 202,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 1
+        },
+        {
+          "name": "Biodiversity and Conservation",
+          "class": 12,
+          "questionCount": 104,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Biological Classification",
+          "class": 11,
+          "questionCount": 177,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Biotechnology and It's Applications",
+          "class": 12,
+          "questionCount": 99,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Biotechnology: Principles and Processes",
+          "class": 12,
+          "questionCount": 143,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [
+            143
+          ],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Body Fluids and Its Circulation",
+          "class": 11,
+          "questionCount": 112,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 2
+        },
+        {
+          "name": "Breathing and Exchange of Gases",
+          "class": 11,
+          "questionCount": 72,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Cell - The Unit of Life",
+          "class": 11,
+          "questionCount": 195,
+          "scanQrQuestionNumbers": [
+            178
+          ],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Chemical Coordination and Integration",
+          "class": 11,
+          "questionCount": 109,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 2
+        },
+        {
+          "name": "Digestion and Absorption",
+          "class": 11,
+          "questionCount": 89,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [
+            89
+          ],
+          "outOfSyllabusCount": 89
+        },
+        {
+          "name": "Ecosystem",
+          "class": 12,
+          "questionCount": 111,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 26
+        },
+        {
+          "name": "Environmental Issues",
+          "class": 12,
+          "questionCount": 152,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 152
+        },
+        {
+          "name": "Evolution",
+          "class": 12,
+          "questionCount": 189,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [
+            189
+          ],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Excretory Products and Their Elimination",
+          "class": 11,
+          "questionCount": 72,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Human Health and Diseases",
+          "class": 12,
+          "questionCount": 171,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 1
+        },
+        {
+          "name": "Human Reproduction",
+          "class": 12,
+          "questionCount": 149,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 1
+        },
+        {
+          "name": "Locomotion and Movement",
+          "class": 11,
+          "questionCount": 78,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [
+            78
+          ],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Microbes in Human Welfare",
+          "class": 12,
+          "questionCount": 99,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Mineral Nutrition",
+          "class": 11,
+          "questionCount": 62,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 62
+        },
+        {
+          "name": "Molecular Basis of Inheritance",
+          "class": 12,
+          "questionCount": 255,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [
+            254,
+            255
+          ],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Morphology of Flowering Plants",
+          "class": 11,
+          "questionCount": 162,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Neural Control and Coordination",
+          "class": 11,
+          "questionCount": 82,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 31
+        },
+        {
+          "name": "Organisms and Populations",
+          "class": 12,
+          "questionCount": 124,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Plant Growth and Development",
+          "class": 11,
+          "questionCount": 135,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [
+            115
+          ],
+          "outOfSyllabusCount": 20
+        },
+        {
+          "name": "Plant Kingdom",
+          "class": 11,
+          "questionCount": 176,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 4
+        },
+        {
+          "name": "Principles of Inheritance and Variation",
+          "class": 12,
+          "questionCount": 272,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Reproduction in Organisms",
+          "class": 12,
+          "questionCount": 27,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 26
+        },
+        {
+          "name": "Reproductive Health",
+          "class": 12,
+          "questionCount": 69,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [
+            68,
+            69
+          ],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Sexual Reproduction in Flowering Plants",
+          "class": 12,
+          "questionCount": 163,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 0
+        },
+        {
+          "name": "Strategies for Enhancement in Food Production",
+          "class": 12,
+          "questionCount": 73,
+          "scanQrQuestionNumbers": [
+            62
+          ],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 72
+        },
+        {
+          "name": "Structural Organisation in Animals",
+          "class": 11,
+          "questionCount": 130,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 15
+        },
+        {
+          "name": "The Living World",
+          "class": 11,
+          "questionCount": 44,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 5
+        },
+        {
+          "name": "Transport in Plants",
+          "class": 11,
+          "questionCount": 69,
+          "scanQrQuestionNumbers": [],
+          "multiCorrectQuestionNumbers": [],
+          "outOfSyllabusCount": 69
+        }
+      ],
+      "notes": "Added as a separate local question bank from 34 supplied chapter-wise PDFs. Source-marked out-of-syllabus questions retain their flags. Two QR-only keys remain visible and unscored. Answers were transcribed from the printed keys and have not all been independently re-solved. Supabase rows were not modified. See BIOLOGY_PDFS_IMPORT_QA.json."
     }
   ],
   "questionMetadataContract": {
