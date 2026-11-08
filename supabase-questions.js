@@ -40,6 +40,7 @@ async function loadQuestionBank() {
 }
 
 const localQuestions = [
+  ...(window.PHYSICS_PDF_QUESTIONS || []),
   ...(window.CHEMICAL_EQUILIBRIUM_QUESTIONS || []),
   ...(window.IONIC_EQUILIBRIUM_QUESTIONS || []),
   ...(window.GOC_QUESTIONS || []),
@@ -73,8 +74,33 @@ const localQuestions = [
   ...(window.BIOMOLECULES_QUESTIONS || []),
   ...(window.COMPOUNDS_CONTAINING_NITROGEN_QUESTIONS || [])
 ];
+
+const normalizeChapter = chapter => String(chapter ?? '').trim().toLowerCase().replace(/[^a-z0-9]/g, '');
+const replacedPhysicsChapters = new Set([
+  ...(window.PHYSICS_PDF_QUESTIONS || []).map(question => question.chapter),
+  'Modern Physics',
+  'Rotational Motion',
+  'Capacitor',
+  'Magnetic Effect of Current',
+  'Geometrical Optics',
+  'COM & Collision',
+  'KTG & Thermodynamics',
+  'Kinematics',
+  'Fluid Mechanics',
+  'Semiconductors',
+  'Oscillations',
+  'Thermal Properties & Heat Transfer',
+  'Units Dimensions Errors Vectors',
+  'Wave Motion',
+  'Work Energy Power'
+].map(normalizeChapter));
+
+const isReplacedPhysicsQuestion = question =>
+  String(question.subject ?? '').trim().toLowerCase() === 'physics' &&
+  replacedPhysicsChapters.has(normalizeChapter(question.chapter));
+
 window.JEE_BANK_READY = loadQuestionBank()
-  .then(questions => [...questions, ...localQuestions])
+  .then(questions => [...questions.filter(question => !isReplacedPhysicsQuestion(question)), ...localQuestions])
   .catch(error => {
     if (!localQuestions.length) throw error;
     console.warn('Supabase is unavailable; loading the local question banks.');

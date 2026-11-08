@@ -1,0 +1,1350 @@
+{
+  "source_folder": "questions/physics questions/",
+  "subject": "Physics",
+  "source_pdf_count": 28,
+  "question_count": 5723,
+  "question_id_range": [
+    22291,
+    28013
+  ],
+  "class_counts": {
+    "12": 3067,
+    "11": 2656
+  },
+  "question_type_counts": {
+    "mcq": 4563,
+    "integer": 1148,
+    "multi": 12
+  },
+  "out_of_syllabus_count": 330,
+  "scan_qr_unscored_count": 10,
+  "question_marker_count": 5723,
+  "answer_key_entry_count": 5723,
+  "duplicate_question_markers": 0,
+  "duplicate_answer_key_entries": 0,
+  "missing_question_numbers": [],
+  "missing_answer_key_entries": [],
+  "unparsed_answer_key_entries": [],
+  "question_image_count": 5723,
+  "question_image_bytes": 257482686,
+  "continuation_pages_combined": [
+    {
+      "source": "JEE Main Alternating Current Previous Year Questions with Answer Key.pdf",
+      "question_no": 20,
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "source": "JEE Main Alternating Current Previous Year Questions with Answer Key.pdf",
+      "question_no": 99,
+      "source_pages": [
+        29,
+        30
+      ]
+    },
+    {
+      "source": "JEE Main Alternating Current Previous Year Questions with Answer Key.pdf",
+      "question_no": 112,
+      "source_pages": [
+        35,
+        36
+      ]
+    },
+    {
+      "source": "JEE Main Circular Motion Previous Year Questions with Answer Key.pdf",
+      "question_no": 35,
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "source": "JEE Main Circular Motion Previous Year Questions with Answer Key.pdf",
+      "question_no": 39,
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "source": "JEE Main Magnetic Properties of Matter Previous Year Questions with Answer Key.pdf",
+      "question_no": 9,
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "source": "JEE Main Semiconductor Previous Year Questions with Answer Key.pdf",
+      "question_no": 10,
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "source": "JEE Main Semiconductor Previous Year Questions with Answer Key.pdf",
+      "question_no": 171,
+      "source_pages": [
+        102,
+        103
+      ]
+    },
+    {
+      "source": "JEE Main Semiconductor Previous Year Questions with Answer Key.pdf",
+      "question_no": 172,
+      "source_pages": [
+        104,
+        105
+      ]
+    },
+    {
+      "source": "JEE Main Thermodynamics Previous Year Questions with Answer Key (1).pdf",
+      "question_no": 100,
+      "source_pages": [
+        33,
+        34
+      ]
+    },
+    {
+      "source": "JEE Main Thermodynamics Previous Year Questions with Answer Key (1).pdf",
+      "question_no": 120,
+      "source_pages": [
+        41,
+        42
+      ]
+    },
+    {
+      "source": "JEE Main Thermodynamics Previous Year Questions with Answer Key (1).pdf",
+      "question_no": 125,
+      "source_pages": [
+        44,
+        45
+      ]
+    },
+    {
+      "source": "JEE Main Work Power & Energy Previous Year Questions with Answer Key.pdf",
+      "question_no": 56,
+      "source_pages": [
+        17,
+        18
+      ]
+    }
+  ],
+  "ignored_non_physics_pdfs": [
+    "JEE Main 3D Geometry Previous Year Questions with Answer Key.pdf",
+    "JEE Main Matrices and Determinants Previous Year Questions with Answer Key.pdf",
+    "JEE Main Sequences and Series Previous Year Questions with Answer Key.pdf"
+  ],
+  "replaced_existing_chapter_labels": [
+    "Alternating Current",
+    "Modern Physics",
+    "COM & Collision",
+    "Electromagnetic Waves",
+    "Gravitation",
+    "KTG & Thermodynamics",
+    "Kinematics",
+    "Fluid Mechanics",
+    "Mechanical Properties of Solids",
+    "Properties of Solids",
+    "Semiconductors",
+    "Oscillations",
+    "Simple Harmonic Motion",
+    "Thermal Properties & Heat Transfer",
+    "Thermal Properties of Matter",
+    "Units Dimensions Errors Vectors",
+    "Wave Motion",
+    "Waves",
+    "Wave Optics",
+    "Work Energy Power"
+  ],
+  "uncovered_existing_chapters_preserved": [
+    "Laws of Motion",
+    "Rotation",
+    "Electrostatics",
+    "Current Electricity",
+    "Moving Charges & Magnetism",
+    "Capacitors",
+    "Electromagnetic Induction",
+    "Ray Optics"
+  ],
+  "supabase_sync": {
+    "database_rows_modified": 0,
+    "write_key_used": false,
+    "behavior": "The browser filters existing Physics rows for replaced chapter labels and loads these local records. Uncovered Physics areas and all non-Physics Supabase rows remain available."
+  },
+  "answer_review_status": "Answers are transcribed from the supplied PDFs and have not all been independently re-solved. Scan QR entries remain unscored.",
+  "sources": [
+    {
+      "source_pdf": "JEE Main Alternating Current Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-alternating_current",
+      "chapter": "Alternating Current",
+      "class": 12,
+      "question_count": 204,
+      "question_id_range": [
+        22291,
+        22494
+      ],
+      "question_pages": [
+        2,
+        56
+      ],
+      "answer_key_pages": [
+        57,
+        58
+      ],
+      "question_markers_found": 204,
+      "answer_key_entries_found": 204,
+      "question_types": {
+        "single_correct_mcq": 138,
+        "numerical": 57,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 9,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/alternating_current/",
+      "images_generated": 204,
+      "cross_page_questions": [
+        {
+          "source": "JEE Main Alternating Current Previous Year Questions with Answer Key.pdf",
+          "question_no": 20,
+          "source_pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source": "JEE Main Alternating Current Previous Year Questions with Answer Key.pdf",
+          "question_no": 99,
+          "source_pages": [
+            29,
+            30
+          ]
+        },
+        {
+          "source": "JEE Main Alternating Current Previous Year Questions with Answer Key.pdf",
+          "question_no": 112,
+          "source_pages": [
+            35,
+            36
+          ]
+        }
+      ],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Atoms and Nuclei Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-atoms_and_nuclei",
+      "chapter": "Atoms and Nuclei",
+      "class": 12,
+      "question_count": 322,
+      "question_id_range": [
+        22495,
+        22816
+      ],
+      "question_pages": [
+        2,
+        69
+      ],
+      "answer_key_pages": [
+        70,
+        71,
+        72
+      ],
+      "question_markers_found": 322,
+      "answer_key_entries_found": 322,
+      "question_types": {
+        "single_correct_mcq": 171,
+        "numerical": 53,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 98,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/atoms_and_nuclei/",
+      "images_generated": 322,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Center of Mass and Collision Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-center_of_mass_and_collision",
+      "chapter": "Center of Mass and Collision",
+      "class": 11,
+      "question_count": 142,
+      "question_id_range": [
+        22817,
+        22958
+      ],
+      "question_pages": [
+        2,
+        42
+      ],
+      "answer_key_pages": [
+        43,
+        44
+      ],
+      "question_markers_found": 142,
+      "answer_key_entries_found": 142,
+      "question_types": {
+        "single_correct_mcq": 116,
+        "numerical": 26,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [
+        87
+      ],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/center_of_mass_and_collision/",
+      "images_generated": 142,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Circular Motion Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-circular_motion",
+      "chapter": "Circular Motion",
+      "class": 11,
+      "question_count": 79,
+      "question_id_range": [
+        22959,
+        23037
+      ],
+      "question_pages": [
+        2,
+        26
+      ],
+      "answer_key_pages": [
+        27
+      ],
+      "question_markers_found": 79,
+      "answer_key_entries_found": 79,
+      "question_types": {
+        "single_correct_mcq": 69,
+        "numerical": 10,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/circular_motion/",
+      "images_generated": 79,
+      "cross_page_questions": [
+        {
+          "source": "JEE Main Circular Motion Previous Year Questions with Answer Key.pdf",
+          "question_no": 35,
+          "source_pages": [
+            11,
+            12
+          ]
+        },
+        {
+          "source": "JEE Main Circular Motion Previous Year Questions with Answer Key.pdf",
+          "question_no": 39,
+          "source_pages": [
+            13,
+            14
+          ]
+        }
+      ],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Dual Nature of Radiation Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-dual_nature_of_radiation",
+      "chapter": "Dual Nature of Radiation",
+      "class": 12,
+      "question_count": 221,
+      "question_id_range": [
+        23038,
+        23258
+      ],
+      "question_pages": [
+        2,
+        56
+      ],
+      "answer_key_pages": [
+        57,
+        58
+      ],
+      "question_markers_found": 221,
+      "answer_key_entries_found": 221,
+      "question_types": {
+        "single_correct_mcq": 197,
+        "numerical": 16,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 8,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/dual_nature_of_radiation/",
+      "images_generated": 221,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Electromagnetic Waves Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-electromagnetic_waves",
+      "chapter": "Electromagnetic Waves",
+      "class": 12,
+      "question_count": 186,
+      "question_id_range": [
+        23259,
+        23444
+      ],
+      "question_pages": [
+        2,
+        47
+      ],
+      "answer_key_pages": [
+        48,
+        49
+      ],
+      "question_markers_found": 186,
+      "answer_key_entries_found": 186,
+      "question_types": {
+        "single_correct_mcq": 163,
+        "numerical": 22,
+        "multiple_correct_mcq": 1
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/electromagnetic_waves/",
+      "images_generated": 186,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Gravitation Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-gravitation",
+      "chapter": "Gravitation",
+      "class": 11,
+      "question_count": 218,
+      "question_id_range": [
+        23445,
+        23662
+      ],
+      "question_pages": [
+        2,
+        55
+      ],
+      "answer_key_pages": [
+        56,
+        57
+      ],
+      "question_markers_found": 218,
+      "answer_key_entries_found": 218,
+      "question_types": {
+        "single_correct_mcq": 201,
+        "numerical": 16,
+        "multiple_correct_mcq": 1
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/gravitation/",
+      "images_generated": 218,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Kinetic Theory of Gases Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-kinetic_theory_of_gases",
+      "chapter": "Kinetic Theory of Gases",
+      "class": 11,
+      "question_count": 167,
+      "question_id_range": [
+        23663,
+        23829
+      ],
+      "question_pages": [
+        2,
+        37
+      ],
+      "answer_key_pages": [
+        38,
+        39
+      ],
+      "question_markers_found": 167,
+      "answer_key_entries_found": 167,
+      "question_types": {
+        "single_correct_mcq": 151,
+        "numerical": 16,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [
+        8,
+        68
+      ],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/kinetic_theory_of_gases/",
+      "images_generated": 167,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Magnetic Properties of Matter Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-magnetic_properties_of_matter",
+      "chapter": "Magnetic Properties of Matter",
+      "class": 12,
+      "question_count": 84,
+      "question_id_range": [
+        23830,
+        23913
+      ],
+      "question_pages": [
+        2,
+        23
+      ],
+      "answer_key_pages": [
+        24
+      ],
+      "question_markers_found": 84,
+      "answer_key_entries_found": 84,
+      "question_types": {
+        "single_correct_mcq": 54,
+        "numerical": 11,
+        "multiple_correct_mcq": 1
+      },
+      "out_of_syllabus_count": 18,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2003,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/magnetic_properties_of_matter/",
+      "images_generated": 84,
+      "cross_page_questions": [
+        {
+          "source": "JEE Main Magnetic Properties of Matter Previous Year Questions with Answer Key.pdf",
+          "question_no": 9,
+          "source_pages": [
+            5,
+            6
+          ]
+        }
+      ],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Mechanical Properties of Fluids Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-mechanical_properties_of_fluids",
+      "chapter": "Mechanical Properties of Fluids",
+      "class": 11,
+      "question_count": 197,
+      "question_id_range": [
+        23914,
+        24110
+      ],
+      "question_pages": [
+        2,
+        50
+      ],
+      "answer_key_pages": [
+        51,
+        52
+      ],
+      "question_markers_found": 197,
+      "answer_key_entries_found": 197,
+      "question_types": {
+        "single_correct_mcq": 151,
+        "numerical": 46,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [
+        117
+      ],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/mechanical_properties_of_fluids/",
+      "images_generated": 197,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Mechanical Properties of Solids Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-mechanical_properties_of_solids",
+      "chapter": "Mechanical Properties of Solids",
+      "class": 11,
+      "question_count": 130,
+      "question_id_range": [
+        24111,
+        24240
+      ],
+      "question_pages": [
+        2,
+        31
+      ],
+      "answer_key_pages": [
+        32
+      ],
+      "question_markers_found": 130,
+      "answer_key_entries_found": 130,
+      "question_types": {
+        "single_correct_mcq": 84,
+        "numerical": 46,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2003,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/mechanical_properties_of_solids/",
+      "images_generated": 130,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Motion in a Plane Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-motion_in_a_plane",
+      "chapter": "Motion in a Plane",
+      "class": 11,
+      "question_count": 103,
+      "question_id_range": [
+        24241,
+        24343
+      ],
+      "question_pages": [
+        2,
+        22
+      ],
+      "answer_key_pages": [
+        23
+      ],
+      "question_markers_found": 103,
+      "answer_key_entries_found": 103,
+      "question_types": {
+        "single_correct_mcq": 83,
+        "numerical": 20,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [
+        20
+      ],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2003,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/motion_in_a_plane/",
+      "images_generated": 103,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Semiconductor Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-semiconductor",
+      "chapter": "Semiconductor",
+      "class": 12,
+      "question_count": 262,
+      "question_id_range": [
+        24344,
+        24605
+      ],
+      "question_pages": [
+        2,
+        133
+      ],
+      "answer_key_pages": [
+        134,
+        135
+      ],
+      "question_markers_found": 262,
+      "answer_key_entries_found": 262,
+      "question_types": {
+        "single_correct_mcq": 191,
+        "numerical": 27,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 44,
+      "scan_qr_question_numbers": [
+        37
+      ],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/semiconductor/",
+      "images_generated": 262,
+      "cross_page_questions": [
+        {
+          "source": "JEE Main Semiconductor Previous Year Questions with Answer Key.pdf",
+          "question_no": 10,
+          "source_pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source": "JEE Main Semiconductor Previous Year Questions with Answer Key.pdf",
+          "question_no": 171,
+          "source_pages": [
+            102,
+            103
+          ]
+        },
+        {
+          "source": "JEE Main Semiconductor Previous Year Questions with Answer Key.pdf",
+          "question_no": 172,
+          "source_pages": [
+            104,
+            105
+          ]
+        }
+      ],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Simple Harmonic Motion Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-simple_harmonic_motion",
+      "chapter": "Simple Harmonic Motion",
+      "class": 11,
+      "question_count": 194,
+      "question_id_range": [
+        24606,
+        24799
+      ],
+      "question_pages": [
+        2,
+        54
+      ],
+      "answer_key_pages": [
+        55,
+        56
+      ],
+      "question_markers_found": 194,
+      "answer_key_entries_found": 194,
+      "question_types": {
+        "single_correct_mcq": 140,
+        "numerical": 39,
+        "multiple_correct_mcq": 2
+      },
+      "out_of_syllabus_count": 13,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/simple_harmonic_motion/",
+      "images_generated": 194,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Thermal Properties of Matter Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-thermal_properties_of_matter",
+      "chapter": "Thermal Properties of Matter",
+      "class": 11,
+      "question_count": 120,
+      "question_id_range": [
+        24800,
+        24919
+      ],
+      "question_pages": [
+        2,
+        34
+      ],
+      "answer_key_pages": [
+        35
+      ],
+      "question_markers_found": 120,
+      "answer_key_entries_found": 120,
+      "question_types": {
+        "single_correct_mcq": 87,
+        "numerical": 17,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 16,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/thermal_properties_of_matter/",
+      "images_generated": 120,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Thermodynamics Previous Year Questions with Answer Key (1).pdf",
+      "sourceId": "jee-main-physics-examgoal-thermodynamics",
+      "chapter": "Thermodynamics",
+      "class": 11,
+      "question_count": 231,
+      "question_id_range": [
+        24920,
+        25150
+      ],
+      "question_pages": [
+        2,
+        70
+      ],
+      "answer_key_pages": [
+        71,
+        72
+      ],
+      "question_markers_found": 231,
+      "answer_key_entries_found": 231,
+      "question_types": {
+        "single_correct_mcq": 159,
+        "numerical": 24,
+        "multiple_correct_mcq": 2
+      },
+      "out_of_syllabus_count": 46,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/thermodynamics/",
+      "images_generated": 231,
+      "cross_page_questions": [
+        {
+          "source": "JEE Main Thermodynamics Previous Year Questions with Answer Key (1).pdf",
+          "question_no": 100,
+          "source_pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "source": "JEE Main Thermodynamics Previous Year Questions with Answer Key (1).pdf",
+          "question_no": 120,
+          "source_pages": [
+            41,
+            42
+          ]
+        },
+        {
+          "source": "JEE Main Thermodynamics Previous Year Questions with Answer Key (1).pdf",
+          "question_no": 125,
+          "source_pages": [
+            44,
+            45
+          ]
+        }
+      ],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Units & Measurements Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-units_measurements",
+      "chapter": "Units & Measurements",
+      "class": 11,
+      "question_count": 281,
+      "question_id_range": [
+        25151,
+        25431
+      ],
+      "question_pages": [
+        2,
+        61
+      ],
+      "answer_key_pages": [
+        62,
+        63
+      ],
+      "question_markers_found": 281,
+      "answer_key_entries_found": 281,
+      "question_types": {
+        "single_correct_mcq": 256,
+        "numerical": 24,
+        "multiple_correct_mcq": 1
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/units_measurements/",
+      "images_generated": 281,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Wave Optics Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-wave_optics",
+      "chapter": "Wave Optics",
+      "class": 12,
+      "question_count": 203,
+      "question_id_range": [
+        25432,
+        25634
+      ],
+      "question_pages": [
+        2,
+        44
+      ],
+      "answer_key_pages": [
+        45,
+        46
+      ],
+      "question_markers_found": 203,
+      "answer_key_entries_found": 203,
+      "question_types": {
+        "single_correct_mcq": 150,
+        "numerical": 52,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 1,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/wave_optics/",
+      "images_generated": 203,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Waves Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-waves",
+      "chapter": "Waves",
+      "class": 11,
+      "question_count": 178,
+      "question_id_range": [
+        25635,
+        25812
+      ],
+      "question_pages": [
+        2,
+        35
+      ],
+      "answer_key_pages": [
+        36,
+        37
+      ],
+      "question_markers_found": 178,
+      "answer_key_entries_found": 178,
+      "question_types": {
+        "single_correct_mcq": 99,
+        "numerical": 38,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 41,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/waves/",
+      "images_generated": 178,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Work Power & Energy Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-work_power_energy",
+      "chapter": "Work Power & Energy",
+      "class": 11,
+      "question_count": 165,
+      "question_id_range": [
+        25813,
+        25977
+      ],
+      "question_pages": [
+        2,
+        42
+      ],
+      "answer_key_pages": [
+        43,
+        44
+      ],
+      "question_markers_found": 165,
+      "answer_key_entries_found": 165,
+      "question_types": {
+        "single_correct_mcq": 123,
+        "numerical": 42,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/work_power_energy/",
+      "images_generated": 165,
+      "cross_page_questions": [
+        {
+          "source": "JEE Main Work Power & Energy Previous Year Questions with Answer Key.pdf",
+          "question_no": 56,
+          "source_pages": [
+            17,
+            18
+          ]
+        }
+      ],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Rotational Motion Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-rotational_motion",
+      "chapter": "Rotation",
+      "class": 11,
+      "question_count": 286,
+      "question_id_range": [
+        25978,
+        26263
+      ],
+      "question_pages": [
+        2,
+        91
+      ],
+      "answer_key_pages": [
+        92,
+        93
+      ],
+      "question_markers_found": 286,
+      "answer_key_entries_found": 286,
+      "question_types": {
+        "single_correct_mcq": 189,
+        "numerical": 96,
+        "multiple_correct_mcq": 1
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [],
+      "bonus_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/rotational_motion/",
+      "images_generated": 286,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Laws of Motion Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-laws_of_motion",
+      "chapter": "Laws of Motion",
+      "class": 11,
+      "question_count": 165,
+      "question_id_range": [
+        26264,
+        26428
+      ],
+      "question_pages": [
+        2,
+        55
+      ],
+      "answer_key_pages": [
+        56,
+        57
+      ],
+      "question_markers_found": 165,
+      "answer_key_entries_found": 165,
+      "question_types": {
+        "single_correct_mcq": 140,
+        "numerical": 25,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [
+        108
+      ],
+      "bonus_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/laws_of_motion/",
+      "images_generated": 165,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Electrostatics Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-electrostatics",
+      "chapter": "Electrostatics",
+      "class": 12,
+      "question_count": 303,
+      "question_id_range": [
+        26429,
+        26731
+      ],
+      "question_pages": [
+        2,
+        102
+      ],
+      "answer_key_pages": [
+        103,
+        105
+      ],
+      "question_markers_found": 303,
+      "answer_key_entries_found": 303,
+      "question_types": {
+        "single_correct_mcq": 248,
+        "numerical": 54,
+        "multiple_correct_mcq": 1
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [],
+      "bonus_question_numbers": [
+        254
+      ],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/electrostatics/",
+      "images_generated": 303,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Current Electricity Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-current_electricity",
+      "chapter": "Current Electricity",
+      "class": 12,
+      "question_count": 406,
+      "question_id_range": [
+        26732,
+        27137
+      ],
+      "question_pages": [
+        2,
+        124
+      ],
+      "answer_key_pages": [
+        125,
+        127
+      ],
+      "question_markers_found": 406,
+      "answer_key_entries_found": 406,
+      "question_types": {
+        "single_correct_mcq": 297,
+        "numerical": 109,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 34,
+      "scan_qr_question_numbers": [],
+      "bonus_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/current_electricity/",
+      "images_generated": 406,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Magnetic Effect of Current Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-magnetic_effect_of_current",
+      "chapter": "Moving Charges & Magnetism",
+      "class": 12,
+      "question_count": 258,
+      "question_id_range": [
+        27138,
+        27395
+      ],
+      "question_pages": [
+        2,
+        83
+      ],
+      "answer_key_pages": [
+        84,
+        85
+      ],
+      "question_markers_found": 258,
+      "answer_key_entries_found": 258,
+      "question_types": {
+        "single_correct_mcq": 211,
+        "numerical": 47,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 1,
+      "scan_qr_question_numbers": [],
+      "bonus_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/magnetic_effect_of_current/",
+      "images_generated": 258,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Electromagnetic Induction Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-electromagnetic_induction",
+      "chapter": "Electromagnetic Induction",
+      "class": 12,
+      "question_count": 155,
+      "question_id_range": [
+        27396,
+        27550
+      ],
+      "question_pages": [
+        2,
+        53
+      ],
+      "answer_key_pages": [
+        54,
+        55
+      ],
+      "question_markers_found": 155,
+      "answer_key_entries_found": 155,
+      "question_types": {
+        "single_correct_mcq": 109,
+        "numerical": 46,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 1,
+      "scan_qr_question_numbers": [],
+      "bonus_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/electromagnetic_induction/",
+      "images_generated": 155,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Capacitor Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-capacitor",
+      "chapter": "Capacitors",
+      "class": 12,
+      "question_count": 182,
+      "question_id_range": [
+        27551,
+        27732
+      ],
+      "question_pages": [
+        2,
+        64
+      ],
+      "answer_key_pages": [
+        65,
+        66
+      ],
+      "question_markers_found": 182,
+      "answer_key_entries_found": 182,
+      "question_types": {
+        "single_correct_mcq": 132,
+        "numerical": 50,
+        "multiple_correct_mcq": 0
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [],
+      "bonus_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/capacitor/",
+      "images_generated": 182,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    },
+    {
+      "source_pdf": "JEE Main Geometrical Optics Previous Year Questions with Answer Key.pdf",
+      "sourceId": "jee-main-physics-examgoal-geometrical_optics",
+      "chapter": "Ray Optics",
+      "class": 12,
+      "question_count": 281,
+      "question_id_range": [
+        27733,
+        28013
+      ],
+      "question_pages": [
+        2,
+        81
+      ],
+      "answer_key_pages": [
+        82,
+        83
+      ],
+      "question_markers_found": 281,
+      "answer_key_entries_found": 281,
+      "question_types": {
+        "single_correct_mcq": 213,
+        "numerical": 67,
+        "multiple_correct_mcq": 1
+      },
+      "out_of_syllabus_count": 0,
+      "scan_qr_question_numbers": [
+        24,
+        46,
+        183
+      ],
+      "bonus_question_numbers": [],
+      "unparsed_answer_key_entries": [],
+      "question_year_range": [
+        2002,
+        2026
+      ],
+      "image_directory": "assets/questions/physics_examgoal/geometrical_optics/",
+      "images_generated": 281,
+      "cross_page_questions": [],
+      "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
+    }
+  ]
+}

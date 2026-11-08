@@ -314,6 +314,12 @@ The six supplied JEE Main PYQ PDFs add 1,707 local, image-backed questions in `m
 
 Question IDs are 20584-22290. All out-of-syllabus questions with printed answers remain scored. Matrices and Determinants Q239 and Permutations and Combinations Q106 say “Scan QR” and remain unscored. Images are under `assets/questions/maths_complex_numbers/`, `assets/questions/maths_3d_geometry/`, `assets/questions/maths_statistics/`, `assets/questions/maths_matrices_determinants/`, `assets/questions/maths_permutations_combinations/`, and `assets/questions/maths_probability/`. The banks load locally; no Supabase rows were written. Answers were transcribed from the printed keys and have not all been independently re-solved. See `MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json`.
 
+## Physics chapters replaced from PDFs
+
+The 28 Physics PDFs in `questions/physics questions/` provide 5,723 image-backed questions in `physics_pdf_data.js`, with crops under `assets/questions/physics_examgoal/`. The three Maths PDFs in that folder were excluded. The added Rotational Motion, Capacitor, Magnetic Effect of Current, and Geometrical Optics PDFs map to the app’s existing Rotation, Capacitors, Moving Charges & Magnetism, and Ray Optics chapters. Matching Physics questions from Supabase are filtered in the browser and replaced by this local bank; Supabase itself was not changed.
+
+Magnetic Properties of Matter remains a separate chapter. Ten questions with “Scan QR” keys remain unscored, and Electrostatics Q254 is marked as a bonus question. Answers were transcribed from the printed keys and have not all been independently re-solved. See `PHYSICS_PDFS_IMPORT_QA.json`. The hosted site needs a separate deployment to serve the updated bank and images.
+
 ## Added Class 11 Maths chapters: Sequences and Series, and Binomial Theorem
 
 The supplied `JEE Main Sequences and Series Previous Year Questions with Answer Key.pdf` and `JEE Main Binomial Theorem Previous Year Questions with Answer Key.pdf` add 609 local, image-backed questions in `maths_sequences_series_binomial_theorem_data.js`:
