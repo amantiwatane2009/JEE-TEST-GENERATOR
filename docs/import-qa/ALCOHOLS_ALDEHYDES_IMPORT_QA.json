@@ -1,7 +1,7 @@
 {
   "source_pdf": "ilovepdf_merged (4).pdf",
   "sourceId": "jee-main-chemistry-organic-chapters-pyq-pdf",
-  "question_data_file": "alcohols_aldehydes_data.js",
+  "question_data_file": "../../data/question-banks/alcohols_aldehydes_data.js",
   "question_count": 494,
   "chapters": [
     {
@@ -32,7 +32,7 @@
         14707,
         14909
       ],
-      "images": "assets/questions/alcohols_phenols_ethers/",
+      "images": "../../assets/questions/alcohols_phenols_ethers/",
       "questions_with_page_continuations": [
         {
           "question_no": 38,
@@ -78,7 +78,7 @@
         14910,
         15200
       ],
-      "images": "assets/questions/aldehydes_ketones_carboxylic_acids/",
+      "images": "../../assets/questions/aldehydes_ketones_carboxylic_acids/",
       "questions_with_page_continuations": [
         {
           "question_no": 7,

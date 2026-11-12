@@ -34,8 +34,8 @@
     15417,
     15681
   ],
-  "image_directory": "assets/questions/compounds_containing_nitrogen/",
-  "question_data_file": "compounds_containing_nitrogen_data.js",
+  "image_directory": "../../assets/questions/compounds_containing_nitrogen/",
+  "question_data_file": "../../data/question-banks/compounds_containing_nitrogen_data.js",
   "supabase_sync": {
     "performed": false,
     "reason": "The chapter is registered as a local question bank; the configured browser key is read-only."

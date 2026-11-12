@@ -38,7 +38,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/periodic-table/"
+      "image_directory": "../../assets/questions/periodic-table/"
     },
     {
       "name": "Chemical Bonding & Molecular Structure",
@@ -65,7 +65,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/chemical-bonding/"
+      "image_directory": "../../assets/questions/chemical-bonding/"
     },
     {
       "name": "Salt Analysis",
@@ -102,7 +102,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/salt-analysis/"
+      "image_directory": "../../assets/questions/salt-analysis/"
     }
   ],
   "answer_missing_or_unparsed": [],

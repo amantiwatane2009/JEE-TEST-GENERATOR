@@ -36,7 +36,7 @@
         17601,
         17843
       ],
-      "image_directory": "assets/questions/chemical_thermodynamics/"
+      "image_directory": "../../assets/questions/chemical_thermodynamics/"
     }
   ],
   "answer_missing_or_unparsed": [],

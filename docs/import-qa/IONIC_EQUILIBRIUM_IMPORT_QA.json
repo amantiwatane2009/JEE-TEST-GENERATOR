@@ -19,7 +19,7 @@
     2,
     35
   ],
-  "images": "assets/questions/ionic_equilibrium/",
+  "images": "../../assets/questions/ionic_equilibrium/",
   "notes": [
     "Question images were cropped from pages 2-35 to preserve chemical notation and complete answer choices.",
     "Answers were transcribed from the printed PDF key; they have not all been independently re-solved.",

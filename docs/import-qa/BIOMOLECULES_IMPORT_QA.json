@@ -37,8 +37,8 @@
     15201,
     15416
   ],
-  "image_directory": "assets/questions/biomolecules/",
-  "question_data_file": "biomolecules_data.js",
+  "image_directory": "../../assets/questions/biomolecules/",
+  "question_data_file": "../../data/question-banks/biomolecules_data.js",
   "supabase_sync": {
     "performed": false,
     "attempted": true,

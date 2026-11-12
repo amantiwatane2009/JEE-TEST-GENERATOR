@@ -8,7 +8,7 @@
       "numerical": 23,
       "multi": 0,
       "answer_missing_or_unparsed": [],
-      "images": "assets/questions/solid_state/"
+      "images": "../../assets/questions/solid_state/"
     },
     {
       "chapter": "Solutions",
@@ -19,7 +19,7 @@
       "answer_missing_or_unparsed": [
         32
       ],
-      "images": "assets/questions/solutions/"
+      "images": "../../assets/questions/solutions/"
     },
     {
       "chapter": "Electrochemistry",
@@ -28,7 +28,7 @@
       "numerical": 92,
       "multi": 0,
       "answer_missing_or_unparsed": [],
-      "images": "assets/questions/electrochemistry/"
+      "images": "../../assets/questions/electrochemistry/"
     }
   ],
   "notes": [

@@ -29,7 +29,7 @@
         2002,
         2024
       ],
-      "image_directory": "assets/questions/s_block/",
+      "image_directory": "../../assets/questions/s_block/",
       "out_of_syllabus": {
         "count": 129,
         "ranges": [
@@ -63,7 +63,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/p_block/",
+      "image_directory": "../../assets/questions/p_block/",
       "out_of_syllabus": {
         "count": 148,
         "ranges": [
@@ -102,7 +102,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/coordination_compounds/",
+      "image_directory": "../../assets/questions/coordination_compounds/",
       "out_of_syllabus": {
         "count": 0,
         "ranges": []

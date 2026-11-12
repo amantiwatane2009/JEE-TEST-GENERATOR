@@ -42,7 +42,7 @@
         19975,
         20315
       ],
-      "image_directory": "assets/questions/maths_sequences_series/"
+      "image_directory": "../../assets/questions/maths_sequences_series/"
     },
     {
       "name": "Binomial Theorem",
@@ -65,7 +65,7 @@
         20316,
         20583
       ],
-      "image_directory": "assets/questions/maths_binomial_theorem/"
+      "image_directory": "../../assets/questions/maths_binomial_theorem/"
     }
   ],
   "source_details": [
@@ -129,7 +129,7 @@
         19975,
         20315
       ],
-      "image_directory": "assets/questions/maths_sequences_series/"
+      "image_directory": "../../assets/questions/maths_sequences_series/"
     },
     {
       "source_pdf": "JEE Main Binomial Theorem Previous Year Questions with Answer Key.pdf",
@@ -189,7 +189,7 @@
         20316,
         20583
       ],
-      "image_directory": "assets/questions/maths_binomial_theorem/"
+      "image_directory": "../../assets/questions/maths_binomial_theorem/"
     }
   ],
   "answer_missing_or_unparsed": [],

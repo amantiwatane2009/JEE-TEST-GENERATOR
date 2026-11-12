@@ -79,7 +79,7 @@
         37,
         38
       ],
-      "image_directory": "assets/questions/maths_complex_numbers/"
+      "image_directory": "../../assets/questions/maths_complex_numbers/"
     },
     {
       "name": "3D Geometry",
@@ -127,7 +127,7 @@
         69,
         71
       ],
-      "image_directory": "assets/questions/maths_3d_geometry/"
+      "image_directory": "../../assets/questions/maths_3d_geometry/"
     },
     {
       "name": "Statistics",
@@ -164,7 +164,7 @@
         29,
         30
       ],
-      "image_directory": "assets/questions/maths_statistics/"
+      "image_directory": "../../assets/questions/maths_statistics/"
     },
     {
       "name": "Matrices and Determinants",
@@ -215,7 +215,7 @@
         90,
         92
       ],
-      "image_directory": "assets/questions/maths_matrices_determinants/"
+      "image_directory": "../../assets/questions/maths_matrices_determinants/"
     },
     {
       "name": "Permutations and Combinations",
@@ -255,7 +255,7 @@
         36,
         37
       ],
-      "image_directory": "assets/questions/maths_permutations_combinations/"
+      "image_directory": "../../assets/questions/maths_permutations_combinations/"
     },
     {
       "name": "Probability",
@@ -303,7 +303,7 @@
         44,
         45
       ],
-      "image_directory": "assets/questions/maths_probability/"
+      "image_directory": "../../assets/questions/maths_probability/"
     }
   ],
   "supabase_sync": {

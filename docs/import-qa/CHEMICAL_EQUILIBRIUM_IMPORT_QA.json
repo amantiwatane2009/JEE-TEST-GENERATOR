@@ -34,7 +34,7 @@
     "schema_changed": false,
     "website_deployed": false
   },
-  "images": "assets/questions/chemical_equilibrium/",
+  "images": "../../assets/questions/chemical_equilibrium/",
   "notes": [
     "Question images are source-faithful grayscale crops with formulas and options preserved.",
     "Answers were transcribed from the supplied printed key and have not all been independently re-solved.",

@@ -64,7 +64,7 @@
     "status": "pending-authorization",
     "error": "Supabase returned HTTP 401 for the configured publishable key; it has no database write authorization."
   },
-  "images": "assets/questions/maths_differential_equations/",
+  "images": "../../assets/questions/maths_differential_equations/",
   "notes": [
     "The PDF's 23 out-of-syllabus questions (Q244-Q266) are excluded.",
     "Question images are source-faithful page crops preserving formulas and options.",

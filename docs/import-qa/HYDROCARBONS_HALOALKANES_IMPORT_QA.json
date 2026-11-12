@@ -1,7 +1,7 @@
 {
   "source_pdf": "ilovepdf_merged (2).pdf",
   "sourceId": "jee-main-chemistry-hydrocarbons-haloalkanes-pyq-pdf",
-  "question_data_file": "hydrocarbons_haloalkanes_data.js",
+  "question_data_file": "../../data/question-banks/hydrocarbons_haloalkanes_data.js",
   "question_count": 390,
   "chapters": [
     {
@@ -32,7 +32,7 @@
         14317,
         14504
       ],
-      "images": "assets/questions/hydrocarbons/"
+      "images": "../../assets/questions/hydrocarbons/"
     },
     {
       "chapter": "Haloalkanes and Haloarenes",
@@ -61,7 +61,7 @@
         14505,
         14706
       ],
-      "images": "assets/questions/haloalkanes_haloarenes/"
+      "images": "../../assets/questions/haloalkanes_haloarenes/"
     }
   ],
   "supabase_sync": {

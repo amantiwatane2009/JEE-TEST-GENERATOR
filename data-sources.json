@@ -8,7 +8,7 @@
       "class": 11,
       "sourceType": "PYQ",
       "status": "active",
-      "questionBankFile": "data.js",
+      "questionBankFile": "data/question-banks/data.js",
       "notes": "Existing production question bank. Preserve IDs and image paths."
     },
     {
@@ -44,7 +44,7 @@
       "sourceType": "PYQ",
       "status": "imported-needs-content-review",
       "originalFilename": "JEE Main d and f Block Elements Previous Year Questions with Answer Key(1).pdf",
-      "questionBankFile": "d_f_block_data.js",
+      "questionBankFile": "data/question-banks/d_f_block_data.js",
       "questionCount": 245,
       "notes": "Integrated as a separate question bank. Image crops preserve the printed source. Q108's QR-only key is handled as an unflagged bonus question: any non-empty response scores. Q245 supports multiple selection and is scored."
     },
@@ -56,7 +56,7 @@
       "sourceType": "PYQ",
       "status": "imported-needs-visual-review",
       "originalFilename": "integration + aoi pyq.pdf",
-      "questionBankFile": "maths_integration_aoi_data.js",
+      "questionBankFile": "data/question-banks/maths_integration_aoi_data.js",
       "questionCount": 569,
       "notes": "Includes Indefinite Integrals Q1-Q90, Definite Integration Q1-Q309 (excludes OOS Q310-Q331), and Area Under the Curves Q1-Q170. Crops preserve printed mathematical notation. Answer keys transcribed from PDF; flagged malformed/missing entries are excluded from scoring."
     },
@@ -71,7 +71,7 @@
       "includedQuestions": 225,
       "excludedOutOfSyllabusQuestions": 56,
       "sourceFile": "Vector_Algebra_JEE_Main_PYQs_Clean_BW.pdf",
-      "questionBankFile": "vector_algebra_data.js",
+      "questionBankFile": "data/question-banks/vector_algebra_data.js",
       "questionCount": 225,
       "questionIdRange": [
         11245,
@@ -87,7 +87,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-key-mapping",
       "originalFilename": "stl lines + conics .pdf",
-      "questionBankFile": "maths_straight_lines_conics_data.js",
+      "questionBankFile": "data/question-banks/maths_straight_lines_conics_data.js",
       "questionCount": 732,
       "questionIdRange": [
         12000,
@@ -120,7 +120,7 @@
           "count": 97
         }
       ],
-      "notes": "Loaded locally for Class 11 Maths practice with image crops under assets/questions/maths_straight_lines_conics/. All 732 answer fields are blank and remain unscored until their keys are mapped. See MATHS_STRAIGHT_LINES_CONICS_IMPORT_QA.json."
+      "notes": "Loaded locally for Class 11 Maths practice with image crops under assets/questions/maths_straight_lines_conics/. All 732 answer fields are blank and remain unscored until their keys are mapped. See docs/import-qa/MATHS_STRAIGHT_LINES_CONICS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-ionic-equilibrium-pyq-pdf",
@@ -130,7 +130,7 @@
       "sourceType": "PYQ",
       "status": "imported-needs-answer-review",
       "originalFilename": "JEE Main Ionic Equilibrium Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "ionic_equilibrium_data.js",
+      "questionBankFile": "data/question-banks/ionic_equilibrium_data.js",
       "questionCount": 154,
       "notes": "Added as Class 11 Chemistry. 108 MCQs and 46 numerical questions from 2002-2026. Source images preserve notation. Q83 answer key says Scan QR and remains flagged/excluded from scoring. Other keys were transcribed from the PDF and have not all been independently re-solved."
     },
@@ -143,7 +143,7 @@
       "sourceType": "PYQ",
       "status": "imported-needs-answer-review",
       "originalFilename": "JEE Main Chemical Equilibrium Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "chemical_equilibrium_data.js",
+      "questionBankFile": "data/question-banks/chemical_equilibrium_data.js",
       "questionCount": 127,
       "questionIdRange": [
         13152,
@@ -158,7 +158,7 @@
         2002,
         2026
       ],
-      "notes": "Available locally in Class 11 Chemistry and synced to public.jee_questions as 127 rows under source_file chemical_equilibrium_data.js. Question images are under assets/questions/chemical_equilibrium/. Answers were transcribed from the PDF key and have not all been independently re-solved. Q122 accepts 72 to 75; Q127 is multiple-correct with A,B. The local chapter remains usable if Supabase is unavailable. Static website deployment is separate. See CHEMICAL_EQUILIBRIUM_IMPORT_QA.json."
+      "notes": "Available locally in Class 11 Chemistry and synced to public.jee_questions as 127 rows under source_file chemical_equilibrium_data.js. Question images are under assets/questions/chemical_equilibrium/. Answers were transcribed from the PDF key and have not all been independently re-solved. Q122 accepts 72 to 75; Q127 is multiple-correct with A,B. The local chapter remains usable if Supabase is unavailable. Static website deployment is separate. See docs/import-qa/CHEMICAL_EQUILIBRIUM_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-chemistry-hydrocarbons-haloalkanes-pyq-pdf",
@@ -167,7 +167,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "ilovepdf_merged (2).pdf",
-      "questionBankFile": "hydrocarbons_haloalkanes_data.js",
+      "questionBankFile": "data/question-banks/hydrocarbons_haloalkanes_data.js",
       "questionCount": 390,
       "questionIdRange": [
         14317,
@@ -200,7 +200,7 @@
         2002,
         2026
       ],
-      "notes": "The merged ExamGOAL PDF contains Class 11 Hydrocarbons and Class 12 Haloalkanes and Haloarenes. All 390 questions are available locally. Supabase sync is pending because the configured publishable key has read-only access (HTTP 401 on insert). Question images are in assets/questions/hydrocarbons/ and assets/questions/haloalkanes_haloarenes/. Answers were transcribed from the printed key and have not all been independently re-solved. Hydrocarbons Q167 accepts either 8 or 6. See HYDROCARBONS_HALOALKANES_IMPORT_QA.json."
+      "notes": "The merged ExamGOAL PDF contains Class 11 Hydrocarbons and Class 12 Haloalkanes and Haloarenes. All 390 questions are available locally. Supabase sync is pending because the configured publishable key has read-only access (HTTP 401 on insert). Question images are in assets/questions/hydrocarbons/ and assets/questions/haloalkanes_haloarenes/. Answers were transcribed from the printed key and have not all been independently re-solved. Hydrocarbons Q167 accepts either 8 or 6. See docs/import-qa/HYDROCARBONS_HALOALKANES_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-chemistry-organic-chapters-pyq-pdf",
@@ -210,7 +210,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "ilovepdf_merged (4).pdf",
-      "questionBankFile": "alcohols_aldehydes_data.js",
+      "questionBankFile": "data/question-banks/alcohols_aldehydes_data.js",
       "questionCount": 494,
       "questionIdRange": [
         14707,
@@ -240,7 +240,7 @@
           "multiple_correct_mcq": 4
         }
       },
-      "notes": "Both chapters are loaded locally with source-page crops and printed answer keys. Images are under assets/questions/alcohols_phenols_ethers/ and assets/questions/aldehydes_ketones_carboxylic_acids/. Answers have not all been independently re-solved. Supabase sync is pending because the configured key previously returned HTTP 401 on insert. See ALCOHOLS_ALDEHYDES_IMPORT_QA.json."
+      "notes": "Both chapters are loaded locally with source-page crops and printed answer keys. Images are under assets/questions/alcohols_phenols_ethers/ and assets/questions/aldehydes_ketones_carboxylic_acids/. Answers have not all been independently re-solved. Supabase sync is pending because the configured key previously returned HTTP 401 on insert. See docs/import-qa/ALCOHOLS_ALDEHYDES_IMPORT_QA.json."
     },
     {
       "sourceId": "neet-biology-3-chapters-pdf",
@@ -250,7 +250,7 @@
       "sourceType": "PYQ",
       "status": "imported-needs-answer-review",
       "originalFilename": "Biology 3 chaps.pdf",
-      "questionBankFile": "biology_three_chapters_data.json",
+      "questionBankFile": "data/question-banks/biology_three_chapters_data.json",
       "questionCount": 266,
       "chapters": [
         {
@@ -277,7 +277,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "GOC.pdf",
-      "questionBankFile": "goc_data.js",
+      "questionBankFile": "data/question-banks/goc_data.js",
       "questionCount": 316,
       "questionIdRange": [
         13279,
@@ -306,7 +306,7 @@
           "count": 310
         }
       ],
-      "notes": "The three source sections are combined under the requested single chapter GOC. Question images are in assets/questions/goc/. Basics of Organic Chemistry Q310 is marked out of syllabus and remains visible but unscored. Supabase sync is still pending. Answer keys were transcribed from the PDF and have not all been independently re-solved. See GOC_IMPORT_QA.json."
+      "notes": "The three source sections are combined under the requested single chapter GOC. Question images are in assets/questions/goc/. Basics of Organic Chemistry Q310 is marked out of syllabus and remains visible but unscored. Supabase sync is still pending. Answer keys were transcribed from the PDF and have not all been independently re-solved. See docs/import-qa/GOC_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-chemistry-bonding-periodic-salt-analysis-pdf",
@@ -320,7 +320,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "chem bonding + periodic table + salt analysis.pdf",
-      "questionBankFile": "chemistry_bonding_periodic_salt_data.js",
+      "questionBankFile": "data/question-banks/chemistry_bonding_periodic_salt_data.js",
       "questionCount": 556,
       "questionIdRange": [
         15682,
@@ -362,7 +362,7 @@
           ]
         }
       ],
-      "notes": "Question images are under assets/questions/periodic-table/, assets/questions/chemical-bonding/, and assets/questions/salt-analysis/. Chemical Bonding Q23 spans two source pages and is kept as one image. Salt Analysis questions are shared by Class 11 and Class 12 without duplicate records. The source-marked out-of-syllabus questions remain visible and unscored. Answers were transcribed from the printed key and have not all been independently re-solved. Supabase was not modified. See CHEMISTRY_BONDING_PERIODIC_SALT_IMPORT_QA.json."
+      "notes": "Question images are under assets/questions/periodic-table/, assets/questions/chemical-bonding/, and assets/questions/salt-analysis/. Chemical Bonding Q23 spans two source pages and is kept as one image. Salt Analysis questions are shared by Class 11 and Class 12 without duplicate records. The source-marked out-of-syllabus questions remain visible and unscored. Answers were transcribed from the printed key and have not all been independently re-solved. Supabase was not modified. See docs/import-qa/CHEMISTRY_BONDING_PERIODIC_SALT_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-chemistry-s-block-p-block-coordination-compounds-pyq-pdf",
@@ -376,7 +376,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "COORDINATION + S BLOCK + P BLOCK.pdf",
-      "questionBankFile": "chemistry_s_p_block_coordination_data.js",
+      "questionBankFile": "data/question-banks/chemistry_s_p_block_coordination_data.js",
       "questionCount": 791,
       "questionIdRange": [
         16238,
@@ -424,7 +424,7 @@
           ]
         }
       ],
-      "notes": "Question images are under assets/questions/s_block/, assets/questions/p_block/, and assets/questions/coordination_compounds/. All s-Block questions and p-Block Q135-Q282 are marked out of syllabus in the source and remain visible but unscored. The printed key says Scan QR for p-Block Q243 and Coordination Compounds Q110, Q174, and Q200; these remain visible but unscored. Answers were transcribed from the printed key and have not all been independently re-solved. Supabase was not modified. See CHEMISTRY_S_P_BLOCK_COORDINATION_IMPORT_QA.json."
+      "notes": "Question images are under assets/questions/s_block/, assets/questions/p_block/, and assets/questions/coordination_compounds/. All s-Block questions and p-Block Q135-Q282 are marked out of syllabus in the source and remain visible but unscored. The printed key says Scan QR for p-Block Q243 and Coordination Compounds Q110, Q174, and Q200; these remain visible but unscored. Answers were transcribed from the printed key and have not all been independently re-solved. Supabase was not modified. See docs/import-qa/CHEMISTRY_S_P_BLOCK_COORDINATION_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-differential-equations-pyq-pdf",
@@ -435,7 +435,7 @@
       "sourceType": "PYQ",
       "status": "imported-needs-answer-review",
       "originalFilename": "JEE Main Differential Equations Previous Year Questions with Answer Key (1).pdf",
-      "questionBankFile": "differential_equations_data.js",
+      "questionBankFile": "data/question-banks/differential_equations_data.js",
       "questionCount": 243,
       "questionIdRange": [
         14000,
@@ -456,7 +456,7 @@
           266
         ]
       },
-      "notes": "Available locally in Class 12 Maths; Supabase sync is pending because the configured publishable key has no write authorization. Question images are under assets/questions/maths_differential_equations/. Answers were transcribed from the printed key and have not all been independently re-solved; Q12 has no printed answer and remains flagged. See DIFFERENTIAL_EQUATIONS_IMPORT_QA.json."
+      "notes": "Available locally in Class 12 Maths; Supabase sync is pending because the configured publishable key has no write authorization. Question images are under assets/questions/maths_differential_equations/. Answers were transcribed from the printed key and have not all been independently re-solved; Q12 has no printed answer and remains flagged. See docs/import-qa/DIFFERENTIAL_EQUATIONS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-chemistry-basic-concepts-structure-atom-redox-pyq-pdf",
@@ -466,7 +466,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "ilovepdf_merged (9).pdf",
-      "questionBankFile": "chemistry_basic_structure_redox_data.js",
+      "questionBankFile": "data/question-banks/chemistry_basic_structure_redox_data.js",
       "questionCount": 572,
       "questionIdRange": [
         17029,
@@ -493,7 +493,7 @@
           ]
         }
       },
-      "notes": "Added as three Class 11 Chemistry chapters with source-faithful per-question image crops. The nine source-marked out-of-syllabus questions retain their tags and are scored using the printed keys. Answers have not all been independently re-solved. The question bank is loaded locally; Supabase was not modified. See CHEMISTRY_BASIC_STRUCTURE_REDOX_IMPORT_QA.json."
+      "notes": "Added as three Class 11 Chemistry chapters with source-faithful per-question image crops. The nine source-marked out-of-syllabus questions retain their tags and are scored using the printed keys. Answers have not all been independently re-solved. The question bank is loaded locally; Supabase was not modified. See docs/import-qa/CHEMISTRY_BASIC_STRUCTURE_REDOX_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-chemistry-chemical-thermodynamics-pyq-pdf",
@@ -503,7 +503,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Thermodynamics Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "chemical_thermodynamics_data.js",
+      "questionBankFile": "data/question-banks/chemical_thermodynamics_data.js",
       "questionCount": 243,
       "questionIdRange": [
         17601,
@@ -517,7 +517,7 @@
         2002,
         2026
       ],
-      "notes": "Added as Class 11 Chemistry Chemical Thermodynamics with source-page crops. The PDF does not mark any questions out of syllabus; all 243 printed answers are included and numerical ranges are preserved for scoring. Answers have not all been independently re-solved. The question bank loads locally; Supabase was not modified. See CHEMICAL_THERMODYNAMICS_IMPORT_QA.json."
+      "notes": "Added as Class 11 Chemistry Chemical Thermodynamics with source-page crops. The PDF does not mark any questions out of syllabus; all 243 printed answers are included and numerical ranges are preserved for scoring. Answers have not all been independently re-solved. The question bank loads locally; Supabase was not modified. See docs/import-qa/CHEMICAL_THERMODYNAMICS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-functions-limits-differentiation-aod-pyq-pdf",
@@ -531,7 +531,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "functions, limits, differentiation , aod .pdf",
-      "questionBankFile": "maths_functions_limits_differentiation_aod_data.js",
+      "questionBankFile": "data/question-banks/maths_functions_limits_differentiation_aod_data.js",
       "questionCount": 823,
       "questionIdRange": [
         17844,
@@ -729,7 +729,7 @@
           ]
         }
       ],
-      "notes": "Adds Class 11 Functions and Limits plus Class 12 Differentiation and Application of Derivatives. The source marks Differentiation Q88 and Application of Derivatives Q193-Q262 out of syllabus; all have printed answers and remain scored. Differentiation Q9 and Application of Derivatives Q52 say Scan QR and remain unscored. No Supabase rows were written. See MATHS_FUNCTIONS_LIMITS_DIFFERENTIATION_AOD_IMPORT_QA.json."
+      "notes": "Adds Class 11 Functions and Limits plus Class 12 Differentiation and Application of Derivatives. The source marks Differentiation Q88 and Application of Derivatives Q193-Q262 out of syllabus; all have printed answers and remain scored. Differentiation Q9 and Application of Derivatives Q52 say Scan QR and remain unscored. No Supabase rows were written. See docs/import-qa/MATHS_FUNCTIONS_LIMITS_DIFFERENTIATION_AOD_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-trigonometric-equations-pyq-pdf",
@@ -739,7 +739,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Trigonometric Equations Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "maths_trigonometry_data.js",
+      "questionBankFile": "data/question-banks/maths_trigonometry_data.js",
       "chapter": "Trigonometry",
       "questionCount": 66,
       "questionIdRange": [
@@ -760,7 +760,7 @@
           "Trigonometry": [22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66]
         }
       },
-      "notes": "Added under the Class 11 Trigonometry chapter alongside Trigonometric Ratio and Identities. The source marks Q22-Q66 out of syllabus; all 45 have printed answers and remain scored. No Supabase rows were written. See MATHS_TRIGONOMETRY_IMPORT_QA.json."
+      "notes": "Added under the Class 11 Trigonometry chapter alongside Trigonometric Ratio and Identities. The source marks Q22-Q66 out of syllabus; all 45 have printed answers and remain scored. No Supabase rows were written. See docs/import-qa/MATHS_TRIGONOMETRY_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-trigonometric-ratio-identities-pyq-pdf",
@@ -770,7 +770,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Trigonometric Ratio and Identites Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "maths_trigonometry_data.js",
+      "questionBankFile": "data/question-banks/maths_trigonometry_data.js",
       "chapter": "Trigonometry",
       "questionCount": 74,
       "questionIdRange": [
@@ -785,7 +785,7 @@
         2004,
         2026
       ],
-      "notes": "Combined with the Trigonometric Equations source under the Class 11 Trigonometry chapter, as requested. No Supabase rows were written. See MATHS_TRIGONOMETRY_IMPORT_QA.json."
+      "notes": "Combined with the Trigonometric Equations source under the Class 11 Trigonometry chapter, as requested. No Supabase rows were written. See docs/import-qa/MATHS_TRIGONOMETRY_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-inverse-trigonometric-functions-pyq-pdf",
@@ -795,7 +795,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Inverse Trigonometric Functions Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "maths_trigonometry_data.js",
+      "questionBankFile": "data/question-banks/maths_trigonometry_data.js",
       "chapter": "Inverse Trigonometric Functions",
       "questionCount": 108,
       "questionIdRange": [
@@ -817,7 +817,7 @@
           "Inverse Trigonometric Functions": [108]
         }
       },
-      "notes": "The source marks Q108 out of syllabus; its printed answer is included and it remains scored. Q107 is multiple-correct with printed answers A and D. No Supabase rows were written. See MATHS_TRIGONOMETRY_IMPORT_QA.json."
+      "notes": "The source marks Q108 out of syllabus; its printed answer is included and it remains scored. Q107 is multiple-correct with printed answers A and D. No Supabase rows were written. See docs/import-qa/MATHS_TRIGONOMETRY_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-chemistry-chemical-kinetics-pyq-pdf",
@@ -826,7 +826,7 @@
       "class": 12,
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
-      "questionBankFile": "chemical_kinetics_data.js",
+      "questionBankFile": "data/question-banks/chemical_kinetics_data.js",
       "questionCount": 223,
       "questionIdRange": [
         18915,
@@ -843,7 +843,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "solid state+ solutions + electrochem.pdf",
-      "questionBankFile": "solid_state_solutions_electrochemistry_data.js",
+      "questionBankFile": "data/question-banks/solid_state_solutions_electrochemistry_data.js",
       "questionCount": 489,
       "questionIdRange": [
         19138,
@@ -866,7 +866,7 @@
           "count": 225
         }
       ],
-      "notes": "Loaded locally with image crops under assets/questions/solid_state/, assets/questions/solutions/, and assets/questions/electrochemistry/. Solid State is retained for optional legacy practice because the source marks it out of the current JEE Main syllabus. Solutions Q32 has no answer key and remains flagged/unscored. See CHEMISTRY_CHAPTERS_IMPORT_QA.json."
+      "notes": "Loaded locally with image crops under assets/questions/solid_state/, assets/questions/solutions/, and assets/questions/electrochemistry/. Solid State is retained for optional legacy practice because the source marks it out of the current JEE Main syllabus. Solutions Q32 has no answer key and remains flagged/unscored. See docs/import-qa/CHEMISTRY_CHAPTERS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-sets-logarithm-quadratic-pyq-pdf",
@@ -876,7 +876,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "sets + log + quadratic .pdf",
-      "questionBankFile": "maths_sets_log_quadratic_data.js",
+      "questionBankFile": "data/question-banks/maths_sets_log_quadratic_data.js",
       "questionCount": 348,
       "questionIdRange": [
         19627,
@@ -915,7 +915,7 @@
           ]
         }
       },
-      "notes": "All 348 printed answer-key entries are mapped. The source marks Quadratic Equation and Inequalities Q212 out of syllabus; its printed answer is 4 and it remains scored. Images are under assets/questions/maths_sets_log_quadratic/. The bank is local; no Supabase rows were written. See MATHS_SETS_LOG_QUADRATIC_IMPORT_QA.json."
+      "notes": "All 348 printed answer-key entries are mapped. The source marks Quadratic Equation and Inequalities Q212 out of syllabus; its printed answer is 4 and it remains scored. Images are under assets/questions/maths_sets_log_quadratic/. The bank is local; no Supabase rows were written. See docs/import-qa/MATHS_SETS_LOG_QUADRATIC_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-sequences-and-series-pyq-pdf",
@@ -925,7 +925,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Sequences and Series Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "maths_sequences_series_binomial_theorem_data.js",
+      "questionBankFile": "data/question-banks/maths_sequences_series_binomial_theorem_data.js",
       "chapter": "Sequences and Series",
       "questionCount": 341,
       "questionIdRange": [19975, 20315],
@@ -934,7 +934,7 @@
         "numerical": 78
       },
       "yearRange": [2002, 2026],
-      "notes": "Question pages 2-52 and answer-key pages 53-55. Q231-Q341 are marked out of syllabus and remain scored when answered. Q164, Q240, and Q301 have Scan QR keys and remain unscored. See MATHS_SEQUENCES_BINOMIAL_IMPORT_QA.json."
+      "notes": "Question pages 2-52 and answer-key pages 53-55. Q231-Q341 are marked out of syllabus and remain scored when answered. Q164, Q240, and Q301 have Scan QR keys and remain unscored. See docs/import-qa/MATHS_SEQUENCES_BINOMIAL_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-binomial-theorem-pyq-pdf",
@@ -944,7 +944,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Binomial Theorem Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "maths_sequences_series_binomial_theorem_data.js",
+      "questionBankFile": "data/question-banks/maths_sequences_series_binomial_theorem_data.js",
       "chapter": "Binomial Theorem",
       "questionCount": 268,
       "questionIdRange": [20316, 20583],
@@ -953,7 +953,7 @@
         "numerical": 89
       },
       "yearRange": [2002, 2026],
-      "notes": "Question pages 2-41 and answer-key pages 42-43. Q193-Q268 are marked out of syllabus and remain scored when answered. Q39 has a Scan QR key and remains unscored. Q245-Q248 are MCQs; the numerical section begins at Q249. See MATHS_SEQUENCES_BINOMIAL_IMPORT_QA.json."
+      "notes": "Question pages 2-41 and answer-key pages 42-43. Q193-Q268 are marked out of syllabus and remain scored when answered. Q39 has a Scan QR key and remains unscored. Q245-Q248 are MCQs; the numerical section begins at Q249. See docs/import-qa/MATHS_SEQUENCES_BINOMIAL_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-complex-numbers-pyq-pdf",
@@ -963,14 +963,14 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Complex Numbers Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "questionBankFile": "data/question-banks/maths_complex_3d_statistics_matrices_pnc_probability_data.js",
       "chapter": "Complex Numbers",
       "questionCount": 224,
       "questionIdRange": [20584, 20807],
       "questionTypes": { "single_correct_mcq": 185, "numerical": 39 },
       "yearRange": [2002, 2026],
       "outOfSyllabus": { "count": 1, "questionNumberRange": [224, 224] },
-      "notes": "Question pages 2-36; answer-key pages 37-38. Q224 is out of syllabus and remains scored using its printed key. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
+      "notes": "Question pages 2-36; answer-key pages 37-38. Q224 is out of syllabus and remains scored using its printed key. No Supabase rows were written. See docs/import-qa/MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-3d-geometry-pyq-pdf",
@@ -980,14 +980,14 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main 3D Geometry Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "questionBankFile": "data/question-banks/maths_complex_3d_statistics_matrices_pnc_probability_data.js",
       "chapter": "3D Geometry",
       "questionCount": 418,
       "questionIdRange": [20808, 21225],
       "questionTypes": { "single_correct_mcq": 331, "numerical": 87 },
       "yearRange": [2002, 2026],
       "outOfSyllabus": { "count": 219, "questionNumberRange": [200, 418] },
-      "notes": "Question pages 2-68; answer-key pages 69-71. Q200-Q418 are out of syllabus and remain scored using their printed keys. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
+      "notes": "Question pages 2-68; answer-key pages 69-71. Q200-Q418 are out of syllabus and remain scored using their printed keys. No Supabase rows were written. See docs/import-qa/MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-statistics-pyq-pdf",
@@ -997,13 +997,13 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Statistics Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "questionBankFile": "data/question-banks/maths_complex_3d_statistics_matrices_pnc_probability_data.js",
       "chapter": "Statistics",
       "questionCount": 160,
       "questionIdRange": [21226, 21385],
       "questionTypes": { "single_correct_mcq": 123, "numerical": 37 },
       "yearRange": [2002, 2026],
-      "notes": "Question pages 2-28; answer-key pages 29-30. All 160 printed answer keys are mapped. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
+      "notes": "Question pages 2-28; answer-key pages 29-30. All 160 printed answer keys are mapped. No Supabase rows were written. See docs/import-qa/MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-matrices-determinants-pyq-pdf",
@@ -1013,14 +1013,14 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Matrices and Determinants Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "questionBankFile": "data/question-banks/maths_complex_3d_statistics_matrices_pnc_probability_data.js",
       "chapter": "Matrices and Determinants",
       "questionCount": 414,
       "questionIdRange": [21386, 21799],
       "questionTypes": { "single_correct_mcq": 334, "numerical": 80 },
       "yearRange": [2002, 2026],
       "outOfSyllabus": { "count": 57, "questionNumberRange": [358, 414] },
-      "notes": "Question pages 2-89; answer-key pages 90-92. Q358-Q414 are out of syllabus and remain scored. Q239 has a Scan QR key and remains unscored. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
+      "notes": "Question pages 2-89; answer-key pages 90-92. Q358-Q414 are out of syllabus and remain scored. Q239 has a Scan QR key and remains unscored. No Supabase rows were written. See docs/import-qa/MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-permutations-combinations-pyq-pdf",
@@ -1030,13 +1030,13 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Permutations and Combinations Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "questionBankFile": "data/question-banks/maths_complex_3d_statistics_matrices_pnc_probability_data.js",
       "chapter": "Permutations and Combinations",
       "questionCount": 236,
       "questionIdRange": [21800, 22035],
       "questionTypes": { "single_correct_mcq": 140, "numerical": 96 },
       "yearRange": [2002, 2026],
-      "notes": "Question pages 2-35; answer-key pages 36-37. Q106 has a Scan QR key and remains unscored. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
+      "notes": "Question pages 2-35; answer-key pages 36-37. Q106 has a Scan QR key and remains unscored. No Supabase rows were written. See docs/import-qa/MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-maths-probability-pyq-pdf",
@@ -1046,14 +1046,14 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Probability Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "maths_complex_3d_statistics_matrices_pnc_probability_data.js",
+      "questionBankFile": "data/question-banks/maths_complex_3d_statistics_matrices_pnc_probability_data.js",
       "chapter": "Probability",
       "questionCount": 255,
       "questionIdRange": [22036, 22290],
       "questionTypes": { "single_correct_mcq": 219, "numerical": 36 },
       "yearRange": [2002, 2026],
       "outOfSyllabus": { "count": 39, "questionNumberRange": [217, 255] },
-      "notes": "Question pages 2-43; answer-key pages 44-45. Q217-Q255 are out of syllabus and remain scored using their printed keys. No Supabase rows were written. See MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
+      "notes": "Question pages 2-43; answer-key pages 44-45. Q217-Q255 are out of syllabus and remain scored using their printed keys. No Supabase rows were written. See docs/import-qa/MATHS_COMPLEX_3D_STATISTICS_MATRICES_PNC_PROBABILITY_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-alternating_current",
@@ -1063,7 +1063,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Alternating Current Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Alternating Current",
       "questionCount": 204,
       "questionIdRange": [
@@ -1082,7 +1082,7 @@
         2002,
         2026
       ],
-      "notes": "204 crops under assets/questions/physics_examgoal/alternating_current/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "204 crops under assets/questions/physics_examgoal/alternating_current/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-atoms_and_nuclei",
@@ -1092,7 +1092,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Atoms and Nuclei Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Atoms and Nuclei",
       "questionCount": 322,
       "questionIdRange": [
@@ -1111,7 +1111,7 @@
         2002,
         2026
       ],
-      "notes": "322 crops under assets/questions/physics_examgoal/atoms_and_nuclei/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "322 crops under assets/questions/physics_examgoal/atoms_and_nuclei/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-center_of_mass_and_collision",
@@ -1121,7 +1121,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Center of Mass and Collision Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Center of Mass and Collision",
       "questionCount": 142,
       "questionIdRange": [
@@ -1140,7 +1140,7 @@
         2002,
         2026
       ],
-      "notes": "142 crops under assets/questions/physics_examgoal/center_of_mass_and_collision/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json. Q87 have Scan QR keys and remain unscored."
+      "notes": "142 crops under assets/questions/physics_examgoal/center_of_mass_and_collision/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json. Q87 have Scan QR keys and remain unscored."
     },
     {
       "sourceId": "jee-main-physics-examgoal-circular_motion",
@@ -1150,7 +1150,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Circular Motion Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Circular Motion",
       "questionCount": 79,
       "questionIdRange": [
@@ -1169,7 +1169,7 @@
         2002,
         2026
       ],
-      "notes": "79 crops under assets/questions/physics_examgoal/circular_motion/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "79 crops under assets/questions/physics_examgoal/circular_motion/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-dual_nature_of_radiation",
@@ -1179,7 +1179,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Dual Nature of Radiation Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Dual Nature of Radiation",
       "questionCount": 221,
       "questionIdRange": [
@@ -1198,7 +1198,7 @@
         2002,
         2026
       ],
-      "notes": "221 crops under assets/questions/physics_examgoal/dual_nature_of_radiation/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "221 crops under assets/questions/physics_examgoal/dual_nature_of_radiation/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-electromagnetic_waves",
@@ -1208,7 +1208,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Electromagnetic Waves Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Electromagnetic Waves",
       "questionCount": 186,
       "questionIdRange": [
@@ -1227,7 +1227,7 @@
         2002,
         2026
       ],
-      "notes": "186 crops under assets/questions/physics_examgoal/electromagnetic_waves/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "186 crops under assets/questions/physics_examgoal/electromagnetic_waves/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-gravitation",
@@ -1237,7 +1237,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Gravitation Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Gravitation",
       "questionCount": 218,
       "questionIdRange": [
@@ -1256,7 +1256,7 @@
         2002,
         2026
       ],
-      "notes": "218 crops under assets/questions/physics_examgoal/gravitation/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "218 crops under assets/questions/physics_examgoal/gravitation/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-kinetic_theory_of_gases",
@@ -1266,7 +1266,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Kinetic Theory of Gases Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Kinetic Theory of Gases",
       "questionCount": 167,
       "questionIdRange": [
@@ -1285,7 +1285,7 @@
         2002,
         2026
       ],
-      "notes": "167 crops under assets/questions/physics_examgoal/kinetic_theory_of_gases/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json. Q8, Q68 have Scan QR keys and remain unscored."
+      "notes": "167 crops under assets/questions/physics_examgoal/kinetic_theory_of_gases/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json. Q8, Q68 have Scan QR keys and remain unscored."
     },
     {
       "sourceId": "jee-main-physics-examgoal-magnetic_properties_of_matter",
@@ -1295,7 +1295,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Magnetic Properties of Matter Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Magnetic Properties of Matter",
       "questionCount": 84,
       "questionIdRange": [
@@ -1314,7 +1314,7 @@
         2003,
         2026
       ],
-      "notes": "84 crops under assets/questions/physics_examgoal/magnetic_properties_of_matter/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "84 crops under assets/questions/physics_examgoal/magnetic_properties_of_matter/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-mechanical_properties_of_fluids",
@@ -1324,7 +1324,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Mechanical Properties of Fluids Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Mechanical Properties of Fluids",
       "questionCount": 197,
       "questionIdRange": [
@@ -1343,7 +1343,7 @@
         2002,
         2026
       ],
-      "notes": "197 crops under assets/questions/physics_examgoal/mechanical_properties_of_fluids/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json. Q117 have Scan QR keys and remain unscored."
+      "notes": "197 crops under assets/questions/physics_examgoal/mechanical_properties_of_fluids/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json. Q117 have Scan QR keys and remain unscored."
     },
     {
       "sourceId": "jee-main-physics-examgoal-mechanical_properties_of_solids",
@@ -1353,7 +1353,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Mechanical Properties of Solids Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Mechanical Properties of Solids",
       "questionCount": 130,
       "questionIdRange": [
@@ -1372,7 +1372,7 @@
         2003,
         2026
       ],
-      "notes": "130 crops under assets/questions/physics_examgoal/mechanical_properties_of_solids/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "130 crops under assets/questions/physics_examgoal/mechanical_properties_of_solids/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-motion_in_a_plane",
@@ -1382,7 +1382,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Motion in a Plane Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Motion in a Plane",
       "questionCount": 103,
       "questionIdRange": [
@@ -1401,7 +1401,7 @@
         2003,
         2026
       ],
-      "notes": "103 crops under assets/questions/physics_examgoal/motion_in_a_plane/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json. Q20 have Scan QR keys and remain unscored."
+      "notes": "103 crops under assets/questions/physics_examgoal/motion_in_a_plane/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json. Q20 have Scan QR keys and remain unscored."
     },
     {
       "sourceId": "jee-main-physics-examgoal-semiconductor",
@@ -1411,7 +1411,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Semiconductor Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Semiconductor",
       "questionCount": 262,
       "questionIdRange": [
@@ -1430,7 +1430,7 @@
         2002,
         2026
       ],
-      "notes": "262 crops under assets/questions/physics_examgoal/semiconductor/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json. Q37 have Scan QR keys and remain unscored."
+      "notes": "262 crops under assets/questions/physics_examgoal/semiconductor/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json. Q37 have Scan QR keys and remain unscored."
     },
     {
       "sourceId": "jee-main-physics-examgoal-simple_harmonic_motion",
@@ -1440,7 +1440,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Simple Harmonic Motion Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Simple Harmonic Motion",
       "questionCount": 194,
       "questionIdRange": [
@@ -1459,7 +1459,7 @@
         2002,
         2026
       ],
-      "notes": "194 crops under assets/questions/physics_examgoal/simple_harmonic_motion/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "194 crops under assets/questions/physics_examgoal/simple_harmonic_motion/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-thermal_properties_of_matter",
@@ -1469,7 +1469,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Thermal Properties of Matter Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Thermal Properties of Matter",
       "questionCount": 120,
       "questionIdRange": [
@@ -1488,7 +1488,7 @@
         2002,
         2026
       ],
-      "notes": "120 crops under assets/questions/physics_examgoal/thermal_properties_of_matter/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "120 crops under assets/questions/physics_examgoal/thermal_properties_of_matter/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-thermodynamics",
@@ -1498,7 +1498,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Thermodynamics Previous Year Questions with Answer Key (1).pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Thermodynamics",
       "questionCount": 231,
       "questionIdRange": [
@@ -1517,7 +1517,7 @@
         2002,
         2026
       ],
-      "notes": "231 crops under assets/questions/physics_examgoal/thermodynamics/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "231 crops under assets/questions/physics_examgoal/thermodynamics/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-units_measurements",
@@ -1527,7 +1527,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Units & Measurements Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Units & Measurements",
       "questionCount": 281,
       "questionIdRange": [
@@ -1546,7 +1546,7 @@
         2002,
         2026
       ],
-      "notes": "281 crops under assets/questions/physics_examgoal/units_measurements/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "281 crops under assets/questions/physics_examgoal/units_measurements/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-wave_optics",
@@ -1556,7 +1556,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Wave Optics Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Wave Optics",
       "questionCount": 203,
       "questionIdRange": [
@@ -1575,7 +1575,7 @@
         2002,
         2026
       ],
-      "notes": "203 crops under assets/questions/physics_examgoal/wave_optics/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "203 crops under assets/questions/physics_examgoal/wave_optics/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-waves",
@@ -1585,7 +1585,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Waves Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Waves",
       "questionCount": 178,
       "questionIdRange": [
@@ -1604,7 +1604,7 @@
         2002,
         2026
       ],
-      "notes": "178 crops under assets/questions/physics_examgoal/waves/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "178 crops under assets/questions/physics_examgoal/waves/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-work_power_energy",
@@ -1614,7 +1614,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Work Power & Energy Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Work Power & Energy",
       "questionCount": 165,
       "questionIdRange": [
@@ -1633,7 +1633,7 @@
         2002,
         2026
       ],
-      "notes": "165 crops under assets/questions/physics_examgoal/work_power_energy/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "165 crops under assets/questions/physics_examgoal/work_power_energy/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-rotational_motion",
@@ -1643,7 +1643,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Rotational Motion Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Rotation",
       "questionCount": 286,
       "questionIdRange": [
@@ -1662,7 +1662,7 @@
         2002,
         2026
       ],
-      "notes": "286 crops under assets/questions/physics_examgoal/rotational_motion/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "286 crops under assets/questions/physics_examgoal/rotational_motion/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-laws_of_motion",
@@ -1672,7 +1672,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Laws of Motion Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Laws of Motion",
       "questionCount": 165,
       "questionIdRange": [
@@ -1691,7 +1691,7 @@
         2002,
         2026
       ],
-      "notes": "165 crops under assets/questions/physics_examgoal/laws_of_motion/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json. Q108 have Scan QR keys and remain unscored."
+      "notes": "165 crops under assets/questions/physics_examgoal/laws_of_motion/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json. Q108 have Scan QR keys and remain unscored."
     },
     {
       "sourceId": "jee-main-physics-examgoal-electrostatics",
@@ -1701,7 +1701,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Electrostatics Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Electrostatics",
       "questionCount": 303,
       "questionIdRange": [
@@ -1720,7 +1720,7 @@
         2002,
         2026
       ],
-      "notes": "303 crops under assets/questions/physics_examgoal/electrostatics/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json. Q254 is marked BONUS in the source key; the app accepts any attempted answer."
+      "notes": "303 crops under assets/questions/physics_examgoal/electrostatics/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json. Q254 is marked BONUS in the source key; the app accepts any attempted answer."
     },
     {
       "sourceId": "jee-main-physics-examgoal-current_electricity",
@@ -1730,7 +1730,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Current Electricity Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Current Electricity",
       "questionCount": 406,
       "questionIdRange": [
@@ -1749,7 +1749,7 @@
         2002,
         2026
       ],
-      "notes": "406 crops under assets/questions/physics_examgoal/current_electricity/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "406 crops under assets/questions/physics_examgoal/current_electricity/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-magnetic_effect_of_current",
@@ -1759,7 +1759,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Magnetic Effect of Current Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Moving Charges & Magnetism",
       "questionCount": 258,
       "questionIdRange": [
@@ -1778,7 +1778,7 @@
         2002,
         2026
       ],
-      "notes": "258 crops under assets/questions/physics_examgoal/magnetic_effect_of_current/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "258 crops under assets/questions/physics_examgoal/magnetic_effect_of_current/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-electromagnetic_induction",
@@ -1788,7 +1788,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Electromagnetic Induction Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Electromagnetic Induction",
       "questionCount": 155,
       "questionIdRange": [
@@ -1807,7 +1807,7 @@
         2002,
         2026
       ],
-      "notes": "155 crops under assets/questions/physics_examgoal/electromagnetic_induction/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "155 crops under assets/questions/physics_examgoal/electromagnetic_induction/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-capacitor",
@@ -1817,7 +1817,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Capacitor Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Capacitors",
       "questionCount": 182,
       "questionIdRange": [
@@ -1836,7 +1836,7 @@
         2002,
         2026
       ],
-      "notes": "182 crops under assets/questions/physics_examgoal/capacitor/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json."
+      "notes": "182 crops under assets/questions/physics_examgoal/capacitor/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json."
     },
     {
       "sourceId": "jee-main-physics-examgoal-geometrical_optics",
@@ -1846,7 +1846,7 @@
       "sourceType": "PYQ",
       "status": "imported-local-needs-answer-review",
       "originalFilename": "JEE Main Geometrical Optics Previous Year Questions with Answer Key.pdf",
-      "questionBankFile": "physics_pdf_data.js",
+      "questionBankFile": "data/question-banks/physics_pdf_data.js",
       "chapter": "Ray Optics",
       "questionCount": 281,
       "questionIdRange": [
@@ -1865,7 +1865,7 @@
         2002,
         2026
       ],
-      "notes": "281 crops under assets/questions/physics_examgoal/geometrical_optics/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See PHYSICS_PDFS_IMPORT_QA.json. Q24, 46, 183 have Scan QR keys and remain unscored."
+      "notes": "281 crops under assets/questions/physics_examgoal/geometrical_optics/. Answers were transcribed from the printed key and have not all been independently re-solved. Source-marked out-of-syllabus questions remain visible and scored when a printed answer is available. See docs/import-qa/PHYSICS_PDFS_IMPORT_QA.json. Q24, 46, 183 have Scan QR keys and remain unscored."
     },
     {
       "sourceId": "neet-biology-chapter-pdfs",
@@ -1913,7 +1913,7 @@
         "NEET The Living World Previous Year Questions with Answer Key.pdf",
         "NEET Transport in Plants Previous Year Questions with Answer Key.pdf"
       ],
-      "questionBankFile": "biology_pdf_data.js",
+      "questionBankFile": "data/question-banks/biology_pdf_data.js",
       "questionCount": 4293,
       "questionIdRange": [
         28014,
@@ -2219,7 +2219,7 @@
           "outOfSyllabusCount": 69
         }
       ],
-      "notes": "Added as a separate local question bank from 34 supplied chapter-wise PDFs. Source-marked out-of-syllabus questions retain their flags. Two QR-only keys remain visible and unscored. Answers were transcribed from the printed keys and have not all been independently re-solved. Supabase rows were not modified. See BIOLOGY_PDFS_IMPORT_QA.json."
+      "notes": "Added as a separate local question bank from 34 supplied chapter-wise PDFs. Source-marked out-of-syllabus questions retain their flags. Two QR-only keys remain visible and unscored. Answers were transcribed from the printed keys and have not all been independently re-solved. Supabase rows were not modified. See docs/import-qa/BIOLOGY_PDFS_IMPORT_QA.json."
     }
   ],
   "questionMetadataContract": {

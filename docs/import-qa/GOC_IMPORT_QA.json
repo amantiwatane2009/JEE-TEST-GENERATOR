@@ -51,8 +51,8 @@
     13279,
     13594
   ],
-  "image_directory": "assets/questions/goc/",
-  "question_data_file": "goc_data.js",
+  "image_directory": "../../assets/questions/goc/",
+  "question_data_file": "../../data/question-banks/goc_data.js",
   "supabase_sync": {
     "performed": false,
     "website_deployed": false

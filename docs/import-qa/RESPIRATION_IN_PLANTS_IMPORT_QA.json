@@ -55,8 +55,8 @@
   ],
   "imagesExtracted": 74,
   "answerKeyEntries": 74,
-  "questionDataFile": "respiration_in_plants_data.js",
-  "imageDirectory": "assets/questions/biology/respiration_in_plants/",
+  "questionDataFile": "../../data/question-banks/respiration_in_plants_data.js",
+  "imageDirectory": "../../assets/questions/biology/respiration_in_plants/",
   "validation": {
     "uniqueIds": true,
     "uniqueImages": true,

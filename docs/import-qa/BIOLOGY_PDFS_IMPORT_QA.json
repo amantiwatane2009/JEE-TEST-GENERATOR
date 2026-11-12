@@ -1,8 +1,8 @@
 {
-  "sourceFolder": "questions/biology questions/",
+  "sourceFolder": "../../questions/biology questions/",
   "sourceId": "neet-biology-chapter-pdfs",
   "subject": "Biology",
-  "questionBankFile": "biology_pdf_data.js",
+  "questionBankFile": "../../data/question-banks/biology_pdf_data.js",
   "questionCount": 4293,
   "questionIdRange": [
     28014,

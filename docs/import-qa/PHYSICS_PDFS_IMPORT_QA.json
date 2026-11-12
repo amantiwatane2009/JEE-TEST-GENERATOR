@@ -1,5 +1,5 @@
 {
-  "source_folder": "questions/physics questions/",
+  "source_folder": "../../questions/physics questions/",
   "subject": "Physics",
   "source_pdf_count": 28,
   "question_count": 5723,
@@ -209,7 +209,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/alternating_current/",
+      "image_directory": "../../assets/questions/physics_examgoal/alternating_current/",
       "images_generated": 204,
       "cross_page_questions": [
         {
@@ -272,7 +272,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/atoms_and_nuclei/",
+      "image_directory": "../../assets/questions/physics_examgoal/atoms_and_nuclei/",
       "images_generated": 322,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -311,7 +311,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/center_of_mass_and_collision/",
+      "image_directory": "../../assets/questions/physics_examgoal/center_of_mass_and_collision/",
       "images_generated": 142,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -347,7 +347,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/circular_motion/",
+      "image_directory": "../../assets/questions/physics_examgoal/circular_motion/",
       "images_generated": 79,
       "cross_page_questions": [
         {
@@ -401,7 +401,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/dual_nature_of_radiation/",
+      "image_directory": "../../assets/questions/physics_examgoal/dual_nature_of_radiation/",
       "images_generated": 221,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -438,7 +438,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/electromagnetic_waves/",
+      "image_directory": "../../assets/questions/physics_examgoal/electromagnetic_waves/",
       "images_generated": 186,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -475,7 +475,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/gravitation/",
+      "image_directory": "../../assets/questions/physics_examgoal/gravitation/",
       "images_generated": 218,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -515,7 +515,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/kinetic_theory_of_gases/",
+      "image_directory": "../../assets/questions/physics_examgoal/kinetic_theory_of_gases/",
       "images_generated": 167,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -551,7 +551,7 @@
         2003,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/magnetic_properties_of_matter/",
+      "image_directory": "../../assets/questions/physics_examgoal/magnetic_properties_of_matter/",
       "images_generated": 84,
       "cross_page_questions": [
         {
@@ -599,7 +599,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/mechanical_properties_of_fluids/",
+      "image_directory": "../../assets/questions/physics_examgoal/mechanical_properties_of_fluids/",
       "images_generated": 197,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -635,7 +635,7 @@
         2003,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/mechanical_properties_of_solids/",
+      "image_directory": "../../assets/questions/physics_examgoal/mechanical_properties_of_solids/",
       "images_generated": 130,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -673,7 +673,7 @@
         2003,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/motion_in_a_plane/",
+      "image_directory": "../../assets/questions/physics_examgoal/motion_in_a_plane/",
       "images_generated": 103,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -712,7 +712,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/semiconductor/",
+      "image_directory": "../../assets/questions/physics_examgoal/semiconductor/",
       "images_generated": 262,
       "cross_page_questions": [
         {
@@ -774,7 +774,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/simple_harmonic_motion/",
+      "image_directory": "../../assets/questions/physics_examgoal/simple_harmonic_motion/",
       "images_generated": 194,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -810,7 +810,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/thermal_properties_of_matter/",
+      "image_directory": "../../assets/questions/physics_examgoal/thermal_properties_of_matter/",
       "images_generated": 120,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -847,7 +847,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/thermodynamics/",
+      "image_directory": "../../assets/questions/physics_examgoal/thermodynamics/",
       "images_generated": 231,
       "cross_page_questions": [
         {
@@ -909,7 +909,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/units_measurements/",
+      "image_directory": "../../assets/questions/physics_examgoal/units_measurements/",
       "images_generated": 281,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -946,7 +946,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/wave_optics/",
+      "image_directory": "../../assets/questions/physics_examgoal/wave_optics/",
       "images_generated": 203,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -983,7 +983,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/waves/",
+      "image_directory": "../../assets/questions/physics_examgoal/waves/",
       "images_generated": 178,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -1020,7 +1020,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/work_power_energy/",
+      "image_directory": "../../assets/questions/physics_examgoal/work_power_energy/",
       "images_generated": 165,
       "cross_page_questions": [
         {
@@ -1067,7 +1067,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/rotational_motion/",
+      "image_directory": "../../assets/questions/physics_examgoal/rotational_motion/",
       "images_generated": 286,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -1107,7 +1107,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/laws_of_motion/",
+      "image_directory": "../../assets/questions/physics_examgoal/laws_of_motion/",
       "images_generated": 165,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -1147,7 +1147,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/electrostatics/",
+      "image_directory": "../../assets/questions/physics_examgoal/electrostatics/",
       "images_generated": 303,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -1185,7 +1185,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/current_electricity/",
+      "image_directory": "../../assets/questions/physics_examgoal/current_electricity/",
       "images_generated": 406,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -1223,7 +1223,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/magnetic_effect_of_current/",
+      "image_directory": "../../assets/questions/physics_examgoal/magnetic_effect_of_current/",
       "images_generated": 258,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -1261,7 +1261,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/electromagnetic_induction/",
+      "image_directory": "../../assets/questions/physics_examgoal/electromagnetic_induction/",
       "images_generated": 155,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -1299,7 +1299,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/capacitor/",
+      "image_directory": "../../assets/questions/physics_examgoal/capacitor/",
       "images_generated": 182,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"
@@ -1341,7 +1341,7 @@
         2002,
         2026
       ],
-      "image_directory": "assets/questions/physics_examgoal/geometrical_optics/",
+      "image_directory": "../../assets/questions/physics_examgoal/geometrical_optics/",
       "images_generated": 281,
       "cross_page_questions": [],
       "answer_review_status": "transcribed from the printed answer key; not all independently re-solved"

@@ -73,7 +73,7 @@
     }
   ],
   "answer_missing_or_unparsed": [],
-  "image_directory": "assets/questions/maths_sets_log_quadratic/",
+  "image_directory": "../../assets/questions/maths_sets_log_quadratic/",
   "supabase_sync": {
     "performed": false,
     "website_deployed": false

@@ -58,7 +58,7 @@
         17029,
         17283
       ],
-      "image_directory": "assets/questions/some_basic_concepts_of_chemistry/"
+      "image_directory": "../../assets/questions/some_basic_concepts_of_chemistry/"
     },
     {
       "name": "Structure of Atom",
@@ -106,7 +106,7 @@
         17284,
         17513
       ],
-      "image_directory": "assets/questions/structure_of_atom/"
+      "image_directory": "../../assets/questions/structure_of_atom/"
     },
     {
       "name": "Redox Reactions",
@@ -135,7 +135,7 @@
         17514,
         17600
       ],
-      "image_directory": "assets/questions/redox_reactions/"
+      "image_directory": "../../assets/questions/redox_reactions/"
     }
   ],
   "answer_missing_or_unparsed": [],
