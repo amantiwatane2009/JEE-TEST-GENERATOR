@@ -49,7 +49,7 @@ STRAIGHT LINES + CONICS IMPORT (2026-10-20)
 - Added 732 question-image crops from the supplied stl lines + conics PDF.
 - New separate Class 11 Maths chapters: Straight Lines, Circles, Parabola, Ellipse, Hyperbola.
 - Includes all 213 questions marked out-of-syllabus in the source chapter counts.
-- Data file: maths_straight_lines_conics_data/question-banks/data.js
+- Data file: data/question-banks/maths_straight_lines_conics_data.js
 - Images: assets/questions/straight_lines_conics/
 - QA summary: docs/import-qa/MATHS_STRAIGHT_LINES_CONICS_IMPORT_QA.json
 IMPORTANT: Answer-key mapping has not been completed. The imported questions have blank answers, so do not use the test scores as meaningful until answer keys are mapped. Category and OOS tags were assigned from audited totals and assumed section ordering; please inspect locally, especially the OOS boundary/crop edges.
