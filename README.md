@@ -30,21 +30,29 @@ Classes 11 and 12 are available, with options to combine subjects or use all ava
 
 ## Screenshots
 
+### Class selection
+
+![Choose Class 11, Class 12, or both classes](docs/screenshots/class-selection.png)
+
+### Subject selection
+
+![Choose Physics, Chemistry, Mathematics, Biology, or a subject combination](docs/screenshots/subject-selection.png)
+
 ### Test setup
 
-![Test setup with chapter distribution and test options](https://github.com/user-attachments/assets/13be9b0d-de03-4fdb-958c-d9d2275bdb92)
+![Set question count, timer, and chapter distribution](docs/screenshots/test-setup.png)
 
 ### Taking a test
 
-![Question image, answer controls, and question palette](https://github.com/user-attachments/assets/774b285c-1fe8-4640-828e-8ca5a3fafc45)
+![Answer a previous-year question and navigate with the question palette](docs/screenshots/active-test.png)
 
 ### Results and analysis
 
-![Test score and chapter-level analysis](https://github.com/user-attachments/assets/93cf695d-a092-4d2e-b7fa-e827a6f686f2)
+![Review score, accuracy, and chapter performance](docs/screenshots/results-analysis.png)
 
 ### Answer review
 
-![Submitted answers alongside the original question images](https://github.com/user-attachments/assets/bd8eb7b5-a95d-4cde-adeb-3f0e821b493b)
+![Review submitted answers with the original question images](docs/screenshots/answer-review.png)
 
 ## Run locally
 
@@ -78,7 +86,8 @@ Printed answer keys are transcribed from source PDFs and have not all been indep
 ├── assets/questions/                Question image crops
 ├── questions/                       Existing question image files
 ├── docs/
-│   └── import-qa/                   Per-import QA reports
+?   ??? import-qa/                   Per-import QA reports
+?   ??? screenshots/                 README screenshots
 └── supabase/migrations/             Database policies
 ```
 
