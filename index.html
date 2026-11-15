@@ -46,11 +46,11 @@
 <script src="data/question-banks/physics_pdf_data.js"></script>
 <script src="supabase-questions.js"></script>
 <script src="app.js"></script>
-<script type="module">
-  import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@1/dist/index.js';
-  inject({
-    mode: 'production'
-  });
+<script>
+  window.va = window.va || function () {
+    (window.vaq = window.vaq || []).push(arguments);
+  };
 </script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
