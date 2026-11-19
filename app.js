@@ -25,6 +25,7 @@ const classAllowed=q=>{
 let sourceFilter='all';
 let clean=[];
 let preferredQuestionCount=80;
+let testSetupState=null;
 const chapterAliases={
  "Mechanical Properties of Solids":"Properties of Solids",
  "Properties of Solids":"Properties of Solids",
@@ -81,15 +82,17 @@ function sameQuestionAnswer(user,q){if(q.bonus)return answerParts(user).length>0
 function answerLabel(q){return isMultiSelect(q)?'Select all correct options':isMcq(q)?'Select one option':'Enter your numerical answer'}
 function isUnscored(q){const answer=String(q.answer??'').trim();if(!answer||answer.toLowerCase()==='scan qr')return true;return !!q.flagged&&!q.out_of_syllabus}
 
-function selectQuestions(n=80){
+function selectQuestions(n=80,chapterScope=chapters){
+ const eligibleChapters=[...new Set(chapterScope)].filter(ch=>chapters.includes(ch));
+ if(!eligibleChapters.length)return [];
  const previous=readTestHistory()[0]||{};
  const used=new Set([...(previous.ids||[]).map(String),...(previous.questionKeys||[])]);
- const pools=chapters.map(ch=>({ch,pool:clean.filter(q=>chapterName(q)===ch&&!used.has(String(q.id))&&!used.has(questionIdentity(q)))}));
+ const pools=eligibleChapters.map(ch=>({ch,pool:clean.filter(q=>chapterName(q)===ch&&!used.has(String(q.id))&&!used.has(questionIdentity(q)))}));
  // Fall back to the full chapter pool when avoiding the previous paper would leave too few questions.
  pools.forEach(x=>{if(x.pool.length===0)x.pool=clean.filter(q=>chapterName(q)===x.ch)});
  const totalPool=pools.reduce((a,x)=>a+x.pool.length,0);
  n=Math.max(1,Math.min(n,totalPool));
- const counts=Object.fromEntries(chapters.map(c=>[c,0]));
+ const counts=Object.fromEntries(eligibleChapters.map(c=>[c,0]));
  const exact=pools.map(x=>({ch:x.ch,raw:n*x.pool.length/totalPool,base:Math.floor(n*x.pool.length/totalPool),frac:(n*x.pool.length/totalPool)%1}));
  exact.forEach(x=>counts[x.ch]=x.base);
  let left=n-exact.reduce((a,x)=>a+x.base,0);
@@ -98,7 +101,7 @@ function selectQuestions(n=80){
  let out=[];
  for(const x of pools){let pool=x.pool;const take=Math.min(counts[x.ch],pool.length);out.push(...shuffle(pool).slice(0,take));}
  // If rounding/caps left us short, fill from remaining unique questions.
- if(out.length<n){const selected=new Set(out.map(questionIdentity));const rest=shuffle(clean.filter(q=>!selected.has(questionIdentity(q))&&!used.has(String(q.id))&&!used.has(questionIdentity(q))));out.push(...rest.slice(0,n-out.length));}
+ if(out.length<n){const selected=new Set(out.map(questionIdentity));const rest=shuffle(clean.filter(q=>eligibleChapters.includes(chapterName(q))&&!selected.has(questionIdentity(q))&&!used.has(String(q.id))&&!used.has(questionIdentity(q))));out.push(...rest.slice(0,n-out.length));}
  return shuffle(out.slice(0,n));
 }
 /* Entry flow: choose class, then subject. */
@@ -129,26 +132,89 @@ function renderComingSoon(title,message){
  document.getElementById('backHome').onclick=()=>{selectedClass='11th';selectedSubject='Physics';setSource('all');renderSelection('class')};
 }
 
+function setupChapterScope(){return testSetupState?.chapterMode==='selected'?testSetupState.selectedChapters:chapters}
+function setupPoolSize(){const scope=setupChapterScope();return clean.filter(q=>scope.includes(chapterName(q))).length}
+function clampSetupQuestionCount(max){if(max<1)return;const next=Math.max(1,Math.min(max,Math.floor(Number(testSetupState.questionCount)||1)));if(next!==testSetupState.questionCount){testSetupState.questionCount=next;testSetupState.questionChoice=[20,40,80].includes(next)?String(next):'custom';preferredQuestionCount=next}}
+function prepareTestSetup(total){
+ const context=`${selectedClass}|${selectedSubject}`;
+ if(!testSetupState||testSetupState.context!==context){
+  const questionCount=Math.max(1,Math.min(total,Math.floor(Number(preferredQuestionCount)||80)));
+  testSetupState={context,step:1,questionCount,questionChoice:[20,40,80].includes(questionCount)?String(questionCount):'custom',chapterMode:'all',selectedChapters:[],timeMode:'untimed'};
+ }
+ testSetupState.selectedChapters=testSetupState.selectedChapters.filter(ch=>chapters.includes(ch));
+ if(testSetupState.chapterMode==='selected'&&!testSetupState.selectedChapters.length)testSetupState.chapterMode='all';
+ clampSetupQuestionCount(setupPoolSize());
+}
 function renderStart(){
  setSource(sourceFilter);
  const total=clean.length;
  if(total===0){app.innerHTML='<div class="wrap selection-wrap"><section class="card coming-card"><h2>No questions found for this selection</h2><p class="muted">This class and subject combination has no questions yet. Try another selection.</p><button class="btn" id="retrySelection">Change selection</button></section></div>';document.getElementById('retrySelection').onclick=()=>renderSelection('class');return;}
- app.innerHTML=`<div class="wrap"><div class="top"><div class="brand"><h1>${selectedExamLabel()} ${subjectDisplayName(selectedSubject)} — ${selectedClass==='both'?'Class 11 + 12':'Class '+selectedClass} PYQ Simulator</h1><p>${selectedExamLabel()} ${subjectDisplayName(selectedSubject)} question bank · ${total} usable ${selectedClass==='both'?'Class 11 + 12':selectedClass==='12th'?'Class 12':'Class 11'} questions</p></div><div class="row"><label class="small">Source <select id="sourceFilter"><option value="all">All years</option>${[...new Set(clean.filter(q=>q.year!==undefined&&q.year!==null&&q.year!=='').map(q=>String(q.year)))].sort((a,b)=>Number(b)-Number(a)).map(y=>'<option value="'+y+'">'+y+' only</option>').join('')+(clean.some(q=>q.year===undefined||q.year===null||q.year==='')?'<option value="unknown">Year not tagged</option>':'')}</select></label><button class="btn secondary" id="changeSelection">Change selection</button><button class="btn secondary" id="hist">History</button></div></div>
- <div class="grid"><div class="card"><h2>Build your test</h2><div class="stats"><div class="stat"><span class="muted">Questions</span><b id="previewN">80</b></div><div class="stat"><span class="muted">Time limit</span><b id="timePreview">Untimed</b></div><div class="stat"><span class="muted">Scoring</span><b>+4 / −1</b></div><div class="stat"><span class="muted">Pool</span><b>${total}</b></div></div><p class="muted">Choose your question count and time limit. Timed tests submit automatically when time runs out. The paper remains PYQ-only and is selected proportionally across the available chapters.</p><div class="row"><label>Number of questions <input id="mainQn" type="number" min="1" max="${total}" value="${Math.min(total,preferredQuestionCount)}"></label><button class="btn" id="start">Start test</button><button class="btn secondary" id="custom">Choose chapters</button></div><div class="section"><b>Time limit</b><div class="row time-options" id="timeOptions"><button type="button" class="btn secondary" data-time-mode="untimed">Untimed</button><button type="button" class="btn secondary" data-time-mode="1">1 min/question</button><button type="button" class="btn secondary" data-time-mode="1.5">1.5 min/question</button><button type="button" class="btn secondary" data-time-mode="2">2 min/question</button><button type="button" class="btn secondary" data-time-mode="2.5">2.5 min/question</button></div></div><div class="section"><h3>Current distribution preview</h3><table class="dist"><tr><th>Chapter</th><th>Q</th><th>Pool</th><th></th></tr>${chapters.map(c=>`<tr><td>${c}</td><td><b class="dcount" data-ch="${c}">—</b></td><td>${clean.filter(q=>chapterName(q)===c).length}</td><td><div class="bar"><span></span></div></td></tr>`).join('')}</table></div></div>
- <div class="card"><h2>What you get</h2><ul class="muted"><li>Original PYQ question images — diagrams preserved</li><li>Choose any test length from 1 to ${total}</li><li>Choose untimed or 1, 1.5, 2, or 2.5 minutes per question</li><li>Randomized paper and question order</li><li>Answer + mark-for-review palette</li><li>Post-test chapter analysis</li><li>Incorrect/skipped question review</li><li>Local history for your previous mocks</li></ul><h3>Source flags</h3><p class="small muted">Questions marked out of syllabus are scored when the answer key has an answer. Questions with an uncertain or missing answer remain unscored.</p></div></div></div>`;
- const updatePreview=()=>{const n=Math.max(1,Math.min(total,+document.getElementById('mainQn').value||80));document.getElementById('previewN').textContent=n;const weights=chapters.map(c=>({c,p:clean.filter(q=>chapterName(q)===c).length}));const sum=weights.reduce((a,x)=>a+x.p,0);const counts=Object.fromEntries(weights.map(x=>[x.c,Math.floor(n*x.p/sum)]));let left=n-Object.values(counts).reduce((a,b)=>a+b,0);weights.sort((a,b)=>(n*b.p/sum)%1-(n*a.p/sum)%1);for(let i=0;i<left;i++)counts[weights[i%weights.length].c]++;document.querySelectorAll('.dcount').forEach(e=>e.textContent=counts[e.dataset.ch]||0)};
+ prepareTestSetup(total);
+ testSetupState.step=1;
+ const classLabel=selectedClass==='both'?'Class 11 + 12':'Class '+selectedClass;
+ app.innerHTML=`<div class="wrap selection-wrap test-setup-wrap"><header class="selection-header test-setup-header"><div class="brand"><p class="setup-eyebrow">${selectedExamLabel()} · ${subjectDisplayName(selectedSubject)} · ${classLabel}</p><h1>Build your test</h1><p>${total} usable previous-year questions available</p></div><div class="row test-setup-actions"><label class="small">Source <select id="sourceFilter"><option value="all">All years</option>${[...new Set(clean.filter(q=>q.year!==undefined&&q.year!==null&&q.year!=='').map(q=>String(q.year)))].sort((a,b)=>Number(b)-Number(a)).map(y=>'<option value="'+y+'">'+y+' only</option>').join('')+(clean.some(q=>q.year===undefined||q.year===null||q.year==='')?'<option value="unknown">Year not tagged</option>':'')}</select></label><button class="btn secondary" id="changeSelection">Change selection</button><button class="btn secondary" id="hist">History</button></div></header><div id="testSetupStep"></div></div>`;
  document.getElementById('sourceFilter').value=sourceFilter;
  document.getElementById('sourceFilter').onchange=e=>{setSource(e.target.value);renderStart()};
- let selectedTimeMode='untimed';const updateTimePreview=()=>{const n=Math.max(1,+document.getElementById('mainQn').value||80);document.getElementById('timePreview').textContent=selectedTimeMode==='untimed'?'Untimed':(+selectedTimeMode*n).toFixed(selectedTimeMode==='1.5'||selectedTimeMode==='2.5'?1:0)+' min';document.querySelectorAll('[data-time-mode]').forEach(b=>{const active=b.dataset.timeMode===selectedTimeMode;b.className='btn '+(active?'':'secondary')})};document.querySelectorAll('[data-time-mode]').forEach(b=>b.onclick=()=>{selectedTimeMode=b.dataset.timeMode;updateTimePreview()});document.getElementById('mainQn').oninput=()=>{const entered=+document.getElementById('mainQn').value;if(entered>0)preferredQuestionCount=Math.min(total,entered);updatePreview();updateTimePreview()};updateTimePreview();updatePreview();
- document.getElementById('start').onclick=()=>{const n=Math.max(1,Math.min(total,+document.getElementById('mainQn').value||80));startTest(selectQuestions(n),selectedTimeMode==='untimed'?null:Number(selectedTimeMode))};
- document.getElementById('custom').onclick=customModal;
  document.getElementById('hist').onclick=showHistory;
  document.getElementById('changeSelection').onclick=()=>renderSelection('class');
+ renderTestSetupStep();
+ document.getElementById('setupHeading')?.focus();
 }
-function customModal(){
- let customTimeMode='untimed';app.innerHTML=`<div class="wrap"><div class="top"><div class="brand"><h1>Custom Test</h1><p>Choose chapters, question count, and an optional time limit.</p></div><button class="btn secondary" onclick="renderStart()">Back</button></div><div class="card"><div class="row"><label>Questions <input id="qn" type="number" min="1" max="${clean.length}" value="${Math.min(clean.length,preferredQuestionCount)}"></label><div class="section"><b>Time limit</b><div class="row time-options" id="customTimeOptions"><button type="button" class="btn" data-custom-time="untimed">Untimed</button><button type="button" class="btn secondary" data-custom-time="1">1 min/question</button><button type="button" class="btn secondary" data-custom-time="1.5">1.5 min/question</button><button type="button" class="btn secondary" data-custom-time="2">2 min/question</button><button type="button" class="btn secondary" data-custom-time="2.5">2.5 min/question</button></div></div></div><div class="section">${chapters.map((c,i)=>`<label style="display:block;margin:10px 0"><input type="checkbox" class="ch" value="${i}"> ${c} <span class="muted small">(${clean.filter(q=>chapterName(q)===c).length})</span></label>`).join('')}</div><button class="btn" id="go">Create test</button></div></div>`;
- document.getElementById('qn').oninput=()=>{const entered=+document.getElementById('qn').value;if(entered>0)preferredQuestionCount=Math.min(clean.length,entered)};document.querySelectorAll('[data-custom-time]').forEach(b=>b.onclick=()=>{customTimeMode=b.dataset.customTime;document.querySelectorAll('[data-custom-time]').forEach(x=>x.className='btn '+(x===b?'':'secondary'))});document.getElementById('go').onclick=()=>{const sel=[...document.querySelectorAll('.ch:checked')].map(x=>chapters[+x.value]);if(!sel.length){alert('Select at least one chapter.');return}let pool=clean.filter(q=>sel.includes(chapterName(q)));const n=Math.max(1,Math.min(pool.length,+document.getElementById('qn').value||preferredQuestionCount));const chosen=shuffle(pool).slice(0,n);startTest(chosen,customTimeMode==='untimed'?null:Number(customTimeMode))};
+function renderTestSetupStep(){
+ if(!testSetupState)return;
+ clampSetupQuestionCount(setupPoolSize());
+ const total=clean.length,chapterPool=setupPoolSize(),questionPool=chapterPool||total,count=testSetupState.questionCount,step=testSetupState.step;
+ const steps=['Questions','Chapters','Timing'];
+ const progress=steps.map((name,index)=>`<div class="setup-progress-step ${index+1===step?'current':index+1<step?'complete':''}" role="listitem" ${index+1===step?'aria-current="step"':''}><span class="setup-step-number">${index+1}</span><span>${name}</span></div>`).join('');
+ let content='';
+ if(step===1){
+  const presets=[['20','Quick practice'],['40','Focused practice'],['80','Full practice set']];
+  const countHint=chapterPool?`${chapterPool} questions available in this chapter scope`:`Up to ${total} questions; choose chapters in the next step`;
+  const countDescription=chapterPool?`Choose a test length between 1 and ${questionPool} questions.`:`Choose a test length, then select chapters on the next step. Up to ${questionPool} questions are available.`;
+  content=`<h2 id="setupHeading" tabindex="-1">How many questions?</h2><p class="muted setup-description">${countDescription}</p><div class="setup-option-grid" role="group" aria-label="Question count presets">${presets.map(([value,description])=>`<button type="button" class="setup-choice ${testSetupState.questionChoice===value?'is-selected':''}" data-question-choice="${value}" aria-pressed="${testSetupState.questionChoice===value}" ${Number(value)>questionPool?'disabled':''}><span class="setup-choice-mark" aria-hidden="true"></span><span class="setup-choice-copy"><strong>${value} questions</strong><small>${description}</small></span></button>`).join('')}<button type="button" class="setup-choice ${testSetupState.questionChoice==='custom'?'is-selected':''}" data-question-choice="custom" aria-pressed="${testSetupState.questionChoice==='custom'}"><span class="setup-choice-mark" aria-hidden="true"></span><span class="setup-choice-copy"><strong>Custom length</strong><small>Choose your own</small></span></button></div><div class="setup-count-field"><label for="setupQuestionCount">Question count</label><input id="setupQuestionCount" type="number" min="1" max="${questionPool}" step="1" value="${count}" aria-describedby="setupCountHelp"><span id="setupCountHelp" class="small muted">${countHint}</span></div>`;
+ }
+ if(step===2){
+  const chapterOptions=chapters.map((chapter,index)=>{const available=clean.filter(q=>chapterName(q)===chapter).length,selected=testSetupState.selectedChapters.includes(chapter);return `<label class="setup-chapter-option" for="setupChapter${index}"><input id="setupChapter${index}" type="checkbox" data-chapter-index="${index}" ${selected?'checked':''}><span class="setup-chapter-name">${chapter}</span><span class="setup-chapter-count">${available} available</span></label>`}).join('');
+  const summary=testSetupState.chapterMode==='all'?`${count} questions · all ${chapters.length} chapters · ${total} available`:`${count} questions · ${testSetupState.selectedChapters.length} chapters selected · ${chapterPool} available`;
+  content=`<h2 id="setupHeading" tabindex="-1">Which chapters?</h2><p class="muted setup-description">Use all chapters for a balanced mix, or choose only the ones you want to practise.</p><div class="setup-option-grid setup-chapter-modes" role="group" aria-label="Chapter scope"><button type="button" class="setup-choice ${testSetupState.chapterMode==='all'?'is-selected':''}" data-chapter-mode="all" aria-pressed="${testSetupState.chapterMode==='all'}"><span class="setup-choice-mark" aria-hidden="true"></span><span class="setup-choice-copy"><strong>All chapters</strong><small>Balanced across the available questions</small></span></button><button type="button" class="setup-choice ${testSetupState.chapterMode==='selected'?'is-selected':''}" data-chapter-mode="selected" aria-pressed="${testSetupState.chapterMode==='selected'}"><span class="setup-choice-mark" aria-hidden="true"></span><span class="setup-choice-copy"><strong>Choose chapters</strong><small>Focus on selected topics</small></span></button></div>${testSetupState.chapterMode==='selected'?`<div class="setup-chapter-toolbar"><span class="small muted">Select one or more chapters</span><div class="row"><button type="button" class="btn secondary" id="selectAllChapters">Select all</button><button type="button" class="btn secondary" id="clearChapters">Clear</button></div></div><div class="setup-chapter-list" aria-label="Available chapters">${chapterOptions}</div>`:''}<div class="setup-summary-note">${summary}</div>`;
+ }
+ if(step===3){
+  const modes=[['untimed','Untimed','No countdown'],['1','1 min / question',`About ${count} minutes total`],['1.5','1.5 min / question',`About ${minutesForSetup(count,1.5)} minutes total`],['2','2 min / question',`About ${minutesForSetup(count,2)} minutes total`],['2.5','2.5 min / question',`About ${minutesForSetup(count,2.5)} minutes total`]];
+  const duration=testSetupState.timeMode==='untimed'?'Untimed':`${minutesForSetup(count,Number(testSetupState.timeMode))} minutes`;
+  const chapterSummary=testSetupState.chapterMode==='all'?'All chapters':testSetupState.selectedChapters.join(', ');
+  content=`<h2 id="setupHeading" tabindex="-1">How much time?</h2><p class="muted setup-description">Choose a pace per question, or practise without a timer.</p><div class="setup-option-grid setup-time-options" role="group" aria-label="Time limit">${modes.map(([value,title,description])=>`<button type="button" class="setup-choice ${testSetupState.timeMode===value?'is-selected':''}" data-setup-time="${value}" aria-pressed="${testSetupState.timeMode===value}"><span class="setup-choice-mark" aria-hidden="true"></span><span class="setup-choice-copy"><strong>${title}</strong><small>${description}</small></span></button>`).join('')}</div><div class="setup-review" aria-label="Test summary"><div><span>Questions</span><strong>${count}</strong></div><div><span>Chapters</span><strong>${chapterSummary}</strong></div><div><span>Time limit</span><strong>${duration}</strong></div></div><p class="small muted setup-timer-note">Timed tests submit automatically when time runs out.</p>`;
+ }
+ const continueDisabled=step===2&&testSetupState.chapterMode==='selected'&&!testSetupState.selectedChapters.length;
+ document.getElementById('testSetupStep').innerHTML=`<section class="card selection-card test-setup-card" aria-labelledby="setupHeading"><div class="setup-progress" role="list" aria-label="Test setup progress">${progress}</div><p class="small muted setup-step-label">Step ${step} of 3</p>${content}<div class="setup-navigation"><button type="button" class="btn secondary" id="setupBack" ${step===1?'disabled':''}>Back</button><button type="button" class="btn" id="setupContinue" ${continueDisabled?'disabled':''}>${step===3?'Start test':'Continue'}</button></div>${continueDisabled?'<p class="small muted setup-validation">Select at least one chapter to continue.</p>':''}</section>`;
+ document.getElementById('setupBack').onclick=()=>{if(testSetupState.step>1){testSetupState.step--;renderTestSetupStep();document.getElementById('setupHeading')?.focus()}};
+ document.getElementById('setupContinue').onclick=()=>{
+  if(testSetupState.step===1){const input=document.getElementById('setupQuestionCount');if(!input.checkValidity()){input.reportValidity();return}testSetupState.questionCount=Math.max(1,Math.min(questionPool,Math.floor(Number(input.value)||1)));preferredQuestionCount=testSetupState.questionCount}
+  if(testSetupState.step===2&&testSetupState.chapterMode==='selected'&&!testSetupState.selectedChapters.length)return;
+  if(testSetupState.step<3){testSetupState.step++;renderTestSetupStep();document.getElementById('setupHeading')?.focus();return}
+  const selectedPool=setupPoolSize();if(!selectedPool)return;
+  clampSetupQuestionCount(selectedPool);
+  const questions=selectQuestions(testSetupState.questionCount,setupChapterScope());
+  if(!questions.length){alert('No questions are available for this selection.');return}
+  startTest(questions,testSetupState.timeMode==='untimed'?null:Number(testSetupState.timeMode));
+ };
+ document.querySelectorAll('[data-question-choice]').forEach(button=>button.onclick=()=>{
+  if(button.dataset.questionChoice==='custom'){testSetupState.questionChoice='custom';document.querySelectorAll('[data-question-choice]').forEach(x=>{const active=x.dataset.questionChoice==='custom';x.classList.toggle('is-selected',active);x.setAttribute('aria-pressed',String(active))});document.getElementById('setupQuestionCount').focus();return}
+  testSetupState.questionCount=Math.min(questionPool,Number(button.dataset.questionChoice));testSetupState.questionChoice=button.dataset.questionChoice;preferredQuestionCount=testSetupState.questionCount;renderTestSetupStep();document.querySelector(`[data-question-choice="${testSetupState.questionChoice}"]`)?.focus();
+ });
+ const countInput=document.getElementById('setupQuestionCount');
+ if(countInput)countInput.oninput=()=>{
+  const value=Number(countInput.value);if(!countInput.checkValidity()||!Number.isInteger(value))return;
+  testSetupState.questionCount=value;testSetupState.questionChoice=[20,40,80].includes(value)?String(value):'custom';preferredQuestionCount=value;
+  document.querySelectorAll('[data-question-choice]').forEach(button=>{const active=button.dataset.questionChoice===testSetupState.questionChoice;button.classList.toggle('is-selected',active);button.setAttribute('aria-pressed',String(active))});
+ };
+ document.querySelectorAll('[data-chapter-mode]').forEach(button=>button.onclick=()=>{testSetupState.chapterMode=button.dataset.chapterMode;clampSetupQuestionCount(setupPoolSize());renderTestSetupStep();document.querySelector(`[data-chapter-mode="${testSetupState.chapterMode}"]`)?.focus()});
+ document.querySelectorAll('[data-chapter-index]').forEach(input=>input.onchange=()=>{const index=Number(input.dataset.chapterIndex),chapter=chapters[index],selected=new Set(testSetupState.selectedChapters);if(input.checked)selected.add(chapter);else selected.delete(chapter);testSetupState.selectedChapters=[...selected];clampSetupQuestionCount(setupPoolSize());renderTestSetupStep();document.querySelector(`[data-chapter-index="${index}"]`)?.focus()});
+ const setChapterSelection=selected=>{testSetupState.selectedChapters=selected;clampSetupQuestionCount(setupPoolSize());renderTestSetupStep()};
+ document.getElementById('selectAllChapters')?.addEventListener('click',()=>{setChapterSelection([...chapters]);document.getElementById('selectAllChapters')?.focus()});
+ document.getElementById('clearChapters')?.addEventListener('click',()=>{setChapterSelection([]);document.getElementById('clearChapters')?.focus()});
+ document.querySelectorAll('[data-setup-time]').forEach(button=>button.onclick=()=>{testSetupState.timeMode=button.dataset.setupTime;renderTestSetupStep();document.querySelector(`[data-setup-time="${testSetupState.timeMode}"]`)?.focus()});
 }
+function minutesForSetup(count,minutesPerQuestion){const minutes=count*minutesPerQuestion;return Number.isInteger(minutes)?String(minutes):String(Number(minutes.toFixed(1)))}
 function startTest(qs,minutesPerQuestion=null){if(timerHandle){clearInterval(timerHandle);timerHandle=null}const limitSeconds=minutesPerQuestion?Math.round(qs.length*minutesPerQuestion*60):null;state={qs,index:0,answers:Array(qs.length).fill(''),review:Array(qs.length).fill(false),spent:Array(qs.length).fill(0),last:Date.now(),started:Date.now(),submitted:false,minutesPerQuestion,limitSeconds,deadline:limitSeconds?Date.now()+limitSeconds*1000:null};persistActiveTest();renderTest()}
 function addSpent(){if(!state)return;const now=Date.now();state.spent[state.index]+=Math.max(0,Math.round((now-state.last)/1000));state.last=now}
 window.addEventListener('pagehide',()=>{if(!state||state.submitted)return;addSpent();persistActiveTest()});
