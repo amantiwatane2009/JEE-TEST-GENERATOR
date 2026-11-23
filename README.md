@@ -10,7 +10,7 @@ Choose a class, subject combination, source year, and chapters. Generate a rando
 
 | Exam | Subjects |
 | --- | --- |
-| JEE Main | Physics, Chemistry, Mathematics |
+| JEE Main pattern | Physics, Chemistry, and Mathematics: 20 MCQs followed by 5 numerical questions each |
 | NEET 2026 format | Physics (JEE PYQs), Chemistry (JEE PYQs), Biology (NEET PYQs) |
 
 Classes 11 and 12 are available, with options to combine subjects or use all available subjects.
@@ -18,10 +18,12 @@ Classes 11 and 12 are available, with options to combine subjects or use all ava
 ## Features
 
 - Build a test with a custom question count and chapter selection.
-- Start a JEE Main pattern test with 25 questions each in Physics, Chemistry, and Mathematics, or a NEET 2026 format test with 45 Physics, 45 Chemistry, and 90 Biology questions.
-- Use Full Syllabus Test (FST) or select chapters separately for each subject in an exam-pattern test.
-- Review the three-hour timer and confirm before the test starts. NEET setup discloses the Physics and Chemistry question sources before starting; the current question bank uses JEE PYQs for those subjects, and NEET PYQs will be added later.
-- The NEET preset follows the 2026 pattern. [NTA currently lists the 2027 pattern as 200 questions, with candidates answering 180 in 200 minutes](https://www.nta.gov.in/exams/neet/); check its 2027 information bulletin when released.
+- In custom practice, choose a single subject, any two subjects, PCM, PCB, or all available subjects.
+- Start a JEE Main pattern test with 25 questions each in Physics, Chemistry, and Mathematics. Each subject places 20 MCQs first, followed by 5 numerical questions.
+- Start a NEET 2026 format test with 45 Physics, 45 Chemistry, and 90 Biology questions.
+- Use Full Syllabus Test (FST) or select chapters separately for each subject in an exam-pattern test. The app checks that each selected pool has enough questions of the required type before launch.
+- Review the three-hour timer and confirm before a preset test starts. NEET setup discloses the Physics and Chemistry question sources; the current banks use JEE PYQs for those subjects, and NEET PYQs will be added later.
+- The NEET preset follows the 2026 pattern. [NTA currently lists the 2027 pattern as 200 questions, with candidates answering 180 in 200 minutes](https://www.nta.gov.in/exams/neet/); check its information bulletin when released.
 - Balance questions across selected chapters based on the available question pool.
 - Filter questions by year or use all available sources.
 - Set a timer or practise without one.
