@@ -11,13 +11,17 @@ Choose a class, subject combination, source year, and chapters. Generate a rando
 | Exam | Subjects |
 | --- | --- |
 | JEE Main | Physics, Chemistry, Mathematics |
-| NEET | Biology |
+| NEET 2026 format | Physics (JEE PYQs), Chemistry (JEE PYQs), Biology (NEET PYQs) |
 
 Classes 11 and 12 are available, with options to combine subjects or use all available subjects.
 
 ## Features
 
 - Build a test with a custom question count and chapter selection.
+- Start a JEE Main pattern test with 25 questions each in Physics, Chemistry, and Mathematics, or a NEET 2026 format test with 45 Physics, 45 Chemistry, and 90 Biology questions.
+- Use Full Syllabus Test (FST) or select chapters separately for each subject in an exam-pattern test.
+- Review the three-hour timer and confirm before the test starts. NEET setup discloses the Physics and Chemistry question sources before starting; the current question bank uses JEE PYQs for those subjects, and NEET PYQs will be added later.
+- The NEET preset follows the 2026 pattern. [NTA currently lists the 2027 pattern as 200 questions, with candidates answering 180 in 200 minutes](https://www.nta.gov.in/exams/neet/); check its 2027 information bulletin when released.
 - Balance questions across selected chapters based on the available question pool.
 - Filter questions by year or use all available sources.
 - Set a timer or practise without one.

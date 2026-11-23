@@ -443,6 +443,35 @@ select option,select optgroup{background:var(--panel);color:var(--text)}
 @media(max-width:700px){.test-setup-header{align-items:flex-start}.test-setup-actions{justify-content:flex-start;width:100%}.setup-progress-step{justify-content:center;gap:7px;padding:9px 5px;font-size:12px}.setup-count-field{grid-template-columns:1fr auto}.setup-count-field .small{grid-column:1/-1}.setup-review{grid-template-columns:1fr}.setup-review>div{display:flex;align-items:center;justify-content:space-between;gap:12px}.setup-review strong{margin-top:0;text-align:right}}
 @media(max-width:480px){.setup-chapter-list{grid-template-columns:1fr}.setup-chapter-toolbar{align-items:flex-start;flex-direction:column}.setup-chapter-toolbar .row{width:100%}.setup-chapter-toolbar .btn{flex:1}.setup-progress{gap:5px}.setup-progress-step{flex-direction:column;gap:4px;font-size:11px}.setup-navigation .btn{flex:1}}
 
+/* Exam-pattern presets */
+.preset-setup-card{padding:clamp(20px,4vw,36px)}
+.preset-subject-list{display:grid;gap:16px}
+.preset-subject-card{min-width:0;padding:18px;border:1px solid var(--border);border-radius:10px;background:var(--panel-soft)}
+.preset-subject-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.preset-subject-heading h3{margin:0 0 5px;font-size:17px;font-weight:600}
+.preset-subject-heading p{margin:0;font-size:13px}
+.preset-scope-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.preset-scope-actions .btn,.preset-chapter-toolbar .btn{min-height:38px;padding:7px 12px;font-size:13px}
+.preset-chapter-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 10px}
+.preset-chapter-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-height:290px;overflow:auto;padding:2px}
+.preset-chapter-option{display:flex;align-items:center;gap:9px;min-width:0;padding:10px 11px;border:1px solid var(--border);border-radius:8px;background:var(--panel);cursor:pointer}
+.preset-chapter-option:focus-within{outline:3px solid var(--accent);outline-offset:2px}
+.preset-chapter-option input{flex:0 0 auto;margin:0}
+.preset-chapter-option span{min-width:0;flex:1;font-size:13px;line-height:1.4}
+.preset-chapter-option small{flex:0 0 auto;color:var(--muted);font-size:11px;white-space:nowrap}
+.preset-validation{margin:12px 0 0;color:var(--bad);font-size:13px;line-height:1.45}
+.preset-notice{margin:20px 0;padding:16px 18px;border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));border-radius:10px;background:color-mix(in srgb,var(--accent) 7%,var(--panel));line-height:1.5}
+.preset-notice strong{font-size:14px}
+.preset-notice p{margin:6px 0 0;color:var(--text);font-size:14px}
+.preset-review{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
+.preset-review>div{min-width:0;padding:14px;border:1px solid var(--border);border-radius:9px;background:var(--panel-soft)}
+.preset-review span,.preset-review strong,.preset-review small{display:block}
+.preset-review span{color:var(--muted);font-size:12px}
+.preset-review strong{margin-top:4px;font-size:16px;line-height:1.35}
+.preset-review small{margin-top:4px;color:var(--muted);font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+@media(max-width:700px){.preset-review{grid-template-columns:1fr}.preset-review>div{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.preset-review strong{margin-top:0;text-align:right}.preset-review small{max-width:65%;text-align:right}}
+@media(max-width:480px){.preset-subject-heading{flex-direction:column}.preset-scope-actions{display:grid;grid-template-columns:1fr}.preset-chapter-list{grid-template-columns:1fr}.preset-chapter-toolbar{align-items:flex-start;flex-direction:column}.preset-chapter-toolbar .row{width:100%}.preset-chapter-toolbar .btn{flex:1}}
+
 .save-status{font-size:12px;color:var(--muted);white-space:nowrap}
 .save-status.save-warning{color:var(--bad);font-weight:600}
 .test-progress{height:2px;margin:-8px 0 24px;border-radius:2px;background:var(--panel-soft);overflow:hidden}
