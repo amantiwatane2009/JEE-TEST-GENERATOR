@@ -471,6 +471,23 @@ select option,select optgroup{background:var(--panel);color:var(--text)}
 .preset-review small{margin-top:4px;color:var(--muted);font-size:12px;line-height:1.4;overflow-wrap:anywhere}
 @media(max-width:700px){.preset-review{grid-template-columns:1fr}.preset-review>div{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.preset-review strong{margin-top:0;text-align:right}.preset-review small{max-width:65%;text-align:right}}
 @media(max-width:480px){.preset-subject-heading{flex-direction:column}.preset-scope-actions{display:grid;grid-template-columns:1fr}.preset-chapter-list{grid-template-columns:1fr}.preset-chapter-toolbar{align-items:flex-start;flex-direction:column}.preset-chapter-toolbar .row{width:100%}.preset-chapter-toolbar .btn{flex:1}}
+.preset-subject-analysis-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.preset-subject-analysis-card{min-width:0;padding:18px;border:1px solid var(--border);border-radius:10px;background:var(--panel-soft)}
+.preset-subject-analysis-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
+.preset-subject-analysis-heading h3{margin:0;font-size:18px}
+.preset-subject-analysis-heading>strong{font-size:20px;white-space:nowrap}
+.preset-subject-analysis-heading>strong span{color:var(--muted);font-size:13px;font-weight:500}
+.preset-subject-analysis-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.preset-subject-analysis-stats>div{padding:9px;border:1px solid var(--border);border-radius:7px;background:var(--panel)}
+.preset-subject-analysis-stats span,.preset-subject-analysis-stats strong{display:block}
+.preset-subject-analysis-stats span{color:var(--muted);font-size:11px}
+.preset-subject-analysis-stats strong{margin-top:3px;font-size:14px}
+.preset-subject-focus{margin:12px 0;color:var(--text)}
+.preset-analysis-table-wrap{min-width:0;overflow-x:auto}
+.preset-analysis-table-wrap h4{margin:18px 0 8px;font-size:14px}
+.preset-analysis-table-wrap .table{min-width:520px}
+@media(max-width:1100px){.preset-subject-analysis-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.preset-subject-analysis-grid{grid-template-columns:1fr}}
 
 .save-status{font-size:12px;color:var(--muted);white-space:nowrap}
 .save-status.save-warning{color:var(--bad);font-weight:600}

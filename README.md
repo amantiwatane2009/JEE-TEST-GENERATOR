@@ -23,6 +23,7 @@ Classes 11 and 12 are available, with options to combine subjects or use all ava
 - Start a NEET 2026 format test with 45 Physics, 45 Chemistry, and 90 Biology questions.
 - Use Full Syllabus Test (FST) or select chapters separately for each subject in an exam-pattern test. The app checks that each selected pool has enough questions of the required type before launch.
 - Review the three-hour timer and confirm before a preset test starts. NEET setup discloses the Physics and Chemistry question sources; the current banks use JEE PYQs for those subjects, and NEET PYQs will be added later.
+- Preset results show marks, accuracy, attempts, and chapter performance separately for Physics, Chemistry, and Mathematics or Biology. JEE results also break each subject into MCQ and numerical sections.
 - The NEET preset follows the 2026 pattern. [NTA currently lists the 2027 pattern as 200 questions, with candidates answering 180 in 200 minutes](https://www.nta.gov.in/exams/neet/); check its information bulletin when released.
 - Balance questions across selected chapters based on the available question pool.
 - Filter questions by year or use all available sources.
